@@ -13,203 +13,196 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" >
 
 	 <style type="text/css">
-			 	body{
-		  margin: 0;
-		  background-color: #ecf0f1;
-		  overflow-x: hidden;
-		}
+  body{
+      margin: 0;
+      background-color: #ecf0f1;
+      overflow-x: hidden;
+    background-size: 50%;
+      background-image: url('https://s15.postimg.org/t1v5xfudn/pattern.png');
+    }
 
-		/*Header*/
-		header{
-		  z-index: 999;
-		  background-color: rgba(22,160,133,.7);
-		  position: fixed;
-		  color: #fff;
-		  opacity: 0.7;
-		  padding: .5em;
-		  transition: 0.3s ease;
-		  width: 100%;
-		  text-align: center;
-		  font-family: 'Roboto', sans-serif;
-		  font-size: 1.2em;
-		}
+    /*Header*/
+    header{
+      z-index: 999;
+      background-color: #16a085;
+      position: fixed;
+      color: white;
+      opacity: 0.7;
+      padding: .5em;
+      transition: 0.3s ease;
+      width: 100%;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.3em;
+      box-shadow: 0px 0px 15px 1px rgba(15,108,91,.7);
+    }
 
-		header a{
-		  margin-left: 15px;
-		  padding: .5em;
-		  transition: 0.3s ease;
-		}
+    header a{
+      margin-left: 15px;
+      padding: .5em;
+      transition: 0.3s ease;
+    }
 
-		header a:hover{
-		  cursor: pointer;
-		  background-color: #2ecc71;
-		  color: white;
-		  transition: 0.3s ease;
-		}
+    header a:hover{
+      cursor: pointer;
+      background-color: #2ecc71;
+      transition: 0.3s ease;
+    }
 
-		.container{
-		  width: 100%;
-		  height: 5em;
-		  padding-top: 2em;
-		}
+    .container{
+      width: 100%;
+      height: 5em;
+      padding-top: 2em;
+    }
 
-		.hola{
-		  text-align: center;
-		  margin-top: 30px;
-		  color: #2ecc71;
-		  font-size: 1.5em;
-		  font-family: 'Pacifico', cursive;
-		}
+    .hola{
+      text-align: center;
+      margin-top: 30px;
+      color: #2ecc71;
+      font-weight: bold;
+      font-size: 1.5em;
+      font-family: 'Pacifico', cursive;
+    }
 
-		.yo{
-		  background-color: #ecf0f1;
-		  height: 12em;
-		  background-image: url('https://s21.postimg.org/tf15umqk7/pixmy.png');
-		  background-size: contain;
-		  width: 12em;
-		  margin: 0 auto;
-		  margin-top: 10px;
-		  border-radius: 50%;
-		}
+    .yo{
+      background-color: #ecf0f1;
+      height: 12em;
+      box-shadow: 0px 0px 15px 3px rgba(45,45,45,.4);
+      background-image: url('https://s21.postimg.org/tf15umqk7/pixmy.png');
+      background-size: contain;
+      width: 12em;
+      margin: 0 auto;
+      margin-top: 10px;
+      border-radius: 50%;
+    }
 
-		.nombre{
-		  text-align: center;
-		  margin-top: 20px;
-		  font-size: 1.6em;
-		  font-family: 'Baloo Bhai', cursive;
-		  color:#27ae60;
-		  animation-delay: 2s;
-		}
+    .nombre{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.6em;
+      text-shadow: 0px 2px #2d2d2d;
+      font-family: 'Baloo Bhai', cursive;
+      color:#27ae60;
+      animation-delay: 2s;
+    }
 
-		.profesion{
-		  text-align: center;
-		  font-family: 'Open Sans', sans-serif;
-		  font-size: 0.9em;
-		}
+    .profesion{
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9em;
+    }
 
-		.bosque{
-		  margin: 0 auto;
-		  margin-top: 50px;
-		  width: 90%;
-		  height: 14em;
-		  background-image: url('https://s15.postimg.org/vl86sue57/bosque.png');
-		  background-size: contain;
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  bottom: 0;
-		  animation-delay: 1s;
-		}
+    .bosque{
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 90%;
+      height: 14em;
+      background-image: url('https://s15.postimg.org/vl86sue57/bosque.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: 0;
+      animation-delay: 1s;
+    }
 
-		.nube1{
-		  position: absolute;
-		  top: 15%;
-		  left: 0;
-		  height: 2em;
-		  width: 9em;
-		  background-size: contain;
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  background-image: url('https://s16.postimg.org/oh0e39cmt/nube.png');
-		}
+    .nube1{
+      position: absolute;
+      top: 15%;
+      left: 0;
+      height: 4em;
+      width: 11em;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('https://s13.postimg.org/cjm11uk1j/nube.png');
+    }
 
-		.nube2{
-		  position: absolute;
-		  top: 35%;
-		  right: 0;
-		  height: 1.5em;
-		  width: 5em;
-		  background-size: contain;
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  background-image: url('https://s16.postimg.org/oh0e39cmt/nube.png');
-		}
+    .nube2{
+      position: absolute;
+      top: 35%;
+      right: 0;
+      height: 3.5em;
+      width: 7em;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('https://s13.postimg.org/cjm11uk1j/nube.png');
+    }
 
-		.sobremi{
-		  background-color: white;
-		  padding-top: 30px;
-		}
+    .sobremi{
+      background-color: white;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 
-		.yoDinseno{
-		  background-color: #bdc3c7;
-		  margin: 0 auto;
-		  background-size: contain;
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  border-radius: 50%;
-		  background-image: url('https://s18.postimg.org/6epqii4t5/dise_o.png');
-		  height: 9em;
-		  width: 9em;
-		}
+    .yoDinseno{
+      background-color: #bdc3c7;
+      margin: 0 auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      background-image: url('https://s18.postimg.org/6epqii4t5/dise_o.png');
+      height: 9em;
+      width: 9em;
+    }
 
-		.subTitle{
-		  margin: 10px;
-		  text-align: center;
-		  font-size: 1.5em;
-		  color: #2ecc71;
-		  font-family: 'Baloo Bhai', cursive;
-		}
+    .subTitle{
+      margin: 10px;
+      text-align: center;
+      font-size: 1.5em;
+      color: #2ecc71;
+      font-family: 'Baloo Bhai', cursive;
+    }
 
-		.texto{
-		  width: 50%;
-		  text-align: center;
-		  margin: 0 auto;
-		  font-size: 1.1em;
-		  font-family: 'Open Sans', sans-serif;
-		}
+    .texto{
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 1.1em;
+      font-family: 'Open Sans', sans-serif;
+    }
 
-		.habilidades{
-		  text-align: center;
-		  margin-top: 90px;
-		}
+    .habilidades{
+      text-align: center;
+      margin-top: 90px;
+    }
 
-		.contacto{
-		  margin-top: 70px;
-		  color: #ecf0f1;
-		  text-shadow: 0px 2px #2d2d2d;
-		}
+    .contacto{
+      margin-top: 70px;
+    }
 
-		table{
-		  height: 5em;
-		  margin: 0 auto;
-		  margin-top: 20px;
-		  width: 50%;
-		}
+    table{
+      height: 5em;
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 50%;
+    }
 
-		table i{
-		  font-size: 10vmin;
-		  color: #1abc9c;
-		}
+    table i{
+      font-size: 10vmin;
+      color: #1abc9c;
+    }
 
-		table td{
-		  border: 20px solid white;
-		  text-align: center;
-		  font-family: 'Baloo Bhai', cursive;
-		}
+    table td{
+      border: 20px solid white;
+      text-align: center;
+      font-family: 'Baloo Bhai', cursive;
+    }
 
-		#email{
-		  font-weight: bold;
-		}
+    #email{
+      font-weight: bold;
+    }
 
-		#contact{
-			background-color:#16a085;
-			padding-bottom: 20px;
-			color: white;
-		}
-
-		/*Animaciones*/
-		body.scrolled header {
-		  background-color: rgba(22,160,133,1);
-		  color: white;
-		  opacity: 1.0;
-		  box-shadow: 0px 0px 15px 1px rgba(15,108,91,.7);
-		  transition: opacity .3s;
-		}
-		body.scrolled header:hover {
-		  opacity: 1.0;
-		  transition: opacity .2s;
-		}
-
-
+    /*Animaciones*/
+    body.scrolled header {
+      opacity: 1.0;
+      transition: opacity .3s;
+    }
+    body.scrolled header:hover {
+      opacity: 1.0;
+      transition: opacity .2s;
+    }
 	 </style>
 
 
@@ -247,6 +240,14 @@
 			        $('.yo').css('background-image', 'url("https://s21.postimg.org/tf15umqk7/pixmy.png")');
 			    }
 			});
+
+			$(function(){
+			        var x = 0;
+			        setInterval(function(){
+			            x-=1;
+			            $('body').css('background-position', x + 'px 0');
+			        }, 40);
+			    })
 		});
 
 		window.addEventListener('scroll', function () {
