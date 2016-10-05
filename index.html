@@ -22,17 +22,16 @@
 		/*Header*/
 		header{
 		  z-index: 999;
-		  background-color: #16a085;
+		  background-color: rgba(22,160,133,.7);
 		  position: fixed;
-		  color: white;
+		  color: #fff;
 		  opacity: 0.7;
 		  padding: .5em;
 		  transition: 0.3s ease;
 		  width: 100%;
 		  text-align: center;
 		  font-family: 'Roboto', sans-serif;
-		  font-size: 1em;
-		  box-shadow: 0px 0px 15px 1px rgba(15,108,91,.7);
+		  font-size: 1.2em;
 		}
 
 		header a{
@@ -44,6 +43,7 @@
 		header a:hover{
 		  cursor: pointer;
 		  background-color: #2ecc71;
+		  color: white;
 		  transition: 0.3s ease;
 		}
 
@@ -57,7 +57,7 @@
 		  text-align: center;
 		  margin-top: 30px;
 		  color: #2ecc71;
-		  font-size: 1.3em;
+		  font-size: 1.5em;
 		  font-family: 'Pacifico', cursive;
 		}
 
@@ -75,7 +75,7 @@
 		.nombre{
 		  text-align: center;
 		  margin-top: 20px;
-		  font-size: 1.3em;
+		  font-size: 1.6em;
 		  font-family: 'Baloo Bhai', cursive;
 		  color:#27ae60;
 		  animation-delay: 2s;
@@ -191,7 +191,10 @@
 
 		/*Animaciones*/
 		body.scrolled header {
+		  background-color: rgba(22,160,133,1);
+		  color: white;
 		  opacity: 1.0;
+		  box-shadow: 0px 0px 15px 1px rgba(15,108,91,.7);
 		  transition: opacity .3s;
 		}
 		body.scrolled header:hover {
