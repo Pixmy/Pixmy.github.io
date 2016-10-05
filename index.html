@@ -225,6 +225,18 @@
 		    $('#cont').on('click', function(){
 		        $('html,body').animate({scrollTop: $("#email").offset().top});
 		    });
+
+		    $('.yo').on({
+			    'mouseenter':function(){
+			        $('.yo').css('background-image', 'url("https://s16.postimg.org/4eooz1byd/new.png")');
+			        $('.yo').removeClass('bounceIn');
+			        $('.yo').addClass('jello');
+			        $('.yo').removeClass('jello');
+			    },'mouseleave':function(){
+			        $('.yo').addClass('jello');
+			        $('.yo').css('background-image', 'url("https://s21.postimg.org/tf15umqk7/pixmy.png")');
+			    }
+			});
 		});
 
 		window.addEventListener('scroll', function () {
