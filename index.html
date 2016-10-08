@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
 	<link href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" rel="stylesheet" >
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" >
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
 	 <style type="text/css">
   body{
@@ -197,9 +198,18 @@
       font-family: 'Baloo Bhai', cursive;
     }
 
-    #email{
-      font-weight: bold;
-    }
+   	.emailButton{
+   	  background-color:#2ecc71;
+   	  color: white;
+      font-family: 'Baloo Bhai', cursive;
+      margin: 0 auto;
+      padding: .6em;
+      padding-left: 2em;
+      padding-right: 2em;
+      border-radius: 5px;
+      text-decoration: none !important;
+   	} 
+
 
 .idioma{
   margin-top: 50px;
@@ -223,6 +233,10 @@
   background-color: #16a085;
   color: white;
   font-family: 'Open Sans', sans-serif;
+}
+
+.mailIcon{
+	margin-right: 10px;
 }
 
     /*Animaciones*/
@@ -341,8 +355,10 @@
 			</div>
 			<div class="contacto subTitle">Contacto</div>
 			<div class="texto">
-				Si usted está interesado en mi trabajo por favor contácteme vía email
-				<p><span id="email">pixmy@outlook.com</span>
+				Si usted está interesado en mi trabajo por favor contácteme vía email<p>
+				<a class="emailButton" href="mailto:pixmy@outlook.com">
+					<i class="mailIcon fa fa-envelope"></i>Enviar Email
+				</a>
 			</div>
 		</div>
 	</div>
