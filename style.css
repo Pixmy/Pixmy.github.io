@@ -206,8 +206,12 @@
       transition: opacity .2s;
     }
 		 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 960px) {
   .texto{
     width: 90% !important;
+  }
+  
+  body{
+    background-size: 80%;
   }
 }
