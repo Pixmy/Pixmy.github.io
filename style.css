@@ -227,4 +227,29 @@
   body{
     background-size: 80%;
   }
+  
+  header a{
+    font-size: calc(0.8em + 2.5vmin);
+  }
+  
+  .hola{
+    font-size: calc(0.8em + 2vmin);
+  }
+  
+  .nombre{
+    font-size: calc(0.8em + 2.2vmin);
+  }
+  
+  .profesion{
+    font-size: calc(0.8em + 1vmin);
+  }
+  
+  table{
+    width: 90%;
+  }
+  
+  .yo{
+    width: 35vw;
+    height: 35vw;
+  }
 }
