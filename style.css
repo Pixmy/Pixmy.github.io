@@ -206,7 +206,7 @@
       transition: opacity .2s;
     }
 		 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1960px) {
   .texto{
     width: 90% !important;
   }
