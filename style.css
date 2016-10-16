@@ -210,7 +210,7 @@
   .texto{
     width: 90% !important;
     text-align: justify;
-    font-size: calc(0.8em + 1.7vmin);
+    font-size: calc(0.8em + 4vmin);
   }
   
   body{
