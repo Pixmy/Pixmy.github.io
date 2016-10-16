@@ -216,6 +216,10 @@
     width: 90%;
   }
   
+  .subTitle{
+    font-size: calc(1em + 2.5vmin);
+  }
+  
   .barProcess{
     font-size: calc(0.8em + 2vmin);
   }
