@@ -209,6 +209,8 @@
 @media screen and (max-width: 1000px) {
   .texto{
     width: 90% !important;
+    text-align: justify;
+    font-size: calc(0.8em + 1.7vmin);
   }
   
   body{
