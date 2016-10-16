@@ -181,7 +181,7 @@
   border-radius: 5px;
   width: 30%;
   margin: 0 auto;
-  min-width: 15em;
+  min-width: 18em;
 }
 .barProcess{
   padding: 1em;
@@ -209,7 +209,14 @@
 @media screen and (max-width: 1000px) {
   .texto{
     width: 90% !important;
-    text-align: justify;
+    font-size: calc(0.8em + 2vmin);
+  }
+  
+  #bar{
+    width: 90%;
+  }
+  
+  .barProcess{
     font-size: calc(0.8em + 2vmin);
   }
   
