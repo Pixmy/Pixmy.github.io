@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,25 +20,22 @@
 
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	 <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js"></script>
 
 
 	<script type="text/javascript">
 	 	$(document).ready(function(){
 		    $(".nube1").animate({left: "300px"},10000);
 		    $(".nube2").animate({left: (($( window ).width()/2)+200)+"px"},7000);
-
 		    $('#sobremiA').on('click', function(){
 		        $('html,body').animate({scrollTop: $(".sobremi").offset().top});
 		    });
-
 		    $('#hab').on('click', function(){
 		        $('html,body').animate({scrollTop: $(".habilidades").offset().top});
 		    });
-
 		    $('#cont').on('click', function(){
 		        $('html,body').animate({scrollTop: $("#email").offset().top});
 		    });
-
 		    $('.yo').on({
 			    'mouseenter':function(){
 			        $('.yo').css('background-image', 'url("https://s16.postimg.org/4eooz1byd/new.png")');
@@ -49,22 +47,29 @@
 			        $('.yo').css('background-image', 'url("https://s21.postimg.org/tf15umqk7/pixmy.png")');
 			    }
 			});
-
 			$(function(){
 			        var x = 0;
 			        setInterval(function(){
 			            x-=1;
 			            $('body').css('background-position', x + 'px 0');
 			        }, 40);
-			    })
-		});
+			})
 
+			jQuery('.element').addClass("hidden").viewportChecker({
+		        classToAdd: 'visible animated slideInLeft',
+		        offset: 100
+	        });
+
+	        jQuery('.elementI').addClass("hidden").viewportChecker({
+		        classToAdd: 'visible animated slideInRight',
+		        offset: 100
+	        });
+		});
 		window.addEventListener('scroll', function () {
 		  document.body.classList[
 		    window.scrollY > 20 ? 'add': 'remove'
 		  ]('scrolled');
 		});
-
 	</script>
 
 </head>
@@ -86,7 +91,7 @@
 		<div class="sobremi">
 			<div class="yoDinseno"></div>
 			<div id="sbm" class="subTitle">Sobre mí</div>
-			<div class="texto">
+			<div class="texto element">
 				Me llamo Arturo Cabrera, soy del estado de Guanajuato y me encanta
 				diseñar páginas web, me gusta dar esa primera impresión la cual 
 				hace que el usuario se quede dentro de la página, además 
@@ -96,8 +101,8 @@
 				Soy un alumno recién egresado del Instituto Tecnológico Superior del Sur de Guanajuato, pero he tenido varias experiencias laborales, por ejemplo <a href="http://sicenet.itsur.edu.mx:8088/_public/views/inicio.aspx">SQLjudge</a>, además he trabajado en proyectos relacionados con instituciones privadas y algunos proyectos libres, por ejemplo <a href="https://pixmy.github.io/ps4">PS4 Interface</a>.
 			</div>
 
-			<div class="habilidades subTitle">Habilidades</div>
-			<table>
+			<div class="elementI  habilidades subTitle">Habilidades</div>
+			<table class="elementI">
 				<tr>
 					<td><i class="devicon-html5-plain"></i>
 					<td><i class="devicon-css3-plain"></i>
@@ -113,8 +118,8 @@
 					<td><i class="devicon-java-plain-wordmark"></i>
 				</tr>
 			</table>
-			<div class="subTitle idioma">Otros Idiomas</div>
-			<div class="idiomas">
+			<div class="element subTitle idioma">Otros Idiomas</div>
+			<div class="element idiomas">
 				<div id="bar"><div class="barProcess">Inglés - 80%</div></div>
 			</div>
 			<div class="contacto subTitle">Contacto</div>
