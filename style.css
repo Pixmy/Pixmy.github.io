@@ -258,3 +258,10 @@
     height: 27vw;
   }
 }
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
