@@ -18,60 +18,90 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	
 
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	 <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
 
 
 	<script type="text/javascript">
-	 	$(document).ready(function(){
-		    $(".nube1").animate({left: "300px"},10000);
-		    $(".nube2").animate({left: (($( window ).width()/2)+200)+"px"},7000);
-		    $('#sobremiA').on('click', function(){
-		        $('html,body').animate({scrollTop: $(".sobremi").offset().top});
-		    });
-		    $('#hab').on('click', function(){
-		        $('html,body').animate({scrollTop: $(".habilidades").offset().top});
-		    });
-		    $('#cont').on('click', function(){
-		        $('html,body').animate({scrollTop: $("#email").offset().top});
-		    });
+		$(document).ready(function(){
+			$(".nube1").animate({left: "300px"},10000);
 
-		    $('.yo').on({
-			    'mouseenter':function(){
-			        $('.yo').css('background-image', 'url("https://s16.postimg.org/4eooz1byd/new.png")');
-			        $('.yo').removeClass('bounceIn');
-			        $('.yo').addClass('jello');
-			        $('.yo').removeClass('jello');
-			    },'mouseleave':function(){
-			        $('.yo').addClass('jello');
-			        $('.yo').css('background-image', 'url("https://s21.postimg.org/tf15umqk7/pixmy.png")');
-			    }
+			$(".nube2").animate({left: (($( window ).width()/2)+200)+"px"},7000);
+			
+			$('#sobremiA').on('click', function(){
+				$('html,body').animate({scrollTop: $(".sobremi").offset().top});
 			});
+			$('#hab').on('click', function(){
+				$('html,body').animate({scrollTop: $(".habilidades").offset().top});
+			});
+			$('#cont').on('click', function(){
+				$('html,body').animate({scrollTop: $("#email").offset().top});
+			});
+
+			$('.yo').on({
+				'mouseenter':function(){
+					$('.yo').css('background-image', 'url("https://s16.postimg.org/4eooz1byd/new.png")');
+					$('.yo').removeClass('bounceIn');
+					$('.yo').addClass('jello');
+					$('.yo').removeClass('jello');
+				},'mouseleave':function(){
+					$('.yo').addClass('jello');
+					$('.yo').css('background-image', 'url("https://s21.postimg.org/tf15umqk7/pixmy.png")');
+				}
+			});
+
 			$(function(){
-			        var x = 0;
-			        setInterval(function(){
-			            x-=1;
-			            $('body').css('background-position', x + 'px 0');
-			        }, 40);
+				var x = 0;
+				setInterval(function(){
+					x-=1;
+					$('body').css('background-position', x + 'px 0');
+				}, 40);
 			})
 
 			jQuery('.element').addClass("hidden").viewportChecker({
-		        classToAdd: 'visible animated slideInLeft',
-		        offset: 100
-	        });
+				classToAdd: 'visible animated slideInLeft',
+				offset: 100
+			});
 
-	        jQuery('.elementI').addClass("hidden").viewportChecker({
-		        classToAdd: 'visible animated slideInRight',
-		        offset: 100
-	        });
+			jQuery('.elementI').addClass("hidden").viewportChecker({
+				classToAdd: 'visible animated slideInRight',
+				offset: 100
+			});
+
+			jQuery('.firma').addClass("hidden").viewportChecker({
+				classToAdd: 'visible animated bounceIn',
+				offset: 100
+			});
+
+			$(window).scroll(function() {
+				if($(window).scrollTop() + $(window).height() == $(document).height()) {
+					var paths = $('path:not(defs path)');
+
+					paths.each(function(i, e) {
+						e.style.strokeDasharray = e.style.strokeDashoffset = e.getTotalLength();
+					});
+
+					var tl = new TimelineMax();
+
+					tl.add([
+						TweenLite.to(paths.eq(0), 4, {
+							strokeDashoffset: 0,
+							delay: 0.0,
+							autoAlpha: 1
+						})
+					]);
+				}
+			});
 		});
-		window.addEventListener('scroll', function () {
-		  document.body.classList[
-		    window.scrollY > 20 ? 'add': 'remove'
-		  ]('scrolled');
-		});
-	</script>
+
+window.addEventListener('scroll', function () {
+	document.body.classList[
+	window.scrollY > 20 ? 'add': 'remove'
+	]('scrolled');
+});
+</script>
 
 </head>
 <body>
@@ -99,38 +129,99 @@
 				me parece muy entretenido programar y llegar a una solución óptima
 				ya sea individualmente o en equipo.
 				<p><p>
-				Soy un alumno recién egresado del Instituto Tecnológico Superior del Sur de Guanajuato, pero he tenido varias experiencias laborales, por ejemplo <a href="http://sicenet.itsur.edu.mx:8088/_public/views/inicio.aspx">SQLjudge</a>, además he trabajado en proyectos relacionados con instituciones privadas y algunos proyectos libres, por ejemplo <a href="https://pixmy.github.io/ps4">PS4 Interface</a>.
-			</div>
+					Soy un alumno recién egresado del Instituto Tecnológico Superior del Sur de Guanajuato, pero he tenido varias experiencias laborales, por ejemplo <a href="http://sicenet.itsur.edu.mx:8088/_public/views/inicio.aspx">SQLjudge</a>, además he trabajado en proyectos relacionados con instituciones privadas y algunos proyectos libres, por ejemplo <a href="https://pixmy.github.io/ps4">PS4 Interface</a>.
+				</div>
 
-			<div class="elementI  habilidades subTitle">Habilidades</div>
-			<table class="elementI">
-				<tr>
-					<td><i class="devicon-html5-plain"></i>
-					<td><i class="devicon-css3-plain"></i>
-					<td><i class="devicon-javascript-plain"></i>
-					<td> <i class="devicon-csharp-plain"></i>
-					<td> <i class="devicon-bootstrap-plain"></i>
-				</tr>
-				<tr>
-					<td> <i class="devicon-android-plain"></i>
-					<td><i class="devicon-jquery-plain-wordmark"></i>
-					<td> <i class="devicon-mysql-plain-wordmark"></i>
-					<td> <i class="devicon-oracle-original"></i> 
-					<td><i class="devicon-java-plain-wordmark"></i>
-				</tr>
-			</table>
-			<div class="element subTitle idioma">Otros Idiomas</div>
-			<div class="element idiomas">
-				<div id="bar"><div class="barProcess">Inglés - 80%</div></div>
-			</div>
-			<div id="email" class="contacto subTitle">Contacto</div>
-			<div class="texto">
-				Si usted está interesado en mi trabajo por favor contácteme vía email<p>
-				<a class="emailButton" href="mailto:pixmy@outlook.com">
-					<i class="animated swing infinite mailIcon fa fa-envelope"></i>Enviar Email
-				</a>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+				<div class="elementI  habilidades subTitle">Habilidades</div>
+				<table class="elementI">
+					<tr>
+						<td><i class="devicon-html5-plain"></i>
+							<td><i class="devicon-css3-plain"></i>
+								<td><i class="devicon-javascript-plain"></i>
+									<td> <i class="devicon-csharp-plain"></i>
+										<td> <i class="devicon-bootstrap-plain"></i>
+										</tr>
+										<tr>
+											<td> <i class="devicon-android-plain"></i>
+												<td><i class="devicon-jquery-plain-wordmark"></i>
+													<td> <i class="devicon-mysql-plain-wordmark"></i>
+														<td> <i class="devicon-oracle-original"></i> 
+															<td><i class="devicon-java-plain-wordmark"></i>
+															</tr>
+														</table>
+														<div class="element subTitle idioma">Otros Idiomas</div>
+														<div class="element idiomas">
+															<div id="bar"><div class="barProcess">Inglés - 80%</div></div>
+														</div>
+														<div id="email" class="contacto subTitle">Contacto</div>
+														<div class="texto">
+															Si usted está interesado en mi trabajo por favor contácteme vía email<p>
+															<a class="emailButton" href="mailto:pixmy@outlook.com">
+																<i class="animated swing infinite mailIcon fa fa-envelope"></i>Enviar Email
+															</a>
+														</div>
+														<div class="firma">
+															<svg
+															xmlns:dc="http://purl.org/dc/elements/1.1/"
+															xmlns:cc="http://creativecommons.org/ns#"
+															xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+															xmlns:svg="http://www.w3.org/2000/svg"
+															xmlns="http://www.w3.org/2000/svg"
+															xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+															xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+															width="75mm"
+															height="77mm"
+															viewBox="0 0 265.74804 272.83465"
+															id="svg4166"
+															version="1.1"
+															inkscape:version="0.91 r13725"
+															sodipodi:docname="arturo.svg">
+															<defs
+															id="defs4168" />
+															<sodipodi:namedview
+															id="base"
+															pagecolor="#ffffff"
+															bordercolor="#666666"
+															borderopacity="1.0"
+															inkscape:pageopacity="0.0"
+															inkscape:pageshadow="2"
+															inkscape:zoom="0.98994949"
+															inkscape:cx="237.21263"
+															inkscape:cy="204.15392"
+															inkscape:document-units="px"
+															inkscape:current-layer="layer1"
+															showgrid="false"
+															inkscape:window-width="1366"
+															inkscape:window-height="715"
+															inkscape:window-x="-8"
+															inkscape:window-y="-8"
+															inkscape:window-maximized="1" />
+															<metadata
+															id="metadata4171">
+															<rdf:RDF>
+															<cc:Work
+															rdf:about="">
+															<dc:format>image/svg+xml</dc:format>
+															<dc:type
+															rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+															<dc:title></dc:title>
+														</cc:Work>
+													</rdf:RDF>
+												</metadata>
+												<g
+												inkscape:label="Layer 1"
+												inkscape:groupmode="layer"
+												id="layer1"
+												transform="translate(0,-779.52757)">
+												<path
+												style="fill:none;fill-opacity:1;stroke:#2ecc7f;stroke-opacity:0.94117647"
+												id="path4839"
+												d="m 233.74873,905.53196 c 0.4138,-11.24323 -5.27376,-21.90435 -9.84448,-31.81696 -5.01142,-9.43088 -10.40374,-18.87253 -17.37404,-27.03383 -2.96646,-3.47335 -8.85075,-9.4106 -13.24947,-11.48088 -2.16128,-1.01721 -4.64794,-1.10459 -6.97191,-1.65689 -2.32041,0.41248 -5.05506,-0.14853 -6.96125,1.23745 -1.06647,0.77543 4.05857,-0.24436 3.81352,1.05126 -1.05473,5.57664 -4.63465,10.36174 -6.95197,15.54262 -1.53555,6.79564 -3.64875,13.48613 -4.60665,20.38693 -2.82147,20.32599 -1.23562,27.89842 0.1396,48.38529 2.53437,20.08531 6.98063,39.94002 14.0268,58.94132 3.12964,8.43963 6.0952,15.03392 11.04316,22.41853 1.60036,2.3885 3.56801,4.5093 5.35201,6.7639 3.61414,3.2539 7.82795,8.0497 13.37859,7.1521 1.33007,-0.2151 4.87968,-2.2679 3.7187,-1.5842 -11.38984,6.708 -9.93151,5.9705 -5.13228,0.6843 5.50424,-7.8719 8.37529,-17.04506 10.06631,-26.40186 0.30477,-2.00384 0.54707,-4.0208 0.59321,-6.04892 0.006,-0.27932 0.003,-0.55898 -0.009,-0.83811 -0.004,-0.10333 -0.13335,-0.26299 -0.0401,-0.30767 4.41833,-2.11666 8.91979,-4.05523 13.37968,-6.08284 0.0136,4.12153 -0.90655,8.02678 -2.15186,11.92964 -1.43719,3.49182 -1.85043,5.08738 -4.38383,8.26485 -9.55755,11.98741 -25.13656,18.39051 -38.16444,25.27831 -7.28719,2.9238 -14.77164,5.329 -22.36707,7.3088 -2.63203,0.6861 -6.49667,1.7699 -9.36047,1.6325 -1.15782,-0.056 -2.26223,-0.5069 -3.39334,-0.7603 -0.93358,-1.0621 -2.12194,-1.9459 -2.80074,-3.1865 -2.11635,-3.8678 -3.73788,-12.0927 -4.60416,-15.7055 -0.9941,-4.1458 -1.9275,-8.3063 -2.94995,-12.44523 -5.5176,-22.33566 -4.75385,-18.72854 -11.82153,-43.46683 -13.63862,-43.79448 -28.49382,-87.21796 -44.551403,-130.1845 -2.35258,-5.82379 -4.39694,-11.76851 -6.73155,-17.59949 -0.6297,-1.57277 -1.17678,-3.19137 -1.99732,-4.67355 -0.31126,-0.56222 -1.90477,-1.0486 -1.35125,-1.3751 14.12735,-8.33307 12.64945,-8.86358 12.40789,-0.32062 0.53539,21.92158 2.95759,43.74793 3.766206,65.65389 0.60307,16.33737 0.27991,20.99717 -0.0573,37.09455 -0.4449,18.95513 -2.815256,37.77469 -6.417086,56.3671 -0.74384,3.7046 -2.01448,7.26242 -3.23292,10.82845 -0.88472,2.33751 -1.06917,4.83985 -1.63536,7.25445 -1.80607,7.77942 -2.63547,5.86685 -15.3796,11.21955 -0.82943,0.34837 -1.77332,-0.30428 -2.65998,-0.45643 -13.63501,-3.77913 -27.40812,-7.0268 -41.16974,-10.30672 -3.73405,-1.10769 -7.767231,-1.71222 -11.266891,-3.53695 -1.04535,-0.54505 -2.64646,-1.56807 -2.89857,-2.92041 -0.16734,-0.89764 0.15447,-1.81967 0.23171,-2.72951 1.59874,-2.06329 3.00287,-4.29328 4.79621,-6.18987 4.393391,-4.64635 20.085691,-18.76941 24.117151,-22.31972 15.51138,-13.66012 31.34622,-26.96639 46.9623,-40.50765 15.267003,-13.46985 30.572263,-26.92765 44.875323,-41.43029 0,0 12.83185,-5.30384 12.83185,-5.30384 l 0,0 c -15.56784,14.9317 -32.10122,28.79642 -48.370937,42.94809 -11.987446,10.25489 -19.322406,16.48181 -31.309896,26.93783 -12.62598,11.01294 -25.57504,21.98502 -36.85937,34.42242 -1.43749,1.58438 -2.62829,3.37619 -3.94244,5.06429 -0.19515,0.57773 -0.59592,1.12349 -0.58544,1.7332 0.0176,1.0266 1.57025,1.94826 2.18478,2.30089 3.21427,1.84443 6.91324,2.69336 10.39139,3.84664 13.7687,3.80748 27.64311,7.45486 41.78288,9.58487 7.18748,-0.0585 3.19399,-0.4939 -8.63249,7.03244 -0.23413,0.14899 0.56554,-0.13881 0.76246,-0.33437 0.63819,-0.63378 0.30995,-1.88532 0.70419,-2.6283 0.6815,-2.44556 0.95071,-4.95888 1.65904,-7.40244 1.30117,-3.68822 2.76933,-7.31164 3.99772,-11.02684 5.1923,-18.85042 8.68685,-38.12838 9.66709,-57.69256 0.21498,-6.01954 0.58685,-12.03553 0.64495,-18.05863 0.26833,-27.81885 -2.36233,-55.69278 -7.28735,-83.05579 -1.5324,-9.36326 -2.62546,-6.54114 12.56414,-13.43511 0.67114,-0.30461 0.60103,1.34978 0.81867,2.05394 1.30603,4.22572 2.311246,8.5388 3.515216,12.79472 1.00805,3.56334 2.048447,7.11744 3.072667,10.67615 5.35082,18.10218 10.70766,36.20034 16.44178,54.18626 8.25247,25.88514 17.03044,51.59892 25.65917,77.35965 2.88201,8.07287 11.60073,32.24001 14.76195,41.91867 2.69483,8.25073 3.63467,13.3199 6.67638,21.1365 0.71205,1.8298 1.45935,3.6726 2.52458,5.322 0.61651,0.9546 1.63074,1.5831 2.4461,2.3746 0.99362,0.1794 1.97146,0.5142 2.98086,0.5382 2.6073,0.062 6.33006,-0.8603 8.72631,-1.447 7.38711,-1.8087 14.65157,-4.1087 21.66856,-7.0555 -0.89059,0.7918 -3.76633,2.8463 -2.67177,2.3752 6.19013,-2.6641 13.89143,-8.8316 18.18063,-14.1144 2.39004,-2.94373 2.76197,-4.45374 4.0948,-7.73079 1.1112,-3.66767 1.99938,-7.42751 1.72138,-11.29024 14.87388,-8.25707 14.01549,-12.38164 13.25172,-6.11417 -0.26065,2.13894 -0.4856,4.28455 -0.92685,6.39686 -2.053,9.52115 -5.06631,18.87494 -10.18671,27.23064 -6.35256,8.2606 -3.21852,5.1992 -18.75429,13.3831 -2.64522,1.3934 -5.60957,1.3432 -8.29539,0.1207 -3.64744,-1.6603 -6.14704,-4.9588 -8.79982,-7.7526 -1.6297,-2.4108 -3.44303,-4.7073 -4.88911,-7.2326 -4.47507,-7.81474 -7.07714,-14.68147 -9.79272,-23.38642 -6.09422,-19.53535 -10.03808,-39.72825 -12.43869,-60.03061 -0.64995,-8.2119 -1.74742,-16.4006 -1.94985,-24.6357 -0.38311,-15.58576 0.57961,-28.58348 4.35522,-43.6204 1.31681,-5.24441 1.89924,-11.13175 5.3092,-15.32818 11.65762,-14.34635 13.50571,-13.29177 25.63387,-14.59765 2.34693,0.73426 4.87716,1.03405 7.04078,2.2028 2.42164,1.30812 4.47488,3.23024 6.48924,5.10585 5.39416,5.02261 8.38546,9.28865 12.56023,15.38997 5.8727,8.58284 6.34875,9.82113 11.49092,18.78615 1.49108,2.99966 3.0076,5.98681 4.47326,8.99897 3.41038,7.00892 7.23984,14.29539 7.76366,22.22948 0,0 -13.33516,6.7946 -13.33516,6.7946 z"
+												inkscape:connector-curvature="0" />
+											</g>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</body>
+						</html>
