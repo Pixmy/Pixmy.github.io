@@ -26,10 +26,13 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
+
+			var scrollCount=0;
+
 			$(".nube1").animate({left: "300px"},10000);
 
 			$(".nube2").animate({left: (($( window ).width()/2)+200)+"px"},7000);
-			
+
 			$('#sobremiA').on('click', function(){
 				$('html,body').animate({scrollTop: $(".sobremi").offset().top});
 			});
@@ -76,7 +79,8 @@
 			});
 
 			$(window).scroll(function() {
-				if($(window).scrollTop() + $(window).height() == $(document).height()) {
+				if($(window).scrollTop() + $(window).height() == $(document).height() && scrollCount===0) {
+					scrollCount = 1;
 					var paths = $('path:not(defs path)');
 
 					paths.each(function(i, e) {
