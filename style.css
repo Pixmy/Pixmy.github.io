@@ -402,6 +402,10 @@ p{
 		width: 70%;
 	}
 	
+	.progress{
+    font-size: calc(0.95em + 1.4vmin);
+	}
+	
 	.hireClick{
 		left: 5%;
 		right: 5%;
