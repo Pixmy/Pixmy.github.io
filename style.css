@@ -143,6 +143,18 @@ body{
     to {transform: translate(20%, -10%);}
 }
 
+@keyframes floating {
+	0%{transform: translate(0px, 0px) rotate(0deg);}
+	20% {transform: translate(0px, 7px) rotate(3deg);}
+	40%{transform: translate(0px, -10px) rotate(0 deg);}
+	60% {transform: translate(0px, 7px) rotate(-3deg);}
+	100%{transform: translate(0px, 0px) rotate(0deg);}
+}
+
+.ps4{
+	animation: floating 4s linear infinite;
+}
+
 .line2{
 	height: 1px;
 	width: 80%;
