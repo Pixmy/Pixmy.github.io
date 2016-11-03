@@ -309,7 +309,8 @@
 			$(".background").css("background", "linear-gradient(#7f8c8d,#e74c3c)");
 		}
 
-		if($(".firma").visible(true)){
+		if($(".firma").visible(true)&& firmacount == 0){
+			firmacount = 1;
 			var paths = $('#svg4166 path:not(defs path)');
 			paths.each(function(i, e) {
 				e.style.strokeDasharray = e.style.strokeDashoffset = e.getTotalLength();
