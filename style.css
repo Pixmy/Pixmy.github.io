@@ -391,7 +391,7 @@ p{
 	.hire{
 		width: 100%;
 		text-align: center;
-		font-size: 150%;
+		font-size: 160%;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -411,6 +411,7 @@ p{
 		left: 0;
 		right: 0;
 		bottom: 0;
+    font-size: calc(1.6em + 1.4vmin);
 	}
 }
 
