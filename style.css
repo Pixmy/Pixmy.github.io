@@ -391,7 +391,7 @@ p{
 	.hire{
 		width: 100%;
 		text-align: center;
-    font-size: calc(0.85em + 1.4vmin);
+		font-size: 150%;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -407,8 +407,10 @@ p{
 	}
 	
 	.hireClick{
-		left: 5%;
-		right: 5%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 }
 
