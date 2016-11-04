@@ -3,6 +3,37 @@ body{
 	padding: 0;
 }
 
+.toggle{
+	position: fixed;
+	bottom: 5%;
+	left: 2%;
+	z-index: 1;
+	font-size: calc(1em + 1vmin);
+}
+
+.toggle-on{
+	font-family: arial !important;
+	font-size: calc(.5em + .7vmin) !important;
+	color: white !important;
+	text-shadow: none !important;
+}
+
+.toggle-soft .toggle-on{
+	background: #2ecc71 !important;
+}
+
+.toggle-soft .toggle-off{
+	background: #3498db !important;
+}
+
+.toggle-off{
+	font-family: arial !important;
+	font-size: calc(.5em + .7vmin) !important;
+	color: white !important;
+	text-shadow: none !important;
+}
+
+
 .background{
   	background: linear-gradient(#2ecc71, #16a085); /* Standard syntax */
 	top: 0;
