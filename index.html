@@ -18,6 +18,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet"> 
+
+	<link rel="stylesheet" type="text/css" href="https://pixmy.github.io/toggles-full.css">
 	<!--JQUERY-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!--Animate-->
@@ -25,16 +27,20 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js" type="text/javascript"></script>
 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toggles/2.0.4/toggles.min.js"></script>
 </head>
 
 
 <body>
 	<div class="background"></div>
+
+		<div class="toggle toggle-soft"></div>
 	<div class="hire" id="hire"><i class="fa fa-handshake-o animated swing infinite"></i>
 		<div class="info display"><div class="correo"><i class="fa fa-envelope"></i>pixmy@outlook.com</div>
 			<div class="tel"><i class="fa fa-phone"></i>445-109-28-37</div>
 		</div>
-		Contratar
+		<span class="espanol">Cotratame</span>
+		<span class="ingles">Hire me</span>
 	</div>
 
 
@@ -50,25 +56,42 @@
 			<div class="line2"></div>
 			<div class="center">
 				<div class="nombre animated fadeInLeft"><p>AR</p><p>TU</p><p>RO</p></div>
-				<div class="iam animated fadeInLeft">Programador | UI Styler</div>
+				<div class="iam animated fadeInLeft">
+				<span class="espanol">Programador</span>
+				<span class="ingles">Developer</span> | UI Styler</div>
 			</div>
 		</div>
 
 	<div class="body" id="body"> 
 		<div class="square" id="first">
-			<div class="squareTitle">Sobre mí<span class="squareSubTitle">Hola! conoceme</span></div>
+			<div class="squareTitle">
+				<span class="espanol">Sobre mí</span>
+				<span class="ingles">About me</span>
+				<span class="squareSubTitle ingles">Hello! get to know me</span>
+				<span class="squareSubTitle espanol">Hola! conoceme</span>
+			</div>
 			<div class="squareImage show1 hidden"><img class="image yo" src="https://s16.postimg.org/4eooz1byd/new.png"></div>
 			<div class="squareText sobreMi show1 hidden">
-				<p>
+				<p class="espanol">
 					Me llamo Arturo Cabrera, soy del estado de Guanajuato y me encanta diseñar páginas web, me gusta dar esa primera impresión la cual hace que el usuario se quede dentro de la página, además <i class="fa fa-heart"></i> la programación y me gusta siempre llegar a una solución óptima para el cliente ya sea individualmente o en equipo.
 					Soy un alumno recién egresado del Instituto Tecnológico Superior del Sur de Guanajuato, pero he tenido varias experiencias laborales.
-					<p>Por último quiero mencionar que mi Inglés es Avanzado.</p>
+					<p class="espanol">Por último quiero mencionar que mi Inglés es Avanzado.</p>
+				</p>
+				<p class="ingles">				
+					My name is Arturo Cabrera, I'm from the state of Guanajuato and I love to design websites, I like to give that first impression which makes the user to stay within the page, plus <i class = "fa fa-heart"> </i> programming and always arrive at an optimal solution for the customer either individually or in teams.
+					I am a recent graduate of Instituto Tecnológico del sur de Guanajuato student, but I have had several work experiences.
+					<p class="ingles">Finally I want to mention that my English is Advanced.</p>
 				</p>
 			</div>
 		</div>
 
 		<div class="square" id="second">
-			<div class="squareTitleRight">Mis habilidades<span class="squareSubTitle">Puntos fuertes de mí</span></div>
+			<div class="squareTitleRight">
+				<span class="espanol">Mis habilidades</span>
+				<span class="ingles">My abilities</span>
+				<span class="squareSubTitle espanol">Puntos fuertes de mí</span>
+				<span class="squareSubTitle ingles">Knowledge in...</span>
+			</div>
 			<div class="squareText show2 hidden">
 				<div class="habilidades">
 					<div class="habilidad show2 hidden">
@@ -147,11 +170,19 @@
 		</div>
 
 		<div class="square" id="third">
-			<div class="squareTitleRight">Mi Trabajo<span class="squareSubTitle">SQLJudge</span></div>
+			<div class="squareTitleRight">
+				<span class="espanol">Mi Trabajo</span>
+				<span class="ingles">My work</span>
+				<span class="squareSubTitle">SQLJudge</span></div>
 			<div class="squareText trabajo show3 hidden">
 				<p>
+				<p class="espanol">
 					SQLJudge es el primer juez SQL abierto para todo el mundo en el cual un sin fin de usuarios podrán resolver problemas que serán evaluados por el juez. Este proyecto pretende ofrecer una nueva experiencia de aprendizaje para el alumno.
-					Este proyecto ya se encuentra implementado en algunas escuelas del estado de Guanajuato.
+					Este proyecto ya se encuentra implementado en algunas escuelas del estado de Guanajuato.</p>
+				<p class="ingles">
+					Web designer of SQLJudge page, which is the first SQL judge open to everyone in which endless users can solve problems that will be evaluated by an automatic judge. This project seeks to provide a new learning experience to students.
+					This project is already implemented in some schools in Guanajuato state.
+				</p>
 					<p></p>
 					<p></p>
 					<p>Link: <a href="http://sicenet.itsur.edu.mx:8088/_public/views/inicio.aspx">SQLJudge</a></p>
@@ -165,7 +196,8 @@
 			<div class="squareImage show4 hidden"><img class="image yo ps4" src="https://s20.postimg.org/6h0syfcfx/ps4.png"></div>
 			<div class="squareText trabajo show4 hidden">
 				<p>
-					PS4 Interface es un proyecto independiente que asemeja la interfaz gráfica de la consola de sony “playstation 4” en una plataforma web.
+					<p class="espanol">PS4 Interface es un proyecto independiente que asemeja la interfaz gráfica de la consola de sony “playstation 4” en una plataforma web.</p>
+					<p class="ingles">PS4 Interface is an independent project that resembles the GUI console sony "playstation 4" on a web platform.</p>
 					<p></p>
 					<p>Link: <a href="https://pixmy.github.io/ps4">PS4 Interface</a></p>
 				</p>
@@ -175,18 +207,23 @@
 		<div class="square" id="fifth">
 			<div class="squareTitleRight"><span class="squareSubTitle">SSRA</span></div>
 			<div class="squareText trabajo show5 hidden">
-				<p>
-					SSRA es un programa que al partir de un número control dado de un alumno este muestra su avance de todos los semestres que ha cursado hasta la fecha desde cuantas materias debe hasta cuantos semestres le hacen falta para terminar.
+				<p><p class="espanol">
+					SSRA es un programa que al partir de un número control dado de un alumno este muestra su avance de todos los semestres que ha cursado hasta la fecha desde cuantas materias debe hasta cuantos semestres le hacen falta para terminar.</p>
+					<p class="ingles">Developer of the project that aims to create academy history document of students from ITSUR institution, providing better information for advisers and teachers of a specific student.
+This project is part of the internal software of the school.
+</p>
 					<p></p>
 					<p></p>
-					<p>Link: No disponible, programa privado.
+					<p class="espanol">Link: No disponible, programa privado.</p>
+					<p class="ingles">Link: Not available, private software</p>
 				</p>
 			</div>
 			<div class="squareImage show5 hidden"><img class="image school" src="https://s20.postimg.org/xg4ntkywt/school.png"></div>
 		</div>
 
 		<div class="firma">
-		<div class="squareSubTitle fir">Firma:</div>
+		<div class="squareSubTitle fir espanol">Firma:</div>
+		<div class="squareSubTitle fir ingles">Signature:</div>
 
 			<svg
 			   xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -257,6 +294,7 @@
 
 	var firmacount = 0;
 	$(document).ready(function(){
+
 		var altura = $(".body").height();
 		var ancho = $(".body").width();
 
@@ -268,6 +306,31 @@
 			$(this).toggleClass("hireClick");
 			$('.info').toggleClass("displaySee");
 		});
+
+		$('.toggle').toggles({
+		  drag: true, // allow dragging the toggle between positions
+		  click: true, // allow clicking on the toggle
+		  text: {
+		    on: 'Español', // text for the ON position
+		    off: 'Inglés' // and off
+		  },
+		  on: true, // is the toggle ON on init
+		  animate: 250, // animation time (ms)
+		  width: 100, // width used if not set in css
+  		  height: 30, // height if not set in css
+		});
+
+
+		espanol();
+
+		$('.toggle').on('toggle', function(e, active) {
+		  if (active) {
+		    espanol();
+		  } else {
+		  	alert("entro");
+		    ingles();
+		  }});
+
 	});
 
 	$(window).resize(function(){
@@ -325,6 +388,19 @@
 			]);
 		}
 	});
+	
+
+
+		
+	function ingles(){
+		$(".espanol").hide();
+		$(".ingles").show();
+	}
+
+	function espanol(){
+		$(".ingles").hide();
+		$(".espanol").show();
+	}
 
 </script>
 
