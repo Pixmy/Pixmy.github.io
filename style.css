@@ -4,11 +4,18 @@ body{
 }
 
 
+
+
+
 #IDCNavList{
 	display: none !important;
 }
 
-.idc-right{
+#IDCommentsHeadLogin{
+	display: none !important;
+}
+
+.idc-head_tools-share{
 	display: none !important;
 }
 
