@@ -3,6 +3,22 @@ body{
 	padding: 0;
 }
 
+
+#comments a{
+	color: #4CAF50;
+	font-weight: normal !important;
+}
+
+.idc-r{
+	background: url("");
+}
+
+#comments{
+	color: #2d2d2d;
+	background-color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+
 .toggle{
 	position: fixed;
 	bottom: 5%;
