@@ -4,6 +4,16 @@ body{
 }
 
 
+#IDCNavList{
+	display: none !important;
+}
+
+.idc-right{
+	display: none !important;
+}
+
+
+
 #comments a{
 	color: #4CAF50;
 	font-weight: normal !important;
