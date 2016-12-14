@@ -402,7 +402,7 @@ This project is part of the internal software of the school.
         }
 
         if($(".firma").visible(true)&& firmacount == 0){
-            firmacount = 1;
+            firmacount = 0;
             var paths = $('#svg4166 path:not(defs path)');
             paths.each(function(i, e) {
                 e.style.strokeDasharray = e.style.strokeDashoffset = e.getTotalLength();
