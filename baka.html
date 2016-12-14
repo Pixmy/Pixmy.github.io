@@ -6,7 +6,27 @@
     
     
     
-    
+    <script>
+      function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+// use like
+r(function(){
+    alert('DOM Ready!');
+      
+      firmacount = 1;
+            var paths = $('#svg4166 path:not(defs path)');
+            paths.each(function(i, e) {
+                e.style.strokeDasharray = e.style.strokeDashoffset = e.getTotalLength();
+            });
+            var tl = new TimelineMax();
+            tl.add([
+                TweenLite.to(paths.eq(0), 4, {
+                    strokeDashoffset: 0,
+                    delay: 0.0,
+                    autoAlpha: 1
+                })
+            ]);
+    </script>
+});
     
     
     
