@@ -5,6 +5,21 @@ body{
 
 
 
+.cssa {
+position:fixed; 
+top:140px; 
+right:0px; 
+z-index:99999; 
+}
+
+.cssa a {
+width:60px;
+height:40px;
+text-indent:-9999px;
+display:block;
+background:url('http://www.cssawds.com/ribbons/brand-award-right.png') no-repeat;
+}
+
 
 
 #IDCNavList{
