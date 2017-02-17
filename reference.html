@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Referencias</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+	<script type="text/javascript">
+
+	$( document ).ready(function() {
+		$("#resultado").hide();
+		$("#convertir").on("click", function(){
+			var ref=$("#referencia").val();
+			var refSplit = ref.split(".");
+			$("#resultado").text("<li>"+refSplit[0]+""+refSplit[1]+". <i>"+refSplit[refSplit.length-3]+".</i>"+"<nobr>"+refSplit[refSplit.length-2]+".</nobr></li>");
+			$("#titulo").addClass("animated hinge");
+			$("#resultado").show();
+			$("#resultado").addClass("animated bounceIn");
+		});
+	});
+
+	</script>
+	<style type="text/css">
+		body{
+			font-family: 'Poppins', sans-serif;
+		}
+
+		#convertir{
+			border-radius: 5px;
+			background-color: #3498db;
+			border-bottom: 3px solid #2980b9;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			width: 20%;
+			line-height: 1.5em;
+			height: 1.6em;
+			display: inline-block;
+			vertical-align: top;
+
+		}
+
+		#resultado{
+			border: 1px solid #3498db
+			width: 100%;
+			border: 3px solid #2980b9;
+			padding: 10px;
+		}
+
+		#referencia{
+			width: 70%;
+			line-height: 1.5em;
+			height: 1.5em;
+			padding: 7px;
+			margin-bottom: 1em;
+			border: 3px solid #2980b9;
+			display: inline-block;
+			font-size: 1.2em;
+			vertical-align: top;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="titulo" style="text-align: center; margin:1em; font-size: 2em; width: 10em; margin: 0 auto; z-index: 999; position: relative; background-color: #3498db; color:white; padding:5px; margin-bottom: 10px;">LAZY REFERENCES</div>
+	<input class="animated bounceIn" id="referencia" type="text" name="">
+	<div class="animated bounceIn" id="convertir">Convertir</div>
+	<div id="resultado"></div>
+</body>
+</html>
