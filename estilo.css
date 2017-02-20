@@ -52,7 +52,7 @@ body{
 
 .montana{
 	width: 100%;
-	background-image: url("montanas.png");
+	background-image: url("https://s20.postimg.org/6e73kjb5p/montanas.png");
 	display: inline-block;
 	position: relative;
 	z-index: 2;
@@ -62,7 +62,7 @@ body{
 .montana2{
 	width: 100%;
 	padding: 1em;
-	background-image: url("montanas2.png");
+	background-image: url("https://s20.postimg.org/abud9xxz1/montanas2.png");
 	background-size: 100%;
 	background-position: center bottom;
 	display: inline-block;
@@ -83,7 +83,7 @@ body{
 }
 
 .skull{
-	background-image: url("skull.png");
+	background-image: url("https://s20.postimg.org/l182279rx/skull.png");
 	height: 3em;
 	background-repeat: no-repeat;
 	width: 7em;
@@ -119,7 +119,7 @@ body{
 	animation: moveCar 5s linear forwards;
 	width: 10em;
 	height: 6em;
-	background-image: url("carro.png");
+	background-image: url("https://s20.postimg.org/jr5n9eqm5/carro.png");
 	background-repeat: no-repeat;
 	background-size: 105%;
 	display: inline-block;
@@ -130,7 +130,7 @@ body{
 
 
 #ufo{
-	background-image: url("ufo.png");
+	background-image: url("https://s20.postimg.org/gglvn9q2l/ufo.png");
 	height: 4em;
 	width: 11em;
 	margin: 0 auto;
@@ -387,12 +387,12 @@ body{
 	position: absolute;
 	z-index: 6;
 	transform: translate(0px,-4.2em);
-	background-image: url("luces.png");
+	background-image: url("https://s20.postimg.org/kvzpesd31/luces.png");
 }
 
 /*cactus 2*/
 .ca{
-	background-image: url("ca.png");
+	background-image: url("https://s20.postimg.org/6unpt89j1/ca.png");
 	height: 3em;
 	background-repeat: no-repeat;
 	width: 7em;
@@ -404,7 +404,7 @@ body{
 }
 
 .ca2{
-	background-image: url("ca2.png");
+	background-image: url("https://s20.postimg.org/6j69ggt31/ca2.png");
 	height: 3em;
 	background-repeat: no-repeat;
 	width: 7em;
@@ -416,7 +416,7 @@ body{
 }
 
 .ca3{
-	background-image: url("ca3.png");
+	background-image: url("https://s20.postimg.org/e0fgvoim5/ca3.png");
 	height: 2em;
 	background-repeat: no-repeat;
 	width: 7em;
