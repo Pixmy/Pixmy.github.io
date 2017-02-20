@@ -116,7 +116,7 @@ body{
 
 
 .car{
-	animation: moveCar 5s linear forwards;
+	animation: moveCar 5s linear forwards, moveCarSide 3s ease infinite 5s;
 	width: 10em;
 	height: 6em;
 	background-image: url("https://s20.postimg.org/jr5n9eqm5/carro.png");
@@ -177,6 +177,12 @@ body{
     60.1% {left: calc(0% - 150px);} 
 	  90% {left: calc(50% - 5em); top: 40%; transform: rotate(0deg) translate(0px, -4.2em);}
 	  100% {left: calc(50% - 5em); top: 30%; transform: rotate(10deg) translate(0px,-60px);}
+}
+
+@keyframes moveCarSide{
+	0% {transform: rotate(10deg) translate(0px,-60px);}
+	50% {transform: rotate(-6deg) translate(5px,-75px);}
+	100% {transform: rotate(10deg) translate(0px,-60px);}
 }
 
 @keyframes ufoEntrance {
