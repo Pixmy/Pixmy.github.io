@@ -176,13 +176,13 @@ body{
 	  60% {left: calc(100%);}
     60.1% {left: calc(0% - 150px);} 
 	  90% {left: calc(50% - 5em); top: 40%; transform: rotate(0deg) translate(0px, -4.2em);}
-	  100% {left: calc(50% - 5em); top: 30%; transform: rotate(10deg) translate(0px,-60px);}
+	  100% {left: calc(50% - 5em); top: 30%; transform: rotate(10deg) translate(-3px,-60px);}
 }
 
 @keyframes moveCarSide{
-	0% {transform: rotate(10deg) translate(0px,-60px);}
-	50% {transform: rotate(-6deg) translate(5px,-75px);}
-	100% {transform: rotate(10deg) translate(0px,-60px);}
+	0% {transform: rotate(10deg) translate(-3px,-60px);}
+	50% {transform: rotate(10deg) translate(-3px,-65px);}
+	100% {transform: rotate(10deg) translate(-3px,-60px);}
 }
 
 @keyframes ufoEntrance {
