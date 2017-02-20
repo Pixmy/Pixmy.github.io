@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Invaders</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<script type="text/javascript">
+				
+
+		window.setInterval(function(){
+
+			function addZero(i) {
+			    if (i < 10) {
+			        i = "0" + i;
+			    }
+			    return i;
+			}
+
+		 	var d = new Date();
+		    var x = document.getElementById("date");
+		    var h = addZero(d.getHours());
+		    var m = addZero(d.getMinutes());
+		    var s = addZero(d.getSeconds());
+		    x.innerHTML = "<span style='margin-right:10px'>24 - 10 - 1993</span> " + h + ":" + m + ":" + s;
+		}, 1000);
+	</script>
+</head>
+<body>
+	<div id="date"></div>
+	<div class="container">
+		<div class="rec"><div class="red"></div>REC</div>
+		<div class="bContainer">
+			<div class="battery">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div><div class="wSquare"></div>
+		</div>
+
+		<div class="stars">
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+		</div>
+
+		<div id="desert">
+
+			<div id="capa0" class="capa">
+				<div class="montana2"></div>
+			</div>
+
+			<div id="capa1" class="capa">
+				<div class="montana"></div>
+			</div>
+
+			<div id="capa2" class="capa">
+				<div class="carContainer"><div class="car"></div></div>
+				<div class="luces"></div>
+				<div class="stela"></div>
+				<div id="ufo"></div>
+			</div>
+
+			<div id="capa3" class="capa">
+				<div class="ca3"></div>
+			</div>
+
+			<div id="capa4" class="capa">
+				<div class="ca"></div>
+				<div class="ca2"></div>
+			</div>
+
+			<div id="capa5" class="capa">
+				<div class="rock"></div>
+				<div class="skull"></div>
+				<div class="cactus"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
