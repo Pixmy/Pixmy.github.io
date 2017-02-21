@@ -475,7 +475,7 @@ body{
 
 .sblue {
   top:100px !important;
-  left:900px !important;
+  left:80% !important;
   background: #42ebf4;
   animation-delay:3.5s;
 }
