@@ -512,4 +512,9 @@ body{
   }
 }
 
+@font-face {
+    font-family: POLYA;
+    src: url("Pixmy.github.io/POLYA.otf") format('truetype');
+    font-style: normal;
+}
 
