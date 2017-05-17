@@ -10,7 +10,7 @@
                      var x=0;
                      var temp;
                     $.each(arrayOfLines, function(index, item) {
-                        if(item != "" || item != " " || item != "\n"){
+                        if(item !== "" || item !== " " || item !== "\n"){
                         var s = item.split(':');
                         x++;
                         if(x === 1){
