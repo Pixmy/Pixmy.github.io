@@ -10,7 +10,6 @@
                      var x=0;
                      var temp;
                     $.each(arrayOfLines, function(index, item) {
-                        if(item !== "" || item !== " " || item !== "\n"){
                         var s = item.split(':');
                         x++;
                         if(x === 1){
@@ -27,7 +26,6 @@
                                  $(".code").html($(".code").val() + '&#09;{\n&#09;&#09;"pageid":"screen' + x + '",\n&#09;&#09;"start":"'+ temp +'",\n&#09;&#09;"end":"'+ mult + '"\n&#09;},\n');
                                 temp = mult + 1;
                             }
-                        }
                         }
                     });
                     $(".code").html($(".code").val() + "\n]")
