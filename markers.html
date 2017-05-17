@@ -1,6 +1,5 @@
 <html>
     <head>
-        <title>Markers</title>
        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
@@ -25,7 +24,7 @@
                             }else{
                                 var mult = (s[0] * 60) + (s[1] - 1);
                                  $(".code").html($(".code").val() + '&#09;{\n&#09;&#09;"pageid":"screen' + x + '",\n&#09;&#09;"start":"'+ temp +'",\n&#09;&#09;"end":"'+ mult + '"\n&#09;},\n');
-                                temp = mult;
+                                temp = mult + 1;
                             }
                         }
                     });
@@ -90,11 +89,11 @@
     </head>
     <body>
         <div class='tools'>
-            <div class='title'>Lazy Markers</div>
+            <div class='title'>Lazy Makers</div>
             <div class='generate'>Generate Code</div>
         </div>
         <div class='content'>
-            <textarea class='markers'></textarea><textarea class='code'></textarea>
+            <textarea class='markers' placeholder="Copy paste markers.tkt here"></textarea><textarea class='code'></textarea>
         </div>
     </body>
 </html>
