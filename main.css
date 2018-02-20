@@ -1,0 +1,1002 @@
+body{
+	margin: 0;
+	padding:0;
+	background-color:#e4e4e4;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cl{
+    border: 2px solid #1d1d1d;
+    display: inline-block;
+    padding: 8px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.cl:hover{
+    background-color: #1d1d1d;
+    color:white;
+}
+
+.menu{
+	background-color:#1d1d1d;
+	height: 45px;
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.menu ul{
+	list-style-type: none;   
+	margin: 0;
+    width: 100%;
+}
+
+.menu ul li{
+	/*font-family: 'Monoton', cursive;*/
+	display: inline-block;
+	color:#ffffff;
+	line-height: 45px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+h2{
+	text-align: center;
+	font-family: 'Monoton', cursive;
+	font-weight: normal;
+	color:white;
+}
+
+.logo{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width:45px;
+	margin:8px;
+}
+
+.logo img{
+	width: 100%;
+}
+
+.mainContainer{
+	margin-top:45px;
+}
+
+.funciones{
+	text-align: center;
+}
+
+.funcion{
+	background-color:#1d1d1d;
+	color: white;
+	padding:15px 10px 10px 10px;
+	width:30%;
+	margin:10px 20px 10px 10px;
+	min-width: 200px;
+	max-width: 250px;
+	position: relative;
+	display: inline-block;
+}
+
+.funcion:after {
+    content:"";
+    position:absolute;
+    left: 0;
+    width:100%;
+    bottom:1px;
+    z-index:-1;
+    transform:scale(.9);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,.5);
+}
+
+.autor{
+	color:#838383;
+	font-size: 13px;
+	margin-bottom: 0px;
+}
+
+.titulo{
+	font-size: 28px;
+	margin-top:0px;
+	margin-bottom: 5px;
+	font-family: 'Noto Serif', serif;
+}
+
+.portada{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width:100%;
+	height: 200px;
+}
+
+#noTocar .portada{
+	background-image: url("img/notocar.jpg");
+}
+
+#libro .portada{
+	background-image: url("img/libro.jpg");
+}
+
+#ser .portada{
+	background-image: url("img/extranioser.jpg");
+}
+
+.info{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.inf{
+	font-size: 10px;
+	margin-bottom: 5px;
+}
+
+.precioText{
+	display: inline-block;
+	width:20%;
+	text-align: center;
+	font-size: 13px;
+}
+
+.fechaText{
+	display: inline-block;
+	width:77%;
+	text-align: center;
+	font-size: 13px;
+}
+
+.precio{
+	display: inline-block;
+	width:20%;
+	text-align: center;
+}
+
+.fecha{
+	display: inline-block;
+	width:77%;
+	text-align: center;
+}
+
+.dash{
+	margin-top: 20px;
+	border: 1px dashed #838383;
+	position: relative;
+}
+
+.codigo{
+	width: 90%;
+	margin: 0 auto;
+	margin-top:20px;
+}
+
+.codigo img{
+	width: 100%;
+}
+
+.left-circle{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color:#2d6988;
+	position: absolute;
+	top:-8px;
+	left: -8px;
+}
+
+.center-circle{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color:#2d6988;
+	position: absolute; 
+  	left: 0; 
+  	right: 0; 
+  	top:-10px;
+ 	margin-left: auto; 
+  	margin-right: auto; 
+}
+
+.right-circle{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color:#2d6988;
+	position: absolute;
+	top:-8px;
+	right: -8px;
+}
+
+.left-circle-bottom{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color:#2d6988;
+	position: absolute;
+	top:-8px;
+	left: -23px;
+}
+
+.right-circle-bottom{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color:#2d6988;
+	position: absolute;
+	top:-8px;
+	right: -23px;
+}
+
+.primary{
+	color:#fff;
+	font-weight: bold;
+}
+
+.active{
+	border-bottom: 2px solid #e2cd22;
+}
+
+.cartelera{
+	background-color:#2d6988;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+/*INFORMACION*/
+
+.atabalInfo{
+	width: 100%;
+	background-color: #ffffff;
+    border-bottom: 1px dashed black;
+}
+
+.principal{
+	width: 70%;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #efbf54;
+	padding-bottom: 15px;
+}
+
+.secondary{
+	width: 30%;
+	text-align: center;
+	display: inline-block;
+	background-color: #ffffff;
+	padding-bottom: 15px;
+	vertical-align: middle;
+}
+
+.accion{
+	width: 31.3%;
+	/* background-color: #ec5555; */
+	position: relative;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 1%;
+	vertical-align: top;
+}
+
+.accionIcon{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: white;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.accionTitulo{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	color: white;
+}
+
+.accionDesc{
+	text-align: center;
+}
+
+.obras{
+	background-image: url("img/icons/006-spot-lights.png");
+}
+
+.festivales{
+	background-image: url("img/icons/007-theater-1.png");
+}
+
+.ganadores{
+	background-image: url("img/icons/025-trophy.png");
+}
+
+.radio{
+	background-image: url("img/icons/020-microphone-1.png");
+}
+
+.producciones{
+	background-image: url("img/icons/022-mask.png");
+}
+
+.obras{
+	background-image: url("img/icons/021-theatre.png");
+}
+
+.familia{
+	background-image: url("img/icons/002-dancer-1.png");
+}
+
+.brand{
+	max-width: 40%;
+	margin: 0 auto;
+}
+
+/*GALLERY*/
+.gallery{
+	width: 100%;
+	background-color: #ec5555;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.column{
+	width: 31.3%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin-left: 1%;
+}
+
+.column1 .img1, .column3 .img1, .column2 .img2{
+	height: 200px;
+}
+
+.column1 .img2, .column3 .img2, .column2 .img1{
+	height: 350px;
+}
+.img1{
+	margin-bottom: 10px;
+}
+
+.img1, .img2, .img3{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+/*Tercera seccion galeria*/
+
+.galeria{
+	background-color: white;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.principalPhoto{
+	width: 95%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.secondaryPhoto{
+	width: 95%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.principalPhoto img{
+	max-width: 100%;
+}
+
+.secondaryPhoto img{
+	max-width: 100%;
+}
+
+.first{
+	display: inline-block;
+	width: 49%;
+	margin-right: 2%;
+}
+
+.morePhotos{
+	width: 49%;
+	display: inline-block;
+	position: relative;
+}
+
+.filter{
+	position: absolute;
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255,255,255,.7);
+}
+
+.filter p{
+	margin-top: 25%;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+/*Tercera seccion galeria*/
+
+.proyectos{
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+
+.proyecto .text, .sep{
+	display: inline-block;
+	margin-left: 5px;
+	color: white;
+	margin-right: 5px;
+}
+
+.proyectos p {
+	margin-top: 0px;
+}
+
+.sep{
+	color: white;
+}
+
+.ogrito{
+	background-image: url("img/icons/026-armchair.png");
+}
+
+.pie{
+	background-image: url("img/icons/004-dancer.png");
+}
+
+.Canek{
+	background-image: url("img/icons/027-tickets.png");
+}
+
+.historias{
+	background-image: url("img/icons/003-man.png");
+}
+
+/*Cruzadas*/
+
+.cruzada{
+	width: 25%;
+	display: inline-block;
+	position: relative;
+	margin:10px;
+    vertical-align: top;
+}
+
+.cruzadaImg{
+	width: 95%;
+	height: 270px;
+	position:  absolute;
+	right: 0;
+}
+
+.cruzadaText{
+	background-color: white;
+	width: 85%;
+	padding:10px;
+	z-index: 10;
+	position: relative;
+	margin-top: 160px;
+	height:  150px;
+	font-size: 13px;
+	box-shadow: 0px 3px 8px 1px rgba(0,0,0,.4);
+	line-height: 15px;
+	position: relative;
+}
+
+.czText{
+	text-align: left;
+}
+
+.czTitle{
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 5px;  
+	font-family: 'Noto Serif', serif;
+}
+
+.vm{
+	color: white;
+	border-radius: 5px;
+	background-color: #2d6988;
+	padding: 9px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.cvm{
+	text-align: right;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.cruzadaImg{
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.cz1{
+	background-image: url("img/cruzada1.png");
+}
+
+.cz2{
+	background-image: url("img/cruzada2.png");
+}
+
+.cz3{
+	background-image: url("img/cruzada3.png");
+}
+
+.cz4{
+	background-image: url("img/cruzada5.png");
+}
+
+.cz5{
+	background-image: url("img/cruzada6.png");
+}
+
+.cz6{
+	background-image: url("img/cruzada4.png");
+}
+
+.cruzadas{
+	background-color: #2d6988;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*TEAM*/
+
+.team{
+	background-color: #fff;
+	padding-top: 30px;
+}
+
+.team h2{
+	color: #1d1d1d;
+	margin-top: 0px;
+}
+
+.person{
+	width: 25%;
+	margin-bottom: 20px;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.person:after{
+	content: "";
+	position: absolute;
+	top: 25%;
+	bottom:25%;
+	background-color: lightgray;
+	width: 1px;
+}
+
+
+.photo{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-size:cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.name{
+	font-weight: bold;
+	text-align:center;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 10px;
+	font-size: 13px;
+	color:#1d1d1d;
+}
+
+.posicion{
+	text-align:center;
+	font-size: 12px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 10px;
+	color:#9d9d9d;
+}
+
+.adrian{
+	background-image: url("img/persons/adrianpalomo.jpg");
+}
+
+.anabertha{
+	background-image: url("img/persons/anabertha.jpg");
+}
+
+.carloscontreras{
+	background-image: url("img/persons/carloscontreras.jpg");
+}
+
+.luciarosher{
+	background-image: url("img/persons/luciarosher.jpg");
+}
+
+.brendacardenas{
+	background-image: url("img/persons/brendacardenas.jpg");
+}
+
+.elyperalta{
+	background-image: url("img/persons/elyperalta.jpg");
+}
+
+.gabirio{
+	background-image: url("img/persons/gabirio.jpg");
+}
+
+.guillermoguitierrez{
+	background-image: url("img/persons/guillermoguitierrez.jpg");
+}
+
+.jorgemartinoli{
+	background-image: url("img/persons/jorgemartinoli.jpg");
+}
+
+.juancarloscasas{
+	background-image: url("img/persons/juancarloscasas.jpg");
+}
+
+.leonardocabrera{
+	background-image: url("img/persons/leonardocabrera.jpg");
+}
+
+.mariafernanda{
+	background-image: url("img/persons/mariafernanda.jpg");
+}
+
+.marianavega{
+	background-image: url("img/persons/marianavega.jpg");
+}
+
+.roidrigonunez{
+	background-image: url("img/persons/roidrigonunez.jpg");
+}
+
+.gabymendoza{
+	background-image: url("img/persons/gabymendoza.jpg");
+}
+
+/*tinta*/
+
+body {
+  background-color: #f9f7f1;
+  color: #404040;
+  padding: 10px;
+}
+
+.tinta{
+	padding-bottom: 15px;
+	padding-top: 10px;
+  font-family: 'PT Serif', serif;
+}
+
+article blockquote {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.2em;
+  font-size: 1.4em;
+  column-span: 2;
+  -webkit-column-span: 2;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5px;
+}
+
+article h1 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+article p {
+	font-size: 14px;
+}
+
+article h2 {
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  font-size: 2.4em;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0.8em;
+  padding-top: 20px;
+}
+
+article .time {
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  font-size: 1.6em;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media only all and (min-width: 600px) {
+  article {
+    -moz-columns: 3;
+    /* How many columns? */
+    
+    -webkit-columns: 3;
+    columns: 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    line-height: 1.5em;
+    font-size: 1em;
+    -webkit-column-rule: 2px outset #444;
+    -moz-column-rule: 2px outset #444;
+    column-rule: 2px outset #444;
+  }
+  article h1 {
+    font-size: 5em;
+    column-span: all;
+    -webkit-column-span: all;
+  }
+  article .time {
+    column-span: all;
+    -webkit-column-span: all;
+  }
+  article p {
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    hyphenate-character: "\u2605";
+  }
+}
+
+
+/*Media queries*/
+
+.menuMob{
+	display: : none !important;
+}
+
+.bars{
+	display: none !important;
+}
+
+.menuMob{
+	position: fixed;
+	top: 15px;
+	left: 0;
+	right:0;
+	bottom:0;
+	z-index: 15;
+	font-size: 30px;
+	overflow-y:scroll;
+	display: none;
+}
+
+.menuMob ul{
+	list-style-type: none;
+	padding-left:0px;
+	bottom:0;
+	top:0;
+	left:0;
+	right:0;
+	position: absolute;
+}
+
+.menuMob li{
+	color:#1d1d1d;
+	text-align:center;
+	font-weight: bold;
+	width: 100%;
+	background-color: rgba(255,255,255,.9);
+	height: 15%;
+	padding-top:10%;
+}
+
+.menuMob li:after{
+	content:"";
+	position: absolute;
+	left:0;
+	right:0;
+	background-color: red;
+}
+
+.footer{
+	background-color: #1d1d1d;
+	height: 70px;
+}
+
+.footer div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer .culturalogo{
+	width: 33.3%;
+}
+
+.footer .culturalogo img{
+	transform: scale(0.9) translate(10px, 5px);
+}
+
+.footer .copy{
+	width: 33.3%;
+	text-align:Center;
+	color: white;
+	line-height: 70px;
+}
+
+.footer .rs{
+	width: 33.3%;
+	text-align: right;
+}
+
+.footer .rs div{
+	width: 20%;
+	color:white;
+	height: 70px;
+	text-align: center;
+}
+
+.footer .rs div svg{
+	margin-top: 25px;
+}
+
+.footer .culturalogo img{
+	width: 200px;
+}
+
+.face{
+	background-color: #3B5998;
+}
+
+.twi{
+	background-color: #1dcaff;
+}
+
+.insta{
+	background-color: #8a3ab9;
+}
+
+.youtube{
+	background-color: #e74c3c;
+}
+
+@media only screen and (max-width: 968px) {
+	.person{
+		width: 33%;
+	}
+
+	.footer{
+		height: auto;
+	}
+
+	.footer .culturalogo{
+		display: inline-block;
+		width:20%;
+	}
+
+	.footer .copy{
+		display: inline-block;
+		width: 80%;
+	}
+
+	.footer .rs{
+		display: inline-block;
+		width: 100%;
+		text-align:center;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.footer .culturalogo{
+		display: block;
+		width:100%;
+		text-align:center;
+	}
+
+	.footer .copy{
+		display: block;
+		width: 100%;
+	}
+
+	.footer .rs{
+		display: inline-block;
+		width: 100%;
+		text-align:center;
+	}
+
+	.bars{
+		color: white;
+		font-size: 25px;
+		margin:10px;
+		display: inline-block !important;
+	}
+
+	.principal{
+		width: 100%;
+		display: block;
+	}
+
+	.secondary{
+		width: 100%;
+		display: block;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	.accion{
+		width: 47%;
+	}
+
+
+	.person{
+		width: 50%;
+	}
+
+	.cruzada{
+		width: 80%;
+	}
+
+	.funcion{
+		width: 100%;
+		max-width: 250px;
+		margin-right: 0;
+	}
+
+	.menu ul{
+		display: none;
+	}
+
+}
+
+/*animaciones*/
