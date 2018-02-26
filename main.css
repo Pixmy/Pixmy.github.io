@@ -839,7 +839,33 @@ article .time {
 .footer div{
 	display: inline-block;
 	vertical-align: top;
+	cursor:  pointer;
 }
+
+.face:hover{
+	background-color: white;
+	color:#1d1d1d !important;
+}
+
+.insta:hover{
+	background-color: white;
+	color:#1d1d1d !important;
+}
+
+.twi:hover{
+	background-color: white;
+	color:#1d1d1d !important;
+}
+
+.youtube:hover{
+	background-color: white;
+	color:#1d1d1d !important;
+}
+
+.rs{
+	transform:translate(1px);
+}
+
 
 .footer .culturalogo{
 	width: 33.3%;
