@@ -454,7 +454,6 @@ h2{
 }
 
 /*Cruzadas*/
-
 .cruzada{
 	width: 25%;
 	display: inline-block;
@@ -464,24 +463,22 @@ h2{
 }
 
 .cruzadaImg{
-	width: 95%;
-	height: 270px;
-	position:  absolute;
+	width: 100%;
+	height: 570px;
 	right: 0;
 }
 
 .cruzadaText{
 	background-color: white;
-	width: 85%;
-	padding:10px;
+	width: 100%;
 	z-index: 10;
-	position: relative;
-	margin-top: 160px;
-	height:  150px;
 	font-size: 13px;
 	box-shadow: 0px 3px 8px 1px rgba(0,0,0,.4);
 	line-height: 15px;
 	position: relative;
+	padding-top:  10px;
+	padding-bottom:  10px;
+	border-top: 1px dashed #1d1d1d;
 }
 
 .czText{
@@ -491,9 +488,11 @@ h2{
 .czTitle{
 	font-size: 18px;
 	font-weight: bold;
-	margin-top: 5px;  
+	margin-top: 5px;
 	font-family: 'Noto Serif', serif;
+	margin-bottom: 5px;
 }
+
 
 .vm{
 	color: white;
