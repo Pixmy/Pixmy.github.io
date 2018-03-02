@@ -2,13 +2,16 @@
 	<head>
 		<title>Atabal Teatro</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="https://pixmy.github.io/main.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!--<link rel="stylesheet" type="text/css" href="https://pixmy.github.io/main.css">-->
+        <link rel="stylesheet" type="text/css" href="main.css">
 		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif+Caption|PT+Serif:400,700,400italic,700italic|Oswald:400,700' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
+		<!--<script type="text/javascript" src="script.js"></script>-->
+        <script type="text/javascript" src="script.js"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 
@@ -19,11 +22,11 @@
 		<div class="menu">
 			<div class='bars'><i class="fas fa-bars"></i></div>
 			<ul>
-				<li class="">Cartelera</li>
-				<li>Galería</li>
-				<li>Equipo</li>
+                <a href="#cartelera" rel="" id="anchor1" class="anchorLink"><li>Cartelera</li></a>
+                <a href="#gallery" rel="" id="anchor2" class="anchorLink"><li>Galería</li></a>
 				<li>Radio</li>
-				<li>Prensa</li>
+				<a href="#prensa" rel="" id="anchor5" class="anchorLink"><li>Prensa</li></a>
+                <a href="#team" rel="" id="anchor4" class="anchorLink"><li>Equipo</li></a>
 			</ul>
 			<div class="logo">
 				<img src="https://image.ibb.co/i74TTH/logo.png">
@@ -34,14 +37,15 @@
 
 			<div class='menuMob'>
 				<ul>
-					<li>Cartelera</li>
-					<li>Galería</li>
-					<li>Equipo</li>
+                    <a href="#cartelera" rel="" id="anchor1" class="anchorLink"><li>Cartelera</li></a>
+                    <a href="#gallery" rel="" id="anchor2" class="anchorLink"><li>Galería</li></a>
 					<li>Radio</li>
-					<li>Prensa</li>
+                        <a href="#prensa" rel="" id="anchor5" class="anchorLink"><li>Prensa</li></a>
+					<a href="#team" rel="" id="anchor4" class="anchorLink"><li>Equipo</li></a>
 				</ul>
 			</div>
 
+            <a name="cartelera" id="cartelera"></a>
 			<div class='cartelera'>
 				<div class="culturaLogo" style="
 					    position:  absolute;
@@ -75,7 +79,7 @@
 							<div class="right-circle-bottom"></div>
 						</div>
 						<div class='codigo'>
-							<p class="inf">I&nbsp;&nbsp;N&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;M&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;I&nbsp;&nbsp;Ó&nbsp;&nbsp; N</p>
+							<p class="inf">M&nbsp;&nbsp;Á&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;M&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;I&nbsp;&nbsp;Ó&nbsp;&nbsp; N</p>
 							<img src='https://image.ibb.co/gwzj2c/barras.png'>
 						</div>
 					</div>
@@ -100,7 +104,7 @@
 							<div class="right-circle-bottom"></div>
 						</div>
 						<div class='codigo'>
-							<p class="inf">I&nbsp;&nbsp;N&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;M&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;I&nbsp;&nbsp;Ó&nbsp;&nbsp; N</p>
+							<p class="inf">M&nbsp;&nbsp;Á&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;M&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;I&nbsp;&nbsp;Ó&nbsp;&nbsp; N</p>
 							<img src='https://image.ibb.co/gwzj2c/barras.png'>
 						</div>
 					</div>
@@ -125,13 +129,14 @@
 							<div class="right-circle-bottom"></div>
 						</div>
 						<div class='codigo'>
-							<p class="inf">I&nbsp;&nbsp;N&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;M&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;I&nbsp;&nbsp;Ó&nbsp;&nbsp; N</p>
+							<p class="inf">M&nbsp;&nbsp;Á&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;M&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;I&nbsp;&nbsp;Ó&nbsp;&nbsp; N</p>
 							<img src='https://image.ibb.co/gwzj2c/barras.png'>
 						</div>
 					</div>
 				</div>
 			</div>
-
+            
+            <a name="gallery" id="gallery"></a>
 			<div class="gallery">
 				<h2>G A L E R Í A</h2>
 				<div class='column column1'>
@@ -163,45 +168,421 @@
 
 			<div class="cruzadas">
 				<h2><nobr>C R U Z A D A</nobr>&nbsp;&nbsp;&nbsp; <nobr>C E N T R A L</nobr>&nbsp;&nbsp;&nbsp; <nobr>P O R</nobr>&nbsp;&nbsp;&nbsp; <nobr>E L</nobr>&nbsp;&nbsp;&nbsp; <nobr>T E A T R O</nobr></h2>
+                
 				<div class="cruzada">
 					<div class="cruzadaImg cz1"></div>
 					<div class="cruzadaText">
-						<p class="czTitle">Cruzada Central</p>
+                        <div class="ct1"><p class="czTitle">Cruzada Central</p></div>
+                        <div class="ct2"><button>Información</button></div>
 					</div>
+                    <div class="cruzadaInfo">
+                    <div class="cruzadaClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                            <p class="p1"><span class="s1"><strong>AL AGUA PATOS</strong></span></p>
+                    <p class="p1"><span class="s1">De Sandra Karina Romo Guerra</span></p>
+                    <p class="p1"><span class="s1">Grupo de Teatro Bocón, Aguascalientes</span></p>
+                    <p class="p1"><span class="s1">En una ciudad casi destruida por las notables grietas en las casas, los pavimentos hundidos y un lago completamente seco es donde dos patos, una rata sabia y un joven intentan solucionar el problema del agua, pero para lograrlo necesitan la ayuda de El Espíritu de la botella, que se encuentra perdida en algún lugar del drenaje.</span></p>
+                    <p class="p1"><span class="s1">Para encontrar la botella y liberar al Espíritu, este singular grupo deberá enfrentarse a los peligros de los caminos subterráneos, repletos de arañas, ratas y a los guardias aliados del gran Rey Cucaracho, quién no permitirá que nuestro grupo de héroes recuperen el control del agua tan necesaria y mal aprovechada por los humanos. </span></p>
+                    <p class="p1"><span class="s1">En 1992 se funda el grupo BOCÓN, con el fin de brindar una propuesta interdisciplinaria en donde se integre el teatro de actores y títeres, la danza, música y propuestas plásticas. Con ésta idea se pretende diversificar la percepción y disfrute del niño, enriqueciendo el desarrollo de la imaginación a través de la interacción con el público infantil.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>EL OSO</strong></span></p>
+                    <p class="p1"><span class="s1">De Antón Chéjov</span></p>
+                    <p class="p1"><span class="s1">Grupo: Mandorla, Querétaro</span></p>
+                    <p class="p1"><span class="s1">Una joven viuda ha decidido aislarse del mundo y encerrarse en su habitación, para demostrarle a su difunto marido que ella es muy fiel y buena, a pesar de los esfuerzos de su criado Luká, quien intenta en vano convencerla de que salga a divertirse de vez en cuando. La visita de un terrateniente llamado Smirnov lo cambiará todo, ya que éste viene a cobrarle a la viuda Popova, un dinero que le quedó a deber el difunto marido; ella accede a pagarle pero no de inmediato ya que su administrador no se encuentra. Smirnov, furioso de que sus acreedores no le paguen, decide permanecer en esa casa hasta que le den su dinero, desatándose así, una simpática batalla entre el terrateniente y la joven viuda -con el criado de por medio-, al grado en que llegan a desafiarse mutuamente a duelo.</span></p>
+                    <p class="p1"><span class="s1">Proyecto apoyado por el programa Apoyarte 2009 del Instituto Queretano de la Cultura y las Artes</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>LA EXCEPCIÓN Y LA REGLA</strong></span></p>
+                    <p class="p1"><span class="s1">De Bertolt Brecht</span></p>
+                    <p class="p1"><span class="s1">Teatro del Ombligo, Aguascalientes</span></p>
+                    <p class="p1"><span class="s1">Obra de tono épico absurdo, puesta en escena bajo una versión contemporánea y multidisciplinaria que contextualiza y denuncia el entorno visible de desigualdad y absurdo del que somos testigos, haciendo alarde al teatro de carpa y cabaret común en la historia de nuestra región.</span></p>
+                    <p class="p1"><span class="s1">Teatro del Ombligo</span></p>
+                    <p class="p1"><span class="s1">Se forma a partir de la iniciativa de la maestra Marcela Morán en el año 2005 con la finalidad de dotar a la ciudad de Aguascalientes de un teatro arriesgado de vanguardia.</span></p>
+                    <p class="p1"><span class="s1">Ha adoptado como misión la búsqueda vanguardista en la unión de temas, géneros, estilos, formas e individuos para ofrecer al público nacional la identificación que con el teatro necesita. </span></p>
+                    <p class="p1"><span class="s1">Ante la atribulada sociedad “Teatro del Ombligo” observa su tarea bajo la absoluta libertad en la unificación de ramas, herramientas y personas que necesiten atestiguar un teatro arriesgadamente contemporáneo.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p4"><span class="s1"><strong>LA HUÍDA DEL GIRASOL</strong></span></p>
+                    <p class="p4"><span class="s1">Espectáculo unipersonal de Marcela Morán</span></p>
+                    <p class="p4"><span class="s1">Teatro del Ombligo, Aguascalientes</span></p>
+                    <p class="p4"><span class="s1">Era un girasol que cansado de la maravilla de seguir al luminoso, decide partir sin rumbo fijo, en la travesía descubre la travesura de vivir lejos de las ordenes del sol, lejos del resto de los girasoles y descubre su soledad, misma que le hace volver. Pero al regreso a casa, el otro girasol que le había acompañado en la estancia frente al sol, también ha decidido partir dejando solo una carta, por lo que recapacita y se reconcilia con el ser luminoso que todo lo observa y decide volver a tener fe.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p4"><span class="s1"><strong>MUNDO NOCTURNO</strong></span></p>
+                    <p class="p4"><span class="s1">De Teresa Valenzuela</span></p>
+                    <p class="p4"><span class="s1">Grupo de teatro Bocón, Aguascalientes</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p4"><span class="s1">Una abeja, cansada de su monótona vida diurna de trabajo que busca la fama y fortuna de la farándula , creyendo que en el “Mundo Nocturno” no necesitará trabajar ni prepararse para convertirse en estrella. Haciéndose presa fácil para los grandes embaucadores de la noche.</span></p>
+                    <p class="p4"><span class="s1">En 1992 se funda el grupo BOCÓN, con el fin de brindar una propuesta interdisciplinaria en donde se integre el teatro de actores y títeres, la danza, música y propuestas plásticas. Con ésta idea se pretende diversificar la percepción y disfrute del niño, enriqueciendo el desarrollo de la imaginación a través de la interacción con el público infantil.</span></p>
+                    <p class="p4">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>QUERIDO DIEGO TE ABRAZA QUIELA</strong></span></p>
+                    <p class="p1"><span class="s1">De Elena Poniatowska</span></p>
+                    <p class="p1"><span class="s1">Dirección Mauricio Jiménez</span></p>
+                    <p class="p1"><span class="s1">Atabal Teatro y Estípite A.C.</span></p>
+                    <p class="p1"><span class="s1">"En esta obra se aborda una de las facetas más importantes en la vida de Diego Rivera: su etapa creativa con influencia Cubista-Futurista, vista desde la perspectiva amorosa de su primera esposa Angelina Beloff, excelente pintora, exiliada rusa, quien compartió con Diego diez años de su vida en París, relación de la que nace un hijo. Momentos difíciles para los artistas refugiados en Montparnasse durante la primera guerra mundial."</span></p>
+                    <p class="p1"><span class="s1">"El olvido de Diego, tras su regreso a México en 1921, hace presa a Angelina y es motivo para la maestra Elena Poniatowska, quien recrea en las cartas, todas las posibilidades de sufrimiento y abandono que pudieron haber sucedido en el espíritu de nuestra Querida Quiela."</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>NOTICIAS DEL IMPERIO</strong></span></p>
+                    <p class="p1"><span class="s1">De Fernando del Paso</span></p>
+                    <p class="p1"><span class="s1">Adaptación: Cruces, Leal,<span class="Apple-converted-space">&nbsp; </span>Jiménez</span>
+                    </p>
+                    <p class="p1"><span class="s1">Dirección Mauricio Jiménez</span></p>
+                    <p class="p1"><span class="s1">Atabal Teatro</span></p>
+                    <p class="p1"><span class="s1">“Si pudiéramos inventar para Carlota una locura inacabable y magnífica, un delirio expresado en todos los tiempos verbales del pasado y del futuro y de los tiempos improbables o imposibles para darle, para crear por ella y para ella el Imperio que fue, el Imperio que será, el Imperio que pudo haber sido, el Imperio que es. Si pudiéramos hacer de la imaginación la loca de la casa, la loca del castillo, la loca de Bouchout y dejarla que, loca desasatada, loca y con alas recorra el mundo y la historia, la verdad y la ternura, la eternidad y el sueño, el odio y la mentira, el amor y la agonía, libre, sí, libre y omnipotente aunque al mismo tiempo presa, mariposa aturdida y ciega, condenada, girando siempre alrededor de una realidad inasible que la deslumbra y que la abraza y se le escapa, pobre imaginación, pobre Carlota, todos los minutos de todos los días”.</span></p>
+                        <p class="p2">&nbsp;</p> <div style="width:100%;text-align:center;"><img src="https://image.ibb.co/dXTcNc/cruzada1.png" class="img-responsive"></div>
+                    </div>
 				</div>
 				<div class="cruzada">
 					<div class="cruzadaImg cz2"></div>
 					<div class="cruzadaText">
-						<p class="czTitle">Segunda Cruzada Central</p>
+						<div class="ct1"><p class="czTitle">Segunda Cruzada Central</p></div>
+                        <div class="ct2"><button>Información</button></div>
 					</div>
+                    <div class="cruzadaInfo">
+                        <div class="cruzadaClose">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                           <p class="p1"><span class="s1"><strong>MALAS PALABRAS</strong></span></p>
+                    <p class="p2"><span class="s1">Querétaro</span></p>
+                    <p class="p2"><span class="s1">Dramaturgia y dirección Perla Szuchmacher</span></p>
+                    <p class="p2"><span class="s1">Grupo Atabal Creación Artística</span></p>
+                    <p class="p2"><span class="s1">Editada por el Consejo Nacional para la Cultura</span></p>
+                    <p class="p2"><span class="s1">y las Artes en la colección El mejor teatro para niños</span></p>
+                    <p class="p2"><span class="s1">Ganadora del Premio FILIJ de dramaturgia 2002</span></p>
+                    <p class="p2"><span class="s1">Flor, escritora de aprox. 40 años revive y comparte con el público el momento justo de su infancia, en el que descubre una verdad que sus padres le han ocultado siempre. Con ayuda de los objetos que están colocados en su escritorio, nos presenta a su mejor amigo: el Pelos, a su mamá, a su papá, a su tía, a su maestra… etc. Como todos nosotros en su momento, Flor tuvo dudas, miedo, se sintió incomprendida, rechazada, etiquetada, pero los juegos al lado de<span class="Apple-converted-space">&nbsp; </span>su mejor amigo y el diccionario fueron fundamentales, para lograr que ella saliera adelante. Finalmente, el personaje nos revela cuáles son las verdaderas Malas Palabras.</span>
+                    </p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>PAPÁ ESTÁ EN LA ATLÁNTIDA</strong></span></p>
+                    <p class="p2"><span class="s1">San Luis Potosí</span></p>
+                    <p class="p2"><span class="s1">De Javier Malpica</span></p>
+                    <p class="p2"><span class="s1">Compañía El Rinoceronte Enamorado*</span></p>
+                    <p class="p2"><span class="s1">Dirección Jesús Coronado</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p2"><span class="s1"><em>Para que una obra se parezca a la vida debe existir un constante movimiento de ida y vuelta entre el punto de vista social y el punto de vista personal; en otras palabras, entre lo individual y lo general, entre lo íntimo y lo público.</em></span></p>
+                    <p class="p2"><span class="s1"><em><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>Peter Brook</em>
+                        </span>
+                    </p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p2"><span class="s1">Dos niños, uno de once y otro de<span class="Apple-converted-space">&nbsp; </span>ocho años de edad, son abandonados por su padre, quien cruza la frontera para encontrar una mejor opción de supervivencia.</span>
+                    </p>
+                    <p class="p2"><span class="s1">Los hermanos, huérfanos de madre, se quedan al cuidado de la abuela paterna, luego con unos tíos, así van pasando “de mano en mano”. La obra conmociona por el dolor con el que está escrita, nos cala por esas verdades que solo los niños y los borrachos pueden decir, sentimos la certeza de estar oyendo la voz de aquellos que se han quedado esperando.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>TIERRA DE NADIE</strong></span></p>
+                    <p class="p2"><span class="s1">Querétaro</span></p>
+                    <p class="p2"><span class="s1">Compañía Barón Negro</span></p>
+                    <p class="p2"><span class="s1">La muerte es uno de los más grandes misterios que la humanidad ha intentado responderse a través de los siglos. Más que la vida, representa o representaba para algunas culturas, la consumación del deber al que el hombre estaba destinado mucho antes de ser concebido. </span></p>
+                    <p class="p2"><span class="s1">A partir de esta visión, queremos replantear las raíces mexicanas, tomando los elementos básicos de la historia y desarrollándola, dramáticamente, desde nuestro imaginario. Con esta renovación, en cuanto al mito, buscamos acercar el planteamiento del mundo náhuatl al espectador actual, utilizando una visión moderna desde los códigos, la plástica y el manejo de lenguaje.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>HÁBLAME COMO LA LLUVIA</strong></span></p>
+                    <p class="p2"><span class="s1">Aguascalientes</span></p>
+                    <p class="p2"><span class="s1">De Tenesse Williams</span></p>
+                    <p class="p2"><span class="s1">Dirección Ian Hopenstech</span></p>
+                    <p class="p2"><span class="s1">Teatro del Ombligo</span></p>
+                    <p class="p2"><span class="s1">Tras la mirada de la lluvia “ella” se encuentra vulnerable en la espera del calor de su ser amado, sabiendo que cotidianamente se encuentran ausentes de si, buscando palabras para olvidar, creando historias para despedirse y al final regresar al mismo lugar, una temporada de lluvia.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>LOS SUEÑOS DE QUETZALCOATL</strong></span></p>
+                    <p class="p2"><span class="s1">San Luis Potosí</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p2"><span class="s1">Obra para títeres de sombra en un acto</span></p>
+                    <p class="p2"><span class="s1">Texto original basado en el mito de</span></p>
+                    <p class="p2"><span class="s1">Quetzalcóatl en el Mictlán de Sandra Delcis</span></p>
+                    <p class="p2"><span class="s1">De como Quetzalcóatl creó a los hijos del quinto sol</span></p>
+                    <p class="p2"><span class="s1">Ometeotl, el dios único, surge de lo mas profundo del Universo para describir como los hombres han sobrevivido a la creación y destrucción de cuatro soles, pero ha llegado el tiempo de la era del quinto sol y para repoblar la tierra, crea a Quetzalcóatl, quien tendrá que bajar por los 9 niveles del inframundo para llegar al Mictlán y<span class="Apple-converted-space">&nbsp; </span>rescatar los huesos de los hombres resguardados celosamente por Mictlantecuthli<span class="Apple-converted-space">&nbsp; </span>y Mictecacíhuatl, los señores del Mictlán. Quetzalcóatl se embarca en una aventura<span class="Apple-converted-space">&nbsp; </span>de acción donde se pone a prueba su ingenio, su valor y su fortaleza para cumplir con la misión de crear a los hombres que poblaran la tierra durante la era del quinto sol: nosotros.</span>
+                    </p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>CANEK</strong></span></p>
+                    <p class="p2"><span class="s1">Querétaro</span></p>
+                    <p class="p3">Historia y leyenda de un héroe maya</p>
+                    <p class="p2"><span class="s1">De Ermilo Abreu Gómez</span></p>
+                    <p class="p2"><span class="s1">Grupo Atabal Creación Artística</span></p>
+                    <p class="p2"><span class="s1">Jacinto Canek nos brinda su pensamiento a veces mágico, en paradojas y parábolas, metáforas de una realidad que se nos ofrece desnuda, solo envuelta en su propia poesía, haciendo de esta historia una fantasía, un cuento, una fábula, constituida en estampas que una mano firme y segura ha hecho con las palabras precisas para producir la simpatía y dejar hendida la memoria, avivada la conciencia de que el mal y el bien son obra de los hombres.</span></p>
+                    <p class="p2"><span class="s1"><em>“Canek, es el libro que mejor refleja mi dolor por el dolor de los humildes, de los indios de mi tierra. Si su lectura aviva la conciencia del hombre frente a la injusticia, me tendré por satisfecho”</em></span></p>
+                    <p class="p2"><span class="s1"><em><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>Ermilo Abreu Gómez</em>
+                        </span>
+                        </p> <div style="width:100%;text-align:center;"><img src="https://image.ibb.co/fzxRFx/cruzada2.png" class="img-responsive"></div>
+                    </div>
 				</div>
 
 				<div class="cruzada">
 					<div class="cruzadaImg cz3"></div>
 					<div class="cruzadaText">
-						<p class="czTitle">Tercera Cruzada Central</p>
+                        <div class="ct1"><p class="czTitle">Tercera Cruzada Central</p></div>
+                        <div class="ct2"><button>Información</button></div>
 					</div>
+                    <div class="cruzadaInfo">
+                        <div class="cruzadaClose">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <p class="p1"><strong><span class="s1">LOS HERALDOS NEGROS</span></strong></p>
+                    <p class="p1"><span class="s1">Atabal Creación Artística A.C. Dirección Jesús Coronado </span></p>
+                    <p class="p1"><span class="s1">Querétaro – San Luis Potosí<span class="Apple-converted-space">&nbsp; </span>Sept. Del 6 al 12<span class="Apple-converted-space">&nbsp; </span>Oct. 1, 2 y 3<span class="Apple-converted-space">&nbsp; </span>20 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">JOB, QUEJA EN TRES VOCES PARA SER SILENCIO Y NADA</span></strong></p>
+                    <p class="p1"><span class="s1">Grupo Teatro en exceso y otras patologías<span class="Apple-converted-space">&nbsp; </span>Dirección Rodolfo Guillén<span class="Apple-converted-space">&nbsp; </span>México, D.F.<span class="Apple-converted-space">&nbsp; </span>Sept. 13 y 14 20 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">CRÓNICA DE PARIAS Y ERRANTES</span></strong></p>
+                    <p class="p1"><span class="s1">Grupo Barón Negro<span class="Apple-converted-space">&nbsp; </span>Dirección Jean Paul Carstensen<span class="Apple-converted-space">&nbsp; </span>Querétaro Sept. 16 y 17 20 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">75 PUÑALADAS</span></strong></p>
+                    <p class="p1"><span class="s1">Grupo Barón Negro<span class="Apple-converted-space">&nbsp; </span>Dirección Jean Paul Carstensen<span class="Apple-converted-space">&nbsp; </span>Querétaro Sept. 18 20 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">EL CORAZÓN Y EL JAGUAR (Niños)</span></strong></p>
+                    <p class="p1"><span class="s1">Grupo El Centauro Mecánico<span class="Apple-converted-space">&nbsp; </span>Dirección Miguel Loyola<span class="Apple-converted-space">&nbsp; </span>Querétaro Sept. 20 y 22 19 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">BASHIR LAZHAR</span></strong></p>
+                    <p class="p1"><span class="s1">Grupo Los Endebles A.C.<span class="Apple-converted-space">&nbsp; </span>Dirección Mahalat Sánchez<span class="Apple-converted-space">&nbsp; </span>México, D.F.<span class="Apple-converted-space">&nbsp; </span>Sept. 21 20 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">BARBIE GIRLS</span></strong></p>
+                    <p class="p1"><span class="s1">Psicostasia Teatro<span class="Apple-converted-space">&nbsp; </span>Dirección Fabián Verdín<span class="Apple-converted-space">&nbsp; </span>Querétaro<span class="Apple-converted-space">&nbsp; </span>Oct. 4, 5 y 6 20 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">CURVA PELIGROSA</span></strong></p>
+                    <p class="p1"><span class="s1">Producciones niebla de recreo<span class="Apple-converted-space">&nbsp; </span>Dirección Rodolfo Guerrero<span class="Apple-converted-space">&nbsp; </span>Michoacán<span class="Apple-converted-space">&nbsp; </span>Oct. 15, 16 y 17 20 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">EL REY ENOJÓN (Niños)</span></strong></p>
+                    <p class="p1"><span class="s1">Grupo Bocón<span class="Apple-converted-space">&nbsp; </span>Dirección Rafael Santacruz<span class="Apple-converted-space">&nbsp; </span>Aguascalientes<span class="Apple-converted-space">&nbsp; </span>Oct. 28 17 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">MOSAICO DEL DÍA DE MUERTOS (Niños)</span></strong></p>
+                    <p class="p1"><span class="s1">Grupo Bocón<span class="Apple-converted-space">&nbsp; </span>Dirección Guadalupe Zaragoza<span class="Apple-converted-space">&nbsp; </span>Aguascalientes<span class="Apple-converted-space">&nbsp; </span>Oct. 28 19 hs.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">ESTO NO ES ROMEO Y JULIETA</span></strong></p>
+                    <p class="p1"><span class="s1">Grupo Luna Avante<span class="Apple-converted-space">&nbsp; </span>Dirección Luna Avante<span class="Apple-converted-space">&nbsp; </span>México, D.F.<span class="Apple-converted-space">&nbsp; </span>Oct. 29 y 30 20 hs.</span>
+                    </p> <div style="width:100%;text-align:center;"><img src="https://image.ibb.co/npgmFx/cruzada3.png" class="img-responsive"></div>
+                    </div>
 				</div>
 
 				<div class="cruzada">
 					<div class="cruzadaImg cz6"></div>
 					<div class="cruzadaText">
-						<p class="czTitle">Cuarta Cruzada Central</p>
+						<div class="ct1"><p class="czTitle">Cuarta Cruzada Central</p></div>
+                        <div class="ct2"><button>Información</button></div>
 					</div>
+                    <div class="cruzadaInfo">
+                        <div class="cruzadaClose">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                          <p class="p1"><strong><span class="s1">CRÓNICA DE PARIAS Y ERRANTES</span></strong></p>
+                    <p class="p1"><span class="s1">Dirección Jean Paul Carstensen</span></p>
+                    <p class="p1"><span class="s1">Grupo Barón Negro, Querétaro</span></p>
+                    <p class="p1"><span class="s1">SINOPSIS</span></p>
+                    <p class="p1"><span class="s1">Esta puesta en escena prentende darle voz a aquellos que por largo tiempo, sólo se han dedicado a contemplar el vaivén de la humanidad y que, a pesar de su triste apariencia, poseen la sabiduría e inocencia suficientes para hablar por vez primera y contar las historias que deben ser escuchadas, pues en su centro guardan lo más grandioso que el hombre ha olvidado: la esencia de la vida.</span></p>
+                    <p class="p1"><span class="s1">Cinco son los personajes y varias son las historias que contamos, historias comunes, historias mágicas llenas de desconcierto, inocencia, desilusión y sorpresa. Personajes que, accidentalmente, perderán la rutina de su cotidiano para compartir un instante con alguien más.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">3,2,1...CERO.</span></strong></p>
+                    <p class="p1"><span class="s1">Dramaturgia y dirección Ôscar García Recuenco</span></p>
+                    <p class="p1"><span class="s1">Compañia La Jarra Azul, España</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">SINOPSIS</span></p>
+                    <p class="p1"><span class="s1">¿Dónde está nuestra responsabilidad como personas ante la violencia de género?</span></p>
+                    <p class="p1"><span class="s1">A partir de una radiografía global de este fenómeno mediante una serie de escenas intensas, claras y directas nos adentramos de lleno en la violencia de género, partiendo de la simplicidad de números y recuento de mujeres asesinadas año tras año, y haciendo retrospectiva del aumento de los homicidios, aquí, allí y en todo el mundo. El espectáculo refleja también la globalidad del fenómeno: cómo comienza, qué significa, dónde está el punto de partida hacia la acción colectiva de la sociedad, y sobretodo remarcar que no hay estereotipos de mujeres maltratadas, que todas somos susceptibles de sufrirlo, y que hace falta parar, de vez en cuando, nuestras vidas tan encaminadas, abrir los ojos y darnos cuenta de que la violencia contra las mujeres no está tan lejos de nosotros, que aquí y ahora, tanto en México como en España, tanto en China como en EEUU las mujeres sufrimos violencia de género. Ya es hora de comenzar la cuenta atrás. 3,2,1...CERO.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">PONER EN PIE</span></strong></p>
+                    <p class="p1"><span class="s1">De Imanol Martínez</span></p>
+                    <p class="p1"><span class="s1">Dirección Jean Paul Carstensen</span></p>
+                    <p class="p1"><span class="s1">Grupo Atabal Creación Artística A.C., Querétaro</span></p>
+                    <p class="p1"><span class="s1">SINOPSIS</span></p>
+                    <p class="p1"><span class="s1">“Lo más ingrato de estar sola, lo más triste, es precisamente eso: afrontar los días, capear el temporal, ¿no?... Porque los días se van amotinando, juntándose uno a uno, y eso está bien, mientras una no piense en los que vienen… Algunas veces el miedo me llega por las mañanas…, pienso que no puede ser tan malo. Que somos necias. No es cierto cuando dicen que aquello a lo que sobreviviste sin morir te hizo más fuerte, no es cierto, solo no te mató y eso es lo importante ¿no?</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">MAL</span></strong></p>
+                    <p class="p1"><span class="s1">Dramaturgia y dirección Eden Coronado</span></p>
+                    <p class="p1"><span class="s1">Grupo El Rinoceronte Enamorado, San Luis Potosí</span></p>
+                    <p class="p1"><span class="s1">Que sea un nombre propio, un yo único, irrepetible, el que se adjudique la autoría de un texto, no significa que su contenido le pertenezca por entero o sea consecuencia de un pensar singular. Las novelas, los poemas y en general las obras literarias siempre son escritas con palabras de otros: se escapan a nuestro afán de dominio, pues además de que representan una música tantas veces escuchada es imposible conocer a fondo las improbables reglas de su funcionamiento. Todo en literatura resulta prestado: ideas, palabras e incluso el texto completo una vez atrapado en la hoja. ¿Quién, quiénes o QUÉ son los autores de un texto?</span></p>
+                    <p class="p1"><span class="s1">Guillermo Fadanelli </span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">EL LOCO AMOR VIENE</span></strong></p>
+                    <p class="p1"><span class="s1">De Jorge Ibargüengoitia</span></p>
+                    <p class="p1"><span class="s1">Dirección Leonardo Cabrera</span></p>
+                    <p class="p1"><span class="s1">Grupo Mandorla, Querétaro</span></p>
+                    <p class="p1"><span class="s1">SINOPSIS</span></p>
+                    <p class="p1"><span class="s1">María es una mujer que vive en una casita en medio del bosque y que está casada con Pedro, el gigante, quien se encuentra ausente. María es sorprendida por la azarosa visita de Juan, “el héroe”, quien pasaba por ahí, y se acerca a la casa a pedir comida. La atracción entre ambos es inmediata, él intenta conquistarla, pero ella se resiste porque es una mujer respetable. Sin embargo, Juan vuelve al día siguiente, más decidido aún y logra seducir a María. Cuando Pedro vuelve, se entera de todo y reta a Juan a un duelo, éste muere en la batalla. Esa misma noche, mientras Pedro duerme, María revive a Juan frotando sus heridas con una toalla mágica, y entre ambos matan a Pedro con una daga, también mágica. Sin embargo, al final de la obra –aparentemente feliz-, Juan dará indicios de que quizá tampoco él es “el príncipe azul” que María esperaba.</span></p>
+                    <p class="p1"><span class="s1">Infidelidad, duelos y asesinatos con un toque cómico de cuento de hadas. Una obra que busca burlarse de los estereotipos, en donde los personajes no son lo que aparentan.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><strong><span class="s1">RÍO ÁNIMAS</span></strong></p>
+                    <p class="p1"><span class="s1">De Edeberto “Pilo” Galindo*</span></p>
+                    <p class="p1"><span class="s1">Dirección Boris Schoemann*</span></p>
+                    <p class="p1"><span class="s1">*Miembros del Sistema Nacional de Creadores de Arte FONCA</span></p>
+                    <p class="p1"><span class="s1">Atabal Creación Artística AC</span></p>
+                    <p class="p1"><span class="s1">La sierra de Chihuahua es el hermoso y desolador escenario de Río Ánimas,</span></p>
+                    <p class="p1"><span class="s1">del dramaturgo juarense Pilo Galindo, acreedor del Premio Nacional de Dramaturgia Víctor Hugo Rascón Banda 2008 por este texto lleno de una poética muy mexicana y a la vez clásica y universal. </span></p>
+                    <p class="p1"><span class="s1">El abandono de los pueblos, la lucha por sobrevivir y el arraigo a la tierra se mezclan sutilmente con la historia de un amor imposible que todos, alguna vez, hemos anhelado.</span></p>
+                    <p class="p1"><span class="s1">Agradezco sinceramente la invitación del grupo queretano Atabal y del Instituto Queretano de la Cultura y las Artes que nos permite llevar a cabo, en esta hermosa ciudad, el estreno mundial de Río Ánimas.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Boris Schoemann</span></p>
+                    <p class="p2">&nbsp;</p> <div style="width:100%;text-align:center;"><img src="https://image.ibb.co/jPc42c/cruzada4.png" class="img-responsive"></div>
+                    </div>
 				</div>
 
 				<div class="cruzada">
 					<div class="cruzadaImg cz4"></div>
 					<div class="cruzadaText">
-						<p class="czTitle">Quinta Cruzada Central</p>
+						<div class="ct1"><p class="czTitle">Quinta Cruzada Central</p></div>
+                        <div class="ct2"><button>Información</button></div>
 					</div>
+                    <div class="cruzadaInfo">
+                        <div class="cruzadaClose">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <p class="p1"><span class="s1"><strong>ASPIRACIONAL</strong></span></p>
+                    <p class="p2"><span class="s1">Todos quisimos ser otra cosa</span></p>
+                    <p class="p2"><span class="s1">Adaptación de “Las preciosas ridículas“<span class="Apple-converted-space">&nbsp; </span>de JBP Moliere por Edgar Chias</span>
+                    </p>
+                    <p class="p2"><span class="s1">Dirección Edén Coronado</span></p>
+                    <p class="p2"><span class="s1">Atabal Creación Artística AC y Barón Negro: laboratorio escénico (Querétaro)</span></p>
+                    <p class="p2"><span class="s1">Funciones: domingo 28, lunes 29, martes 30 de septiembre, miércoles 1, viernes 17 y 24, sábados 11, 18 y 25 y domingos 12, 19 y 24</span></p>
+                    <p class="p2"><span class="s1">20 hrs.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>TRES CRÍMENES</strong></span></p>
+                    <p class="p2"><span class="s1">Dramaturgia y dirección Edén Coronado</span></p>
+                    <p class="p2"><span class="s1">El Rinoceronte Enamorado (San Luis Potosí)</span></p>
+                    <p class="p2"><span class="s1">Funciones: viernes 3, sábado 4 y domingo 5</span></p>
+                    <p class="p2"><span class="s1">20 hrs.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>RETRATO DE ELLA DORMIDA</strong></span></p>
+                    <p class="p2"><span class="s1">Fotonovela escénica de Luis Enrique Gutiérrez Ortiz Monasterio</span></p>
+                    <p class="p2"><span class="s1">Unipersonal de Laura Castro (Distrito Federal)</span></p>
+                    <p class="p2"><span class="s1">Funciones: jueves 9 y viernes 10 /20:30 hrs.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>EL SISTEMA DEL DOCTOR TARR Y EL PROFESOR FETHER</strong></span></p>
+                    <p class="p2"><span class="s1">Basado en el cuento homónimo de Edgar Allan Poe</span></p>
+                    <p class="p2"><span class="s1">Compañía Barón Negro: laboratorio escénico (Querétaro)</span></p>
+                    <p class="p2"><span class="s1">Creación Colectiva</span></p>
+                    <p class="p2"><span class="s1">Funciones: lunes 13, martes 14 y miércoles 15 /20 hrs.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>MOSCAS EN EL TECHO</strong></span></p>
+                    <p class="p2"><span class="s1">De Adriana Bandín</span></p>
+                    <p class="p2"><span class="s1">Dirección Uriel Bravo</span></p>
+                    <p class="p2"><span class="s1">Agrupación teatral Los Desesperados (Querétaro)</span></p>
+                    <p class="p2"><span class="s1">Función: jueves 16/20 hrs.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>RÍO ÁNIMAS</strong></span></p>
+                    <p class="p2"><span class="s1">De Edeberto “Pilo” Galindo</span></p>
+                    <p class="p2"><span class="s1">Dirección Boris Schoemann</span></p>
+                    <p class="p2"><span class="s1">Compañía Atabal Creación Artística AC (Querétaro)</span></p>
+                    <p class="p2"><span class="s1">Funciones: lunes 20, martes 21 y miércoles 22/20 hrs.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>EL SUEÑO DE OSHY</strong></span></p>
+                    <p class="p2"><span class="s1">Circo Danza Teatro</span></p>
+                    <p class="p2"><span class="s1">Dirección Rayito Zamudio y Jean Paul Carstensen</span></p>
+                    <p class="p2"><span class="s1">Compañía VeOzdanza de México (Querétaro)</span></p>
+                    <p class="p2"><span class="s1">Función: jueves 23/20 hrs.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>NO MÁS GARDEL</strong></span></p>
+                    <p class="p2"><span class="s1">De Mariana Torres Ruiz </span></p>
+                    <p class="p2"><span class="s1">Dirección J. Concepción Macías Candelas</span></p>
+                    <p class="p2"><span class="s1">Grupo Proyecto 5 Teatro (Aguascalientes)</span></p>
+                    <p class="p2"><span class="s1">Funciones: sábado 25 y domingo 26/19 hrs.</span></p> 
+                        <div style="width:100%;text-align:center;"><img src="https://image.ibb.co/bBL2oH/cruzada5.png" class="img-responsive"></div>
+                    </div>
 				</div>
 
 				<div class="cruzada">
 					<div class="cruzadaImg cz5"></div>
 					<div class="cruzadaText">
-						<p class="czTitle">Sexta Cruzada Central</p>
+						<div class="ct1"><p class="czTitle">Sexta Cruzada Central</p></div>
+                        <div class="ct2"><button>Información</button></div>
 					</div>
+                    <div class="cruzadaInfo">
+                        <div class="cruzadaClose">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                          <p class="p1"><span class="s1"><strong>Instrucciones para esperar</strong></span></p>
+                    <p class="p2"><span class="s1">Dramaturgia y dirección Caín Coronado</span></p>
+                    <p class="p2"><span class="s1">Compañía El Rinoceronte Enamorado</span></p>
+                    <p class="p2"><span class="s1">[SAN LUIS POTOSÍ]</span></p>
+                    <p class="p2"><span class="s1">Nueva Creación del Rinoceronte Enamorado. Obra Ganadora del Premio 20 de Noviembre, emisión 2014. Obra inspirada en “Esperando a Godot” de Samuel Beckett, que plantea la espera en situaciones políticas adversas y nos hace preguntarnos: ¿Qué esperamos? O ¿A quién? Tomando como figura central a AMLO, la obra hace un recorrido por su carrera política desde el intento de desafuero y va cuestionando a cuatro personajes (que funcionan como un espejo para el espectador) que siguen esperando su llegada. Mediada por la espiritualidad y la ciencia, la espera se pone sobre la mesa y busca generar la reflexión en el espectador sobre la situación de nuestro país.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>Río Ánimas</strong></span></p>
+                    <p class="p2"><span class="s1">De Edeberto “Pilo” Galindo*</span></p>
+                    <p class="p2"><span class="s1">Dirección Boris Schoemann**</span></p>
+                    <p class="p2"><span class="s1">Compañía Atabal Teatro</span></p>
+                    <p class="p2"><span class="s1">[QUERÉTARO]</span></p>
+                    <p class="p2"><span class="s1">La acción se desarrolla en la cabina de “Radio Norteña”, que transmite desde Cuauhtémoc, Chihuahua, la radionovela “Río Ánimas, la historia de amor más grande del mundo”. A medida que avanza el relato, el narrador motiva al equipo de locutores, quienes pasan de la mesa de grabación a la escenificación de la radionovela.</span></p>
+                    <p class="p2"><span class="s1">De forma simultánea se cuenta la historia de un pueblo enclavado en el municipio de Batopilas, un lugar olvidado en la sierra de Chihuahua, que desapareció (como muchos pueblos de México) sin que nadie hubiera sabido jamás que algún día existió.</span></p>
+                    <p class="p2"><span class="s1">Parte de una historia verídica, para crear una ficción donde observamos cómo cada uno de los habitantes de esa comunidad enfrentaron la tragedia, desde un sentido del humor lleno de ironía.</span></p>
+                    <p class="p2"><span class="s1">* Miembro del Sistema Nacional de Creadores de Arte FONCA y Premio Nacional de Dramaturgia Victor Hugo Rascón Banda Nuevo León 2008.</span></p>
+                    <p class="p2"><span class="s1">** Miembro del Sistema Nacional de Creadores de Arte FONCA.</span></p>
+                    <p class="p2"><span class="s1">Obra beneficiada con el Programa de Estímulos a la Creación y</span></p>
+                    <p class="p2"><span class="s1">Desarrollo Artístico PECDA 2013 del Instituto Queretano de la Cultura y las Artes</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>Generación X</strong></span></p>
+                    <p class="p2"><span class="s1">De Edeberto Pilo Galindo*</span></p>
+                    <p class="p2"><span class="s1">Dirección Leonardo Kosta</span></p>
+                    <p class="p2"><span class="s1">[QUERÉTARO]</span></p>
+                    <p class="p2"><span class="s1">A través de un espacio circular, el personaje principal (César de 17 años) va dando vida a los objetos, haciéndolos parte de la narración, transformándolos en personajes con los que interactúa, a medida que va relatando su vida en diversas esferas como: “el amor de su vida”, las dificultades que presenta ante una sociedad que califica, clasifica y cuantifica a los seres humanos; los obstáculos que tiene que librar para poder continuar su educación, el frenesí tecnológico y, finalmente, la decisión que debe tomar para saber si el camino que “el negro le ofrece” es la respuesta más viable a todos sus conflictos, tanto económicos como existenciales; siendo éste último dilema, una constante de principio a fin que permea su historia.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>El sueño de Oshy</strong></span></p>
+                    <p class="p2"><span class="s1">Compañía VeOzDanza México</span></p>
+                    <p class="p2"><span class="s1">[QUERÉTARO]</span></p>
+                    <p class="p3">Es un espectáculo multidisciplinario donde confluyen lenguajes escénicos propios de la danza contemporánea, del teatro, la música, la danza aérea y el nuevo circo, es un espectáculo acorde a nuestros tiempos y al desarrollo del quehacer escénico.</p>
+                    <p class="p2"><span class="s1">Tomando como pretexto dramático el texto Sueño de un curioso de Charles Baudelaire, el espectáculo cuenta la fábula de un hombre (Oshy) atrapado en su sueño con la plena conciencia de que se trata el momento previo a su muerte. Sin embargo el sueño es tan presente, tan poderoso, que Oshy, busca respuestas de por qué debe morir y de por qué ha vivido. Busca en el sueño su propia identidad, encontrar el sentido de su existencia que va llegando a su fin. Y lo que va encontrando en el camino es su propia sensibilidad, su propia fragilidad, la belleza y la magia, elementos vibrantes a lo largo de ese viaje a su interior, a su propia mística, a su sueño.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>Modelo 76</strong></span></p>
+                    <p class="p2"><span class="s1">Compañía Sabandijas de Palacio AC</span></p>
+                    <p class="p2"><span class="s1">[QUERÉTARO]</span></p>
+                    <p class="p2"><span class="s1">Una mujer, Arenga, celebra su cumpleaños a solas. Con amarga ironía rememora algunos pasajes de su vida, entre ellos, el suicidio de su madre, quien a los 39 años decidió tragarse un collar de Dior para morir con elegancia y sofisticación. Como Arenga está a un año de cumplir la cuarentena, se siente particularmente melancólica. Tanto ella como su hermana gemela, treinta años atrás, hicieron un trato, la noche en la que sepultaron a su madre: ellas también iban a suicidarse a los 39. Como Arenga no tiene ni la menor intención de acabar con su vida, su hermana contrata a un asesino. Arenga, con horror, descubre que el victimario ya está listo para entrar en acción, ronda la casa y busca la forma de forzar los cerrojos para cumplir con su contrato. El asesino es perseverante, así que ella intenta seducirlo, persuadirlo, disuadirlo a través de la puerta, pero todos sus intentos resultan inútiles. Al final, con resignación, debe abrir la puerta y esperar a que el mercenario ejecute su misión, pero un descubrimiento insólito cambiará el rumbo de los eventos…</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>Los ojos de Ana</strong></span></p>
+                    <p class="p2"><span class="s1">De Luc Tartar</span></p>
+                    <p class="p2"><span class="s1">Dirección Boris Schoemann</span></p>
+                    <p class="p2"><span class="s1">Compañía Los Endebles</span></p>
+                    <p class="p2"><span class="s1">[DISTRITO FEDERAL]</span></p>
+                    <p class="p2"><span class="s1">Aborda el conflicto generacional entre padres e hijos; dentro de este, los padres están tan inmersos en sus propios problemas, tanto económicos como laborales, que terminan por olvidarse de las necesidades y problemas de sus hijos; como resultado se va gestando una generación de adolescentes agresivos, individualistas,<span class="Apple-converted-space">&nbsp; </span>intolerantes y violentos que toman al bullying y la radicalización como una manera de señalar a aquellos que son diferentes a sí mismos y que por tanto deben ser excluidos. Los Ojos de Ana retoma los conflictos entre padres e hijos, entre patrones y empleados, así como entre alumnos y profesores, todo desde un punto de vista poético, pero crudo, que intenta evidenciar la crisis de valores que actualmente viven nuestras sociedades.</span>
+                    </p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>Los heraldos negros</strong></span></p>
+                    <p class="p2"><span class="s1">De Gerardo Velásquez</span></p>
+                    <p class="p2"><span class="s1">Dirección Jesús Coronado*</span></p>
+                    <p class="p2"><span class="s1">Compañía Atabal Teatro</span></p>
+                    <p class="p2"><span class="s1">[QUERÉTARO]</span></p>
+                    <p class="p2"><span class="s1">Raquel, una mujer mayor, sufre las consecuencias de la guerrilla en los años 60s y 70s pues su hija se sumó a un grupo radical de esos que “quieren cambiar esta vida”; dejando al nieto Peco bajo su cuidado. La abuela Raquel lucha por protegerlo de las malas influencias y darle una educación sólida, lejos de ideas revolucionarias que aparentemente ha heredado de sus padres. Lucha también por olvidar a su marido y el cruel momento en que los judiciales entraron a su casa, la golpearon y ultrajaron, amenazándola con matar a su nieto si no les decía dónde encontrar a su hija y su grupo de guerrilleros. No traiciona, salva la vida de su nieto,<span class="Apple-converted-space">&nbsp; </span>pero va cargando esa culpa; se queda sola, va perdiendo la razón y la noción del tiempo. En silencio sufre, cargada de culpa, resentimientos y soledad.</span>
+                    </p>
+                    <p class="p2"><span class="s1">*Miembro del Sistema Nacional de Creadores de Arte FONCA</span></p>
+                    <p class="p2"><span class="s1">Obra beneficiada con el Programa de Apoyo a la Producción Artística 2012.</span></p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>Coloquio de hipócritas</strong></span></p>
+                    <p class="p2"><span class="s1">De Paul Williams </span></p>
+                    <p class="p2"><span class="s1">Director: Rodrigo Canchola</span></p>
+                    <p class="p2"><span class="s1">Co-dirección: Sotero Castrejón</span></p>
+                    <p class="p2"><span class="s1">Imaginartes Compañía Teatral </span></p>
+                    <p class="p2"><span class="s1">[QUERÉTARO]</span></p>
+                    <p class="p2"><span class="s1">Una comedia divertida distorsionada por la farsa,<span class="Apple-converted-space">&nbsp; </span>narrada por 2 amigos (Trak y Flop) que se han enamorado de la misma mujer y que por instinto de supervivencia tienen que mentirse, simple y sencillamente por miedo; es aquí donde el mundo entero cae, el miedo a decir, el miedo a hacer, incluso el miedo a pensar,<span class="Apple-converted-space">&nbsp; </span>dejar de ser para convertirse en lo que el otro necesita o necesitar del otro para poder ser, formando así un círculo vicioso de patetismo donde la única salvación será la muerte.</span>
+                    </p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>Bola de carne</strong></span></p>
+                    <p class="p2"><span class="s1">De Bernardo Gamboa*</span></p>
+                    <p class="p2"><span class="s1">Dirección Bernardo Gamboa y Micaela Gramajo*</span></p>
+                    <p class="p2"><span class="s1">Teatro Bola de Carne</span></p>
+                    <p class="p2"><span class="s1">[DISTRITO FEDERAL]</span></p>
+                    <p class="p3">La anécdota de bola de carne es sencilla y quizá lo menos importante. De hecho será cortada incesantemente por ensoñaciones y apartes. Lavinia, Chirón y Demetrio compartirán una mañana en el campo. Ella será iniciada por sus criados godos-indios en el arte de cazar puercos con cuchillo. Un día de campo que promete un crimen. Ese supuesto crimen será diseccionado moralmente. Confusos juegos de poder. Psicología de clase y raza. Demetrio es acusado. El escenario es un tribunal y el espectador un juez moral. Un cerdo domesticado toma el té. Los actores de este espectáculo son racistas. Demetrio defenderá su derecho a usar su fuerza. Tito también. ¿Qué pasó con Lavinia? Noam Chomsky y Michel Foucault se enfrentan entre torres de libros de donde nacerán bolas de carne. Los animales salvajes no están en el mundo para ser domesticados. Se les puede eliminar, pero domesticarlos es criminal. La violencia anima.</p>
+                    <p class="p2"><span class="s1">Pretendemos que nos acompañen en este ejercicio de deconstrucción de nuestra seguridad moral.</span></p>
+                    <p class="p2"><span class="s1">* Beneficiarios del programa Creadores escénicos 2015 del FONCA </span></p>
+                    <p class="p2"><span class="s1">** Becario Jóvenes Creadores 20014-2015 del FONCA</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>Hazme un hijo, falso documental de un suceso imbécil y hormonal</strong></span></p>
+                    <p class="p2"><span class="s1">De Enrique Olmos de Ita*</span></p>
+                    <p class="p2"><span class="s1">Dirección Susana Romo y Fausto Ramírez**</span></p>
+                    <p class="p2"><span class="s1">A la Deriva Teatro</span></p>
+                    <p class="p2"><span class="s1">[GUADALAJARA, JAL.]</span></p>
+                    <p class="p3">En forma de falso documental, A LA DERIVA TEATRO nos lleva a presenciar diversos testimonios del “suceso” que llevaron a Lara, de 17 años a tener un embarazo y los conflictos que a esa edad suceden por dicha situación. Veremos y escucharemos los testimonios del Pene erecto del joven “Toro”, el condón que alega su inocencia, el test de embarazo cumpliendo su temida labor; el muñeco de peluche Odi, amante de Patán, el perro de la familia; los padres que ignoran completamente su situación y Claudia, la hermana, quien es testigo de las inquietudes y arrebatos de Lara, que sigue buscando una salida.</p>
+                    <p class="p2"><span class="s1">*Miembro del Sistema Nacional de Creadores de Arte FONCA</span></p>
+                    <p class="p2"><span class="s1">**Becario FONCA Jóvenes Creadores 2011-2012<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span>
+                    </p>
+                    <p class="p3">&nbsp;</p>
+                    <p class="p3"><strong>El último viaje de Jacinto</strong></p>
+                    <p class="p2"><span class="s1">Dramaturgia Carlos Casas</span></p>
+                    <p class="p2"><span class="s1">Dirección Fabián Verdín</span></p>
+                    <p class="p2"><span class="s1">Barón negro, laboratorio escénico</span></p>
+                    <p class="p2"><span class="s1">[QUERÉTARO]</span></p>
+                    <p class="p2"><span class="s1">Jacinto sufre la pérdida de su amada. Sumergido en el vacío, en la ausencia, en el dolor y, sin más compañía que la de su guitarra, se descubre a sí mismo inmerso en un mundo desconocido, donde tendrá que luchar, no con los habitantes de ese extraño lugar, sino con sus propias dudas y certezas, para lograr su objetivo: volverla a ver. </span></p>
+                    <p class="p2"><span class="s1">A partir del mito griego de Orfeo, “El último viaje de Jacinto” explora la cosmogonía náhuatl tomando como referente la fiesta del día de muertos. El sentido ritual del montaje y el peso de signos tan arraigados en el inconsciente de los mexicanos se suman para generar este mundo imaginario en el que la muerte juega un papel principal. </span></p> <div style="width:100%;text-align:center;"><img src="https://image.ibb.co/gybxNc/cruzada6.png" class="img-responsive"></div>
+                    </div>
 				</div>
 			</div>
 
@@ -250,10 +631,10 @@
 					<p>Fondo Nacional para la Cultura y las Artes<br>"México en Escena"</p>
 				</div>
 			</div>
-
+            
+            <a name="prensa" id="prensa"></a>
 			<div class='tinta'>
-				
-				<article>
+               <article>
 				  <h1>TINTA PARA UN ATABAL</h1>
 
 				  <div class="time">
@@ -289,75 +670,650 @@
 				    <p>"La experiencia sirve entre otras cosas, para tener fe en la lógica de las propias acciones."</p>
 
 				    <p>"...A nivel federa, se llevó a cabo también la Muestra Nacional de Teatro en el estado de San Luis Potosí dentro de la cual, con líneas curatoriales..."</p>
-                    <div class='cl'><strong>Más Reseñas</strong></div>
+                      <a href="http://atabalteatro.com/tintas.php"><div class='cl'><strong>Más Reseñas</strong></div></a>
 				  </section>
                     
 				</article>
 			</div>
-
+            
+            
+            <a name="team" id="team"></a>
 			<div class="team">
 				<h2>E Q U Í P O</h2>
 				<div class="person">
 					<div class="photo adrian"></div>
 					<div class="name">ADRIÁN PALOMO</div>	
-					<div class="posicion">Coordinación técnica y operativa</div>				
+					<div class="posicion">Coordinación técnica y operativa</div>	
+                    <div class="informacion">
+                        Lic. en Arte Teatral, Facultad de Artes Escénica, UANL (03-07). Como actor ha trabajado en distintas producciones de Atabal Creación Artística AC, Clan d Clauns (teatro de calle), Cornisa 20, Barón Negro y Gayo Teatro. Como docente ha laborada para CONARTE, Planetario Alfa y Centro Extra Académico de Alfa Fundación; impartiendo actuación y máscara. Para el Museo de Historia Mexicana, desarrolló el proyecto de guías dramatizadas. Actualmente cumple con temporada de Teatro Escolar con Martina y los Hombres pájaro, en Monterrey, Nuevo León.
+                    </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo anabertha"></div>
 					<div class="name">ANA BERTHA CRUCES</div>	
-					<div class="posicion">Dirección General y Artística</div>				
+					<div class="posicion">Dirección General y Artística</div>
+                    <div class="informacion">
+                        <p class="p1"><span class="s1"><strong>CURRICULUM VITAE</strong></span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1"><strong>NOMBRE: Ana Bertha Cruces Dorantes</strong></span></p>
+                    <p class="p3"><span class="s1"><strong>FECHA DE NACIMIENTO: 21 de Febrero de 1971</strong></span></p>
+                    <p class="p3"><span class="s1"><strong>LUGAR DE NACIMIENTO: Dolores Hidalgo, Gto.</strong></span></p>
+                    <p class="p3"><span class="s1"><strong>NACIONALIDAD: Mexicana</strong></span></p>
+                    <p class="p3"><span class="s1"><strong>RFC: CUDA-710221-2V8</strong></span></p>
+                    <p class="p3"><span class="s1"><strong>CURP: CUDA710221MGTRRN08</strong></span></p>
+                    <p class="p3"><span class="s1"><strong>DIRECCIÓN: Fray B. de Sahagún # 42 Col. Cimatario, Qro. </strong></span></p>
+                    <p class="p3"><span class="s1"><strong>TELÉFONO: 442 2 42 55 28<span class="Apple-converted-space">&nbsp; &nbsp; </span>/ <span class="Apple-converted-space">&nbsp; &nbsp; </span>442-3 19 57 34<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; </span>EMAIL:</strong>
+                        </span><span class="s2"><strong>acruces1@hotmail.com</strong></span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1"><strong><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></strong>
+                        </span><span class="s3"><strong>ESTUDIOS</strong></span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1">2004-2006 <strong>Licenciatura en Docencia del Arte Escénico</strong></span></p>
+                    <p class="p4"><span class="s1">Escuela de Bellas Artes de la Universidad Autónoma de Querétaro.</span></p>
+                    <p class="p5"><span class="s1">1987-1990 <strong>Bachillerato </strong></span></p>
+                    <p class="p4"><span class="s1">C.B.T.i.s. No. 75 Dolores Hidalgo, Gto.</span></p>
+                    <p class="p6">&nbsp;</p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p7"><span class="s3"><strong>CURSOS<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; </span>Y<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; </span>TALLERES DE ESPECIALIZACIÓN</strong>
+                        </span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p5"><span class="s1">2012 <strong> Diplomado “Competencias docentes para la educación media superior” Sexta generación.</strong> Becada por la Universidad Autónoma de Querétaro.</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p3"><span class="s1"> Taller: <strong>Danza Técnica Limón </strong></span></p>
+                    <p class="p3"><span class="s1"><strong> Maestro: Alan Danielson (NY)</strong></span></p>
+                    <p class="p9"><span class="s1">Curso Internacional de Verano / Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p2"><span class="s1"><strong><span class="Apple-converted-space">&nbsp;&nbsp;</span></strong>
+                        </span>
+                    </p>
+                    <p class="p3"><span class="s1">2011 Talleres: <strong>Teatro, Barra al Piso y Danza técnica Muller</strong></span></p>
+                    <p class="p4"><span class="s1"><strong>Maestros (as): </strong>Edgar Chías (México), María del Mar Nogueras (México), Rosie Lani<span class="Apple-converted-space">&nbsp; </span>Fiedelman (EU)</span>
+                    </p>
+                    <p class="p9"><span class="s1">Curso Internacional de verano/ Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p10">&nbsp;</p>
+                    <p class="p3"><span class="s1">2010 Talleres: <strong>Danza Butoh, Barra al Piso, Hip Hop y Creatividad Aplicada</strong> </span></p>
+                    <p class="p3"><span class="s1"> Curso Internacional de Verano / Centro Nacional de Danza Contemporánea </span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1">2009 Taller:<span class="Apple-converted-space">&nbsp; </span><strong>Producción ejecutiva de Espectáculos</strong></span>
+                    </p>
+                    <p class="p3"><span class="s1"> Maestra: Enid Negrete / Centro Cultural Los Arquitos, Aguascalientes</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1"> Seminario <strong>La dramaturgia del Actor</strong></span></p>
+                    <p class="p3"><span class="s1"> Maestro Eugenio Barba / Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1"> Taller: <strong>Liberación Natural de la Voz (Técnica Link Later)</strong> </span></p>
+                    <p class="p9"><span class="s1">II Encuentro Nacional de la voz y la palabra:<span class="Apple-converted-space">&nbsp; </span>CEUVOZ</span>
+                    </p>
+                    <p class="p11"><span class="s1">Maestra Luisa Huertas y Maestro Antonio Ocampo/ Teatro de la Ciudad, México,<span class="Apple-converted-space">&nbsp; </span>DF</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1"> Taller: <strong>Mima Corporal Dramática</strong></span></p>
+                    <p class="p3"><span class="s1"> Maestro Ricardo Leal Velasco / Teatro Aguascalientes, Ags.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1"> Taller: <strong>Educación de la Voz</strong></span></p>
+                    <p class="p3"><span class="s1"> Maestra: Erika Cortés Rico / Centro Cultural los Arquitos, Aguascalientes</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1"> Taller: <strong>Dirección Escénica</strong></span></p>
+                    <p class="p11"><span class="s1">Maestro Eugenio Barba, Director de la Compañía Odín Teatre, <span class="Apple-converted-space">&nbsp; </span>Dinamarca</span>
+                    </p>
+                    <p class="p12">&nbsp;</p>
+                    <p class="p11"><span class="s1">Taller: <strong>Actuación “LA ENERGÍA DEL ACTOR”</strong></span></p>
+                    <p class="p11"><span class="s1">Maestro Augusto Omolú, Brasil, maestro del Odín Teatre, Dinamarca</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; </span>2008 Taller: <strong>Actuación</strong></span>
+                    </p>
+                    <p class="p3"><span class="s1"> <span class="Apple-converted-space">&nbsp; </span>Maestro Abraham Oseranski, Universidad de Xalapa, Ver.</span>
+                    </p>
+                    <p class="p2"><span class="s1"><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span>
+                    </p>
+                    <p class="p3"><span class="s1">Taller<strong>: Preparación actoral</strong>. Dirigido a la puesta en escena “José Trigo” Maestro y Director: Mauricio Jiménez</span></p>
+                    <p class="p13"><span class="s1">Centro Cultural La Estación</span></p>
+                    <p class="p14">&nbsp;</p>
+                    <p class="p13"><span class="s1">Taller: <strong>Drama </strong></span></p>
+                    <p class="p13"><span class="s1">Maestro Germán Castillo </span></p>
+                    <p class="p13"><span class="s1">Curso Internacional de verano / Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s1">Taller: <strong>Teatro</strong></span></p>
+                    <p class="p13"><span class="s1">Maestro Mauricio Jiménez</span></p>
+                    <p class="p13"><span class="s1">Curso Internacional de verano / Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">Taller<strong>: Preparación actoral</strong>. Dirigido a la puesta en escena “Noticias del Imperio” Maestro y Director: Mauricio Jiménez</span></p>
+                    <p class="p13"><span class="s1">Centro Cultural La Estación</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">Taller: <strong>Teatro</strong></span></p>
+                    <p class="p13"><span class="s1">Maestro Héctor Mendoza</span></p>
+                    <p class="p13"><span class="s1">Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p16"><span class="s1">2003-2005 Taller: <strong>Actuación y dirección escénica. </strong>Sobre<span class="Apple-converted-space">&nbsp; </span>la puesta en escena “Corona de Sombra” de Rodolfo Usigli</span>
+                    </p>
+                    <p class="p16"><span class="s1"> Maestro y Director: Mauricio Jiménez</span></p>
+                    <p class="p16"><span class="s1"> Museo de la Ciudad y Escuela de Laudería</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p17"><span class="s1">2004 Taller: <strong>Danza Butoh-Leone Kats</strong> </span></p>
+                    <p class="p13"><span class="s1">Encuentro Internacional de Teatro del Cuerpo</span></p>
+                    <p class="p13"><span class="s1">Grupo: Leone Kats Francia-México / CENADAC</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s1">Taller: <strong>Actuación </strong></span></p>
+                    <p class="p13"><span class="s1">Maestra Ofelia Medina</span></p>
+                    <p class="p13"><span class="s1">Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">Taller:<span class="Apple-converted-space">&nbsp; </span><strong>Actuación y voz</strong></span>
+                    </p>
+                    <p class="p13"><span class="s1">Maestra Luisa Huertas / Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">Taller: <strong>Teatro Mediatrónico</strong> </span></p>
+                    <p class="p13"><span class="s1">Encuentro Internacional de Teatro del Cuerpo</span></p>
+                    <p class="p13"><span class="s1">Compañía Blakskywhite (Rusia)/ Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p15"><span class="s1"> <span class="Apple-converted-space">&nbsp; &nbsp; &nbsp;</span></span>
+                    </p>
+                    <p class="p9"><span class="s1">Taller:<span class="Apple-converted-space">&nbsp; </span><strong>Dramaturgia para Joven Público</strong></span>
+                    </p>
+                    <p class="p9"><span class="s1">Maestra Maribel Carrasco / Centro de Formación Artística y Cultural</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">Taller: <strong>Máscaras</strong> </span></p>
+                    <p class="p13"><span class="s1">Encuentro Internacional de Teatro del Cuerpo</span></p>
+                    <p class="p18"><span class="s1"><span class="Apple-converted-space">&nbsp;&nbsp; </span>Maestro Ignacio Miranda (Chile) / CENADAC</span>
+                    </p>
+                    <p class="p15"><span class="s1"> <span class="Apple-converted-space">&nbsp; &nbsp; &nbsp;</span></span>
+                    </p>
+                    <p class="p13"><span class="s1">Taller de <strong>Actuación: Ciudades de la Memoria</strong></span></p>
+                    <p class="p19"><span class="s1">Maestro Jaime Soriano / Teatrino del Patio Barroco, UAQ</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p19"><span class="s1"><strong>Curso Práctico de Arte Escénico</strong></span></p>
+                    <p class="p9"><span class="s1">Maestro Víctor Osorio /Centro de Formación Artística y Cultural</span></p>
+                    <p class="p15"><span class="s1"> &nbsp;</span></p>
+                    <p class="p3"><span class="s1">Taller: <strong>Teatro de Movimiento</strong> </span></p>
+                    <p class="p18"><span class="s1"><span class="Apple-converted-space">&nbsp;&nbsp; </span>Maestro: Martín Chapul (Francia) / Encuentro Internacional de Teatro del Cuerpo / Centro Nacional de Danza Contemporánea</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1"><strong>Plenaria de Teatro Escolar</strong></span></p>
+                    <p class="p18"><span class="s1"><span class="Apple-converted-space">&nbsp;&nbsp; </span>Pedagogos del Grupo 55 Argentina-México</span>
+                    </p>
+                    <p class="p18"><span class="s1"><span class="Apple-converted-space">&nbsp;&nbsp; </span>Casa del Teatro, México, DF</span>
+                    </p>
+                    <p class="p20">&nbsp;</p>
+                    <p class="p21"><span class="s1"><strong>XXVII Taller de la Escuela Internacional de Teatro de América Latina y el Caribe</strong></span></p>
+                    <p class="p21"><span class="s1">Maestro: Joao Das Neves (Brasil)</span></p>
+                    <p class="p21"><span class="s1">Casa del Teatro</span></p>
+                    <p class="p20">&nbsp;</p>
+                    <p class="p21"><span class="s1">Taller: <strong>Barra al Piso</strong></span></p>
+                    <p class="p21"><span class="s1">Maestro Mario Andrade</span></p>
+                    <p class="p21"><span class="s1">Casa del Faldón, Querétaro</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s1">Taller: <strong>Gimnasia Acrobática</strong></span></p>
+                    <p class="p13"><span class="s1">Maestro Zaldumbide</span></p>
+                    <p class="p13"><span class="s1">Universidad Autónoma de Querétaro</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">Taller: <strong>Perfeccionamiento actoral</strong></span></p>
+                    <p class="p13"><span class="s1">Maestros: Rogelio Luévano y Jorge Vargas</span></p>
+                    <p class="p13"><span class="s1">Casa del Faldón, Querétaro</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p13"><span class="s1">Taller: <strong>Coreografía</strong></span></p>
+                    <p class="p13"><span class="s1">Maestro Marco Antonio Silva</span></p>
+                    <p class="p13"><span class="s1">Teatro del IMSS y Colegio Nacional de Danza Contemporánea</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">Taller: <strong>Mima Corporal</strong> </span></p>
+                    <p class="p13"><span class="s1">Maestro Daniel Stein (Estados Unidos) </span></p>
+                    <p class="p13"><span class="s1">Encuentro Internacional de Teatro del Cuerpo</span></p>
+                    <p class="p22"><span class="s1">Centro Nacional de Danza Contemporánea</span></p>
+                    <p class="p23"><span class="s1"> <span class="Apple-converted-space">&nbsp; &nbsp; &nbsp;</span></span>
+                    </p>
+                    <p class="p13"><span class="s1">Taller: <strong>Teatro Mexicano</strong></span></p>
+                    <p class="p22"><span class="s1">Maestro José Solé</span></p>
+                    <p class="p22"><span class="s1">Centro Cultural del Bosque, México DF</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p24"><span class="s1"> Taller: <strong>Planeación y Pedagogía Teatral</strong></span></p>
+                    <p class="p13"><span class="s1">Maestros: Rogelio Luévano, Teresa Rábago, Luis de Tavira, Antonio Peñúñuri</span></p>
+                    <p class="p13"><span class="s1">Casa del Teatro, México DF</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s1"><strong>Diplomado en Actuación</strong></span></p>
+                    <p class="p13"><span class="s1">Maestros: Luis de Tavira, Jorge Vargas, Teresa Rábago, Antonio Peñúñuri, Rogelio Luévano</span></p>
+                    <p class="p13"><span class="s1">Casa del Teatro</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s1">Taller: <strong>Escenografía</strong></span></p>
+                    <p class="p13"><span class="s1">Maestro Phillip Amand</span></p>
+                    <p class="p13"><span class="s1">Casa del Teatro</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s1">Taller: <strong>Dramaturgia</strong></span></p>
+                    <p class="p13"><span class="s1">Maestros: Luis Mario Moncada y Jaime Chabaud</span></p>
+                    <p class="p13"><span class="s1">Casa del Teatro</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s1">Taller: <strong>Dirección Escénica</strong></span></p>
+                    <p class="p13"><span class="s1">Maestro Luis de Tavira</span></p>
+                    <p class="p9"><span class="s1">Casa del Teatro</span></p>
+                    <p class="p25">&nbsp;</p>
+                    <p class="p3"><span class="s1"><strong>Diplomado en actuación</strong></span></p>
+                    <p class="p9"><span class="s1">Maestros de la Casa del Teatro</span></p>
+                    <p class="p26"><span class="s1">Casa del Faldón, Querétaro</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">Taller:<span class="Apple-converted-space">&nbsp; </span><strong>Danza Contemporánea para actores</strong></span>
+                    </p>
+                    <p class="p13"><span class="s1">Maestros de Ballet Nacional de México</span></p>
+                    <p class="p13"><span class="s1">Colegio Nacional de Danza Contemporánea</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p16"><span class="s1">1990-1992 Talleres: <strong>Actuación, Pantomima y Teatro de Títeres</strong></span></p>
+                    <p class="p13"><span class="s1">Maestro Víctor Osorio</span></p>
+                    <p class="p13"><span class="s1">Escuela de Bellas Artes, UAQ</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s3"><strong>EXPERIENCIA PROFESIONAL<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>(ACTRIZ)</strong>
+                        </span>
+                    </p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p16"><span class="s1">2013 “Río Ánimas” <span class="Apple-converted-space">&nbsp; </span>de Edeberto Pilo Galindo</span>
+                    </p>
+                    <p class="p16"><span class="s1"> Dirección: Boris Schoemann</span></p>
+                    <p class="p27">&nbsp;</p>
+                    <p class="p16"><span class="s1">2012 </span><span class="s4"><strong>“Los Heraldos Negros”</strong></span><span class="s1"> de Gerardo Velásquez</span></p>
+                    <p class="p16"><span class="s1"> Dirección: Jesús Coronado</span></p>
+                    <p class="p16"><span class="s1"> Coproducción: Atabal Creación Artística AC (Querétaro) y El Rinoceronte Enamorado (San Luis Potosí) </span></p>
+                    <p class="p27">&nbsp;</p>
+                    <p class="p16"><span class="s4"><strong>“Amor, pequeña agonía”</strong></span><span class="s1"> Espectáculo interdisciplinario de experimentación escénica. Creación colectiva: Atabal Creación Artística AC</span></p>
+                    <p class="p27">&nbsp;</p>
+                    <p class="p27">&nbsp;</p>
+                    <p class="p27">&nbsp;</p>
+                    <p class="p16"><span class="s1">2011 </span><span class="s4"><strong>“También sin felicidad se vive”</strong></span><span class="s1"> Teatro de Intervención. Espectáculo unipersonal basado en los CUENTOS REUNIDOS, de Clarice Lispector; presentado en el marco del festival Subterráneos escénicos. México DF</span></p>
+                    <p class="p27">&nbsp;</p>
+                    <p class="p28"><span class="s5">2010-2011 </span><span class="s1"><strong>“Querido Diego, te abraza Quiela”</strong></span><span class="s5"> de Elena poniatowska</span></p>
+                    <p class="p16"><span class="s1"> Dirección: Mauricio Jiménez</span></p>
+                    <p class="p27">&nbsp;</p>
+                    <p class="p16"><span class="s1">2007-2012 </span><span class="s4"><strong>“Malas Palabras”</strong></span><span class="s1"> Dramaturgia y Dirección de Perla Szuchmacher</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s4"><strong>“Una Olla de Once Orejas”</strong></span><span class="s1"> Ópera de Marta García Renart</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s4"><strong>“Akukum”</strong></span><span class="s1"> De Martha S., Dirección Román García</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">2006-2011 </span><span class="s4"><strong>“Noticias del Imperio”</strong></span><span class="s1"> Adaptación: Cruces, Leal, Jiménez</span></p>
+                    <p class="p13"><span class="s1">Dirección: Mauricio Jiménez</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">2005-2006 </span><span class="s4"><strong>“Corona de Sombra”</strong></span><span class="s1"> de Rodolfo Usigli</span></p>
+                    <p class="p13"><span class="s1">Dirección: Mauricio Jiménez</span></p>
+                    <p class="p13"><span class="s1">“Susana y los Jóvenes” de Ibargüengoitia, Dirección: Ricardo Leal</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p29"><span class="s1"><strong>“Sangre en el Cuello del Gato”</strong></span><span class="s5"> de Fassbinder, </span></p>
+                    <p class="p9"><span class="s1">Dirección: Román García</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p16"><span class="s1">2004-2005 </span><span class="s4"><strong>“El Quijote de la Mancha”</strong></span><span class="s1"> Teatro con títeres de hilo</span></p>
+                    <p class="p13"><span class="s1">Adaptación y dirección: Víctor Osorio</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p30"><span class="s1"><strong>“Historia Mínima de una Mujer”</strong></span></p>
+                    <p class="p13"><span class="s1">Adaptación de la obra “La mujer sola” de Darío Fo</span></p>
+                    <p class="p13"><span class="s1">Dirección: Ana Bertha Cruces</span></p>
+                    <p class="p20">&nbsp;</p>
+                    <p class="p3"><span class="s4"><strong>“Blanco y Negro”</strong></span><span class="s1"> de Antonio Malpica (Premio Nacional de dramaturgia) Dirección: Román García</span></p>
+                    <p class="p27"><span class="s1"><span class="Apple-converted-space">&nbsp; &nbsp;</span></span>
+                    </p>
+                    <p class="p16"><span class="s1">2001-2002 <strong>“</strong></span><span class="s4"><strong>La Fuga de Nicanor”</strong></span><span class="s1"> de Ibargüengoitia, Dirección: Román García</span></p>
+                    <p class="p13"><span class="s4">“<strong>El Atentado”</strong></span><span class="s1"> de Ibargüengoitia, Dirección: Román García</span></p>
+                    <p class="p30"><span class="s1"><strong>“El Jardín de las Delicias”</strong></span><span class="s5"> de González Dávila, </span></p>
+                    <p class="p13"><span class="s1">Dirección: Román García</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p16"><span class="s1">2000-2001 </span><span class="s4"><strong>“Luz del Norte”</strong></span><span class="s1"> de Juan Tovar, Dirección: Rogelio Luévano</span></p>
+                    <p class="p13"><span class="s4"><strong>“Salir al Mundo”</strong></span><span class="s1"> de Bertha Iriart, Dirección: Román García</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p29"><span class="s5">1998-1999 </span><span class="s1"><strong>“Por el Pequeño cielo de la puerta”</strong></span></p>
+                    <p class="p9"><span class="s1">Dramaturgia y dirección: Román García</span></p>
+                    <p class="p9"><span class="s4"><strong>“Momo”</strong></span><span class="s1"> de Sabina Berman, Dirección: Román García</span></p>
+                    <p class="p9"><span class="s4"><strong>“Nora”</strong></span><span class="s1"> de Emilio Carballido, Dirección: Marco Antonio Silva</span></p>
+                    <p class="p9"><span class="s4"><strong>“Dulces Compañías”</strong></span><span class="s1"> de Oscar Liera, Dirección: Uriel Bravo</span></p>
+                    <p class="p9"><span class="s4"><strong>“Chiquito Pingüica”</strong></span><span class="s1"><strong>,</strong> de Sabina Berman, Dirección: Uriel Bravo</span></p>
+                    <p class="p31"><span class="s1"><strong>“Fotografía en la Playa”</strong></span><span class="s5"> de Emilio Carballido</span></p>
+                    <p class="p9"><span class="s1">Dirección: Román García</span></p>
+                    <p class="p25">&nbsp;</p>
+                    <p class="p3"><span class="s4"><strong>“Petición de Mano”</strong></span><span class="s1"> de Anton Chejov, Dirección: Víctor Osorio</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p29"><span class="s1"><strong>“Esperando a Godot”</strong></span><span class="s5"> de Samuel Beckett</span></p>
+                    <p class="p9"><span class="s1">Dirección: Víctor Osorio</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p13"><span class="s3"><strong>EXPERIENCIA PROFESIONAL<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span>(DIRECCIÓN ESCÉNICA)</strong>
+                        </span>
+                    </p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p29"><span class="s5">1012 </span><span class="s1"><strong>“Diván” ¿Quieres una historia con mensaje”</strong></span></p>
+                    <p class="p3"><span class="s1"> Autores varios. Versión de Danza-teatro</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p32"><span class="s5">2011-2012 </span><span class="s1"><strong>“Canek” Historia y leyenda de un héroe maya.</strong></span></p>
+                    <p class="p4"><span class="s1">De Ermilo Abreu Gómez, Adaptación libre. </span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p33"><span class="s5">2007-2008 </span><span class="s1"><strong>“Historias en la Cama para tocar campanas y llegar a la luna”</strong></span></p>
+                    <p class="p13"><span class="s1">De Iván Olivares Buendía</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p29"><span class="s5">2007 </span><span class="s1"><strong>“Una Olla de Once Orejas” </strong></span></p>
+                    <p class="p13"><span class="s1">Ópera de Marta García Renart</span></p>
+                    <p class="p15">&nbsp;</p>
+                    <p class="p3"><span class="s1">2004 </span><span class="s4"><strong>“El Principito”</strong></span><span class="s1"> Adaptación de Víctor Osorio&nbsp;</span></p>
+                    <p class="p2"><span class="s1"><span class="Apple-converted-space">&nbsp;&nbsp;</span></span>
+                    </p>
+                    <p class="p16"><span class="s1">2002-2003 <span class="Apple-converted-space">&nbsp; &nbsp; </span></span><span class="s4"><strong>“Sin Pies ni cabeza”</strong></span><span class="s1"> de Jaime Chabaud</span></p>
+                    <p class="p27">&nbsp;</p>
+                    <p class="p31"><span class="s1"><strong>“El Juego que todos Jugamos</strong></span><span class="s5"><strong>”</strong> de Jodorovski</span></p>
+                    <p class="p10">&nbsp;</p>
+                    <p class="p3"><span class="s1">1996 <span class="Apple-converted-space">&nbsp; </span></span><span class="s4"><strong>“Violinista en el Tejado”</strong></span><span class="s1"> de Joseph Stein</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p31"><span class="s1"><strong>“Los Miserables”</strong></span><span class="s5"> de Víctor Hugo</span></p>
+                    <p class="p10">&nbsp;</p>
+                    <p class="p34"><span class="s4"><strong>“Romeo y Julieta”</strong></span><span class="s1"> Adaptación: Víctor Osorio</span></p>
+                    <p class="p35">&nbsp;</p>
+                    <p class="p35">&nbsp;</p>
+                    <p class="p35">&nbsp;</p>
+                    <p class="p36">&nbsp;</p>
+                    <p class="p7"><span class="s3"><strong>EXPERIENCIA PROFESIONAL<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>(DOCENTE)</strong>
+                        </span>
+                    </p>
+                    <p class="p36">&nbsp;</p>
+                    <p class="p5"><span class="s1">2011-2012 -</span><span class="s4"><strong>Talleres de literatura y Teatro</strong></span><span class="s1"> para estudiantes de bachillerato y licenciatura<span class="Apple-converted-space">&nbsp; </span>/ Colegio Nacional de Danza Contemporánea</span>
+                    </p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p37"><span class="s5"> -</span><span class="s1"><strong>Taller<span class="Apple-converted-space">&nbsp; </span>de Análisis Literario I y II / Asignaturas: Lectura y redacción y Comprensión lectora</strong>
+                        </span><span class="s5"> Bachillerato semiescolarizado.</span></p>
+                    <p class="p4"><span class="s1">Escuela de Bachilleres de la Universidad Autónoma de Querétaro</span></p>
+                    <p class="p6">&nbsp;</p>
+                    <p class="p5"><span class="s1"> -</span><span class="s4"><strong>Taller de Actuación</strong></span><span class="s1"><span class="Apple-converted-space">&nbsp; </span>Colegio Nacional de Danza Contemporánea</span>
+                    </p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p5"><span class="s1"> -</span><span class="s4"><strong>Seminario Producción Ejecutiva de Espectáculos</strong></span><span class="s1">/En el Curso Internacional de verano del CENADAC</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p5"><span class="s1"> -</span><span class="s4"><strong>Taller libre de Preparación Actoral</strong></span><span class="s1">/Centro de Arte y Cultura Bernardo Quintana de la Universidad Autónoma de Querétaro.</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p5"><span class="s1"> -</span><span class="s4"><strong>Conferencias y mesas de discusión sobre arte y cultura</strong></span><span class="s1"> con alumnos de bachillerato en instituciones públicas.</span></p>
+                    <p class="p5"><span class="s1"> -</span><span class="s4"><strong>Talleres de Teatro para niños y jóvenes</strong></span><span class="s1"> en el Colegio Salesiano de Querétaro</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p32"><span class="s5">2010 -</span><span class="s1"><strong>Diplomado para titulación: Producción ejecutiva de espectáculos</strong></span><span class="s5">. Escuela de Bellas Artes, UAQ</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p32"><span class="s5">2009 -</span><span class="s1"><strong>Taller de educación de la voz para maestros de danza</strong></span><span class="s5">. Curso internacional de verano CENADAC</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p32"><span class="s5">2009-2010 -</span><span class="s1"><strong>Estancia Académica Instituto Cultural de Aguascalientes, para el diseño y elaboración de la Licenciatura en Teatro</strong></span></p>
+                    <p class="p38">&nbsp;</p>
+                    <p class="p5"><span class="s4"><strong> -Taller: Ruptura y renovación del actor, </strong></span><span class="s1">dirigido a actores profesionales, Instituto Cultural de Aguascalientes.</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p5"><span class="s1">2001-2008 </span><span class="s4"><strong>-Taller de Actuación </strong></span><span class="s1">para estudiantes de bachillerato y licenciatura del Colegio Nacional de Danza Contemporánea.</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p5"><span class="s1">2008 </span><span class="s4">-<strong>Taller de Expresión Corporal</strong></span><span class="s1">/ Facultad de Bellas Artes, UAQ</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p3"><span class="s1">2004 <span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="s4">-<strong>Taller de Teatro</strong></span><span class="s1"> / Colegio de Música ANCORA</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1">2003-2004 </span><span class="s4">-<strong>Talleres de teatro para jóvenes</strong></span><span class="s1"> / Centro Cultural La Estación</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p29"><span class="s5">2000-2003 </span><span class="s1">-<strong>Talleres de teatro para niños y jóvenes</strong></span><span class="s5"> / Colegio Liceo Queretano</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p4"><span class="s4">-<strong>Taller de Actuación</strong></span><span class="s1"> para cantantes de ópera Escuela de Bellas Artes de la UAQ</span></p>
+                    <p class="p3"><span class="s1">2000-2002 </span><span class="s4">-<strong>Taller de Teatro/ </strong></span><span class="s1">Preparatoria Agustín Quiñones May</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1">1999-2002 </span><span class="s4">-<strong>Taller de Teatro</strong></span><span class="s1"> / Centro de Estudios Musicales Mi Fa Sol</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p5"><span class="s1">1999-2000 </span><span class="s4">-<strong>Taller de Teatro</strong></span><span class="s1"> / Escuela de Música de la Facultad de Bellas Artes, UAQ. Taller de actuación para cantantes de ópera.</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p32"><span class="s5">1996-1998 </span><span class="s1">-<strong>Talleres de teatro y dirección de los grupos representativos </strong></span><span class="s5">del ITESM, campus Querétaro</span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p1"><span class="s1"><strong>EXPERIENCIA OTRAS ACTIVIDADES Y CARGOS</strong></span></p>
+                    <p class="p1"><span class="s1"><strong>RELACIONADOS CON EL ARTE Y LA CULTURA</strong></span></p>
+                    <p class="p39">&nbsp;</p>
+                    <p class="p5"><span class="s1"><strong>2013-2010 CRUZADA CENTRAL POR EL TEATRO </strong>Intercambio entre agrupaciones independientes del centro del país. Para el fomento de la cultura teatral en el estado.</span></p>
+                    <p class="p7"><span class="s1"><strong>Organización, gestión, promoción y difusión (TRES EMISIONES)</strong></span></p>
+                    <p class="p39">&nbsp;</p>
+                    <p class="p3"><span class="s1"><strong>2012 </strong> <strong>TALLER DE VERANO DE COMEDIA MUSICAL</strong> para niños y jóvenes.</span></p>
+                    <p class="p3"><span class="s1"> Hotel<span class="Apple-converted-space">&nbsp; </span>Hacienda Jurica. </span>
+                    </p>
+                    <p class="p9"><span class="s1"><strong>Producción ejecutiva y coordinación artística</strong></span></p>
+                    <p class="p39">&nbsp;</p>
+                    <p class="p3"><span class="s1"><strong>2013-2006 ATABAL CREACION ARTÍSTICA AC Fundadora y representante legal.</strong></span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p5"><span class="s1"><strong>2011-2006 COORDINADORA DE CÍRCULOS DE LECTURA PARA JÓVENES EN DIFERENTES INSTITUCIONES DEL ESTADO.</strong></span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p5"><span class="s1"><strong> PROMOTORA Y GESTORA DE PROYECTOS ARTÍSTICOS dirigidos al fomento de la lectura, con el apoyo del programa federal “Alas y raíces” a los niños y jóvenes. Del Consejo Nacional para la Cultura y las Artes.</strong></span></p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p40">&nbsp;</p>
+                    <p class="p40">&nbsp;</p>
+                    <p class="p41"><span class="s1"><strong>BECADA POR EL INSTITUTO QUERETANO DE LA<span class="Apple-converted-space">&nbsp; </span>CULTURA Y LAS ARTES: </strong>
+                        </span>
+                    </p>
+                    <p class="p41"><span class="s1"><strong>2013<span class="Apple-converted-space">&nbsp; </span>Programa de estímulos a la creación y desarrollo Artístico (Desarrollo de grupos artísticos)</strong>
+                        </span>
+                    </p>
+                    <p class="p41"><span class="s1"><strong>2012 <span class="Apple-converted-space">&nbsp; </span>Apoyo a la producción Artística</strong>
+                        </span>
+                    </p>
+                    <p class="p41"><span class="s1"><strong>2010 Apoyo a la producción Artística</strong></span></p>
+                    <p class="p41"><span class="s1"><strong>2008<span class="Apple-converted-space">&nbsp; </span>Estímulos a la Creación<span class="Apple-converted-space">&nbsp; </span>Artística para<span class="Apple-converted-space">&nbsp; </span>desarrollo de grupos artísticos</strong>
+                        </span>
+                    </p>
+                    <p class="p41"><span class="s1"><strong>2007 Apoyo a la Producción Artística </strong></span></p>
+                    <p class="p41"><span class="s1"><strong>2006 Estímulos a la Creación Artística y Apoyo a la Producción artística (personal)</strong></span></p>
+                    <p class="p41"><span class="s1"><strong>2001 Producción en Co-inversión </strong></span></p>
+                    <p class="p40">&nbsp;</p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p8">&nbsp;</p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p42">&nbsp;</p>
+                    <p class="p43"><span class="s1"><strong>Última actualización: marzo 2013</strong></span></p>
+                    </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo carloscontreras"></div>
 					<div class="name">CARLOS CONTRERAS FIGUEROA</div>
-					<div class="posicion">Asistente operativo y de difusión.</div>				
+					<div class="posicion">Asistente operativo y de difusión.</div>	
+                     <div class="informacion">
+                       <p class="p1"><span class="s1">Nace el<span class="Apple-converted-space">&nbsp; </span>9 de febrero de 1987 en la ciudad de Querétaro, Qro. </span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">En el año 2005, en la ciudad de Aguascalientes, inicia la licenciatura en Artes Escénicas y Audiovisuales en la Universidad “La Concordia”, para culminar en 2010.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">En 2007 se inicia en la escena con el proyecto “Juana la Invisible”, paráfrasis y dirección de Marcela Morán. </span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">En 2008 participó como actor en: “Mitos y leyendas” espectáculo que se lleva a cabo cada año durante las conmemoraciones de muertos en el panteón municipal de “La cruz”<span class="Apple-converted-space">&nbsp; </span>en la ciudad de Aguascalientes. </span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">En 2010 es convocado por Ana Bertha Cruces a participar como asistente de producción en la adaptación de la obra: “Querido Diego te abraza Quiela”<span class="Apple-converted-space">&nbsp; </span>de Elena Poniatowska, dirección escénica de Mauricio Jiménez. </span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Ha tomado diversos talleres entre los que se encuentran: “Teatro combate” con Medín Villatoro y Natalia Velasco,<span class="Apple-converted-space">&nbsp; </span>“Mimo Corporal Dramático”, con el maestro Daniel Viveros,” Reescritura Actoral” con Alfredo Vargas, “Una técnica todas las técnicas” (taller de actuación) con Abraham Oceransky, “Dirección Escénica” con Boris Schoemann,<span class="Apple-converted-space">&nbsp; </span>“Dramaturgia” con “Pilo” Galindo y “Voz” con la técnica “Eutonía“<span class="Apple-converted-space">&nbsp; </span>impartido por Fabián Verdín.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Actualmente colabora con: Atabal A.C<span class="Apple-converted-space">&nbsp; </span>compañía que coordina Ana Bertha Cruces, como asistente de producción y actor en la obra teatral: “Río Ánimas” de “Pilo” Galindo bajo la dirección de Boris Schoemann.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">2014 Actor.<span class="Apple-converted-space">&nbsp; </span>Obra: “Los Heraldos Negros” de Gerardo Velásquez. Dir. Jesús Coronado.</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">2014 Actor en la obra de teatro: “Aspiracional” o todos quisimos ser la misma cosa, de Edgar Chías, Dir. Edén Coronado. Querétaro Qro.</span></p>
+                    </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo luciarosher"></div>
 					<div class="name">LUCÍA ROSENDO HERRERA</div>	
-					<div class="posicion">LUCÍA ROSENDO HERRERA</div>
+					<div class="posicion">Asistencia general y administrativa</div>
+                    <div class="informacion">
+                        <p class="p1"><span class="s1">Egresada de la Licenciatura en Danza Contemporánea. Modalidad Intérprete. (2009-2013) Y de la carrera en Técnico Superior Universitario en Actuación(2008-2011), ambas de la Universidad de las Artes del Instituto Cultural de Aguascalientes (ICA) y por las cuales fue becada<span class="Apple-converted-space">&nbsp; </span>con excelencia académica dos años consecutivos. </span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Fue becaria del PECDA Aguascalientes, emisión 2014, en el área de desarrollo artístico individual para la realización de estudios de educación somática con la escuela Body Mind Movement.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Ha tomado cursos en las áreas del arte escénico con maestros como Ray Swartz, Sara Murphi, Christine Dakin, Alicia Sánchez, Oscar Velázquez, Kasuko Hirabayashi, Alan Danielson, Mauricio Nava, Anton Reza, Marlene Robles, Beto Pérez, Whitney V. Hunter, Eber Ortiz, Zbigniew Szumski entre otros.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Participó como bailarina en las obras; <em>Impulso efímero de Martin Resendiz y Yasmin Hernandez</em>, <em>Resonancia para un destierro </em>de Oscar Velázquez, <em>La gente de la lluvia</em>, <em>Mi sombra</em> de David Barrón, Fandango de calaveras, <em>El origen que esconde su fantasía</em> también de Oscar Velázquez, <em>La consagración de la primavera</em>, entre otras.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Como actriz en las obras: Aspiracional de Edgar Chías y Rey Lear de Rodrigo García ambas bajo la dirección de Edén Coronado, Hay un lobo que se come el sol todos los inviernos, dirección de Bruno Ruiz, <em>Los negros pájaros del adiós</em> de Óscar Liera, <em>Katastrofe</em>, dirección y dramaturgia; Bruno Ruiz.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p3"><span class="s1">En el área docente ha trabajado impartiendo cursos de Educación Somática, de expresión corporal con niños y adultos, talleres de danza, activación física con instituciones como el Instituto de Educación de Aguascalientes (IEA), ICA, y de manera independiente en centros culturales.</span></p>
+                    </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div>
 				<div class="person">
 					<div class="photo brendacardenas"></div>
 					<div class="name">BRENDA ILIANA CÁRDENAS TORRES</div>	
-					<div class="posicion">Diseño e Imagen y Publicidad</div>				
+					<div class="posicion">Diseño e Imagen y Publicidad</div>
+                    <div class="informacion">
+                        <p>Egresada en el 2001 de la Facultad de Bellas Artes de la Universidad Autónoma de Querétaro, con la carrera de Diseño Gráfico, y la especialidad en Artes Visuales, labora desde ese mismo año en el Instituto Queretano de la Cultura y las Artes, lugar donde el trabajo con artistas ha sido continuó y de gran proyección, de manera independiente ha realizado el trabajo artístico de discos, boletines, revistas, libros de artistas, libros culturales, catálogos y la imagen gráfica a grupos artísticos para obras teatrales, congresos y festivales que han tenido proyección tanto a nivel local como nacional.</p>
+                        <p>
+                            La realización de otro tipo de objetos que reflejan su interés por el diseño se ha enfocado en materiales diversos como la cerámica artística, los hilos y la madera, que han logrado resolver necesidades visuales y del entorno en el que se rodea, mas por satisfacción personal que por solicitud.
+                        </p>
+                    </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo elyperalta"></div>
 					<div class="name">ELIZABETH PERALTA DE ITA</div>	
-					<div class="posicion">Coordinación de talleres, programación de grupos y asistencia en gestión</div>				
+					<div class="posicion">Coordinación de talleres, programación de grupos y asistencia en gestión</div>	
+                    <div class="informacion">
+                        <p>Actriz de Teatro, egresada de la Universidad Autónoma de Querétaro, de la Licenciatura en Artes Escénicas con línea terminal en Actuación. Ha participado en más de 15 montajes con directores como:
+*Emmanuel Márquez Peralta,
+*Jesús Coronado, Pamela Jiménez Draguicevic, Ituriel Hernández, Franco Vega, entre otros.
+Ha tomado cursos de Danza, Teatro, Voz, Dramaturgia, Clown, etc., con maestros reconocidos en su área, como Orlando Sheker, Beatriz Juan Gil, Richard Viqueira, Jeff Johnson, La compañía inglesa ‘Le navet bete’, Pablo Cabral, Teresa Rábago, entre otros.
+En el año 2015 fue beneficiada por el programa “Alas y raíces” con la obra “El ladrón de cuentos”.
+Actualmente labora con la compañía XTeatro y Atabal Creación Artística A.C.
+*Miembro del Sistema Nacional de Creadores de Arte CONACULTA - FONCA.</p>
+                    </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo gabirio"></div>
 					<div class="name">GABRIELA DEL RÍO ARRIETA</div>	
-					<div class="posicion">Coordinadora de promoción y difusión</div>				
+					<div class="posicion">Coordinadora de promoción y difusión</div>
+                <div class="informacion">
+                        <p class="p1"><span class="s1">Comisión Nacional de la Industria Azucarera: Auxiliar de departamento de Prensa y Relaciones Públicas y redactora de boletines de prensa. De 1977 a 1980</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Unión Nacional de Productores de Azúcar: Auxiliar de departamento de Prensa y Relaciones Públicas y redactora de la revista interna. De 1980 a 1981</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Unidad de Televisión Educativa y Cultural: Reportera, de 1980 a 1984, conductora, de 1982 a 1985, productora, de 1985 a 1988. De 1980 a 1988</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">XEEP radio educación: Locutora de cabina, conductora de los programas<span class="Apple-converted-space">&nbsp; </span><em>Ecos de la UPN</em><span class="Apple-converted-space">&nbsp; </span>y <em>Tierra y Libertad</em>. De 1985 a 1986</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Producción y Comunicación Electrónica (PROCEL): Guionista de programas de radio y televisión. Durante 1985</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Secretaría de Educación Pública: Guionista de televisión, de la serie: <em>Temas de Primaria</em><span class="Apple-converted-space">&nbsp; </span>y de programas educativos en general. Durante 1986</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Unidad de Televisión Educativa y canal 11: Productora de diversos programas especiales. De 1986 a 1987</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">IMEVISIÓN, Consejo Nacional de Ciencia y Tecnología, Secretaría de la Reforma Agraria, Fondo de Cultura Económica, DIF, IMER, TV UNAM, sector salud. Locutora de diversos programas, spots y campañas. De 1987 a 1995</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Radio UNAM: Locutora de cabina y conductora de noticiarios. De 1987 a 1988</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Secretaría de Gobernación: Conductora del programa radiofónico<span class="Apple-converted-space">&nbsp; </span><em>La Hora Nacional de México</em>. De 1987 a 1991</span>
+                    </p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Instituto Mexicano de la Radio: Locutora de cabina de las emisoras: Radio México Internacional, Opus 94, Estéreo Joven. De 1986 a 1992</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Conductora de las transmisiones del Festival Internacional Cervantino, 1989.</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Colegio Salesiano de Querétaro. Preparatoria: Profesora de Lectura y Redacción y del taller de Oratoria. De agosto de 1995 a julio de 2006.</span></p>
+                    <p class="p1"><span class="s1">Promotora de lectura. De julio de 2003 a abril de 2011</span></p>
+                    <p class="p1"><span class="s1">Directora Técnica. De mayo de 2004 a abril de 2011</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Grupo de teatro: “Atabal”</span></p>
+                    <p class="p1"><span class="s1">Coordinadora del equipo de promoción y difusión. De 2008 a 2011</span></p>
+                    <p class="p1"><span class="s1">Tesorera. De 2011 a la fecha</span></p>
+                    <p class="p2">&nbsp;</p>
+                    <p class="p1"><span class="s1">Radio y Televisión Querétaro.</span></p>
+                    <p class="p1"><span class="s1">Productora y conductora del programa de televisión <em>Está escrito</em>. De octubre de 2010 a marzo de 2011</span></p>
+                    <p class="p1"><span class="s1">Productora, locutora y Encargada del Despacho de la Subdirección de Producción de Radio Querétaro. De marzo de 2011 a la fecha</span></p>
+                    </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo guillermoguitierrez"></div>
 					<div class="name">GUILLERMO GUTIERREZ</div>	
-					<div class="posicion">Actor</div>				
+                <div class="posicion">Actor</div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo jorgemartinoli"></div>
 					<div class="name">JORGE MARTINOLI</div>	
-					<div class="posicion">Actor</div>				
+					<div class="posicion">Actor</div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo juancarloscasas"></div>
 					<div class="name">JUAN CARLOS CASAS</div>	
-					<div class="posicion">Actor</div>				
+					<div class="posicion">Actor</div>
+                    <div class="informacion">
+                         <p class="p1"><span class="s1">Nace el 16 de marzo de 1984 en la ciudad de Querétaro, Qro.<span class="Apple-converted-space">&nbsp; </span>Obtiene el titulo de Lic. En Artes Escénicas con línea terminal en Actuación en el 2008, por parte de la Facultad de Bellas Artes de la Universidad Autónoma de Querétaro. </span>
+                        </p>
+                        <p class="p1"><span class="s1">Beneficiario del programa APOYARTE del Instituto Queretano para la Cultura y las Artes en tres ocasiones. (2008, 2010 y 2012)</span></p>
+                        <p class="p1"><span class="s1">Ha realizado sus estudios escénicos en la exploración corporal, comedia física y clown, con maestros como: Blas Villalpando, Augusto Lintz Albanez, Jeff Johnson, David Menes, Florent Lestage, Mizraim Araujo y Ricardo Leal por mencionar algunos. </span></p>
+                        <p class="p1"><span class="s1">Su trabajo actoral lo ha realizado con directores como Boris Schoeman, Uriel Bravo, Franco Vega, Benito Cañada, Ricardo Leal, Jean Paul Carstensen, entre otros.&nbsp;</span></p>
+                        <p class="p1"><span class="s1">Participación en festivales y encuentros de teatro a nivel nacional e internacional como: Muestra Joven de Dramaturgia, Querétaro; Festival Internacional Rodará, Puebla, México; XVII Edición del Festival Romerías de Mayo Holguín, Cuba; FESTEA, Caracas, Venezuela; Festival Universitario de Teatro, Cali, Colombia;<span class="Apple-converted-space">&nbsp; </span>Festival de Teatro de Nuevo León, entre otros. </span>
+                        </p>
+                        <p class="p1"><span class="s1">Interesado en la Gestión y promoción, su actualización profesional lo ha llevado a tomar diplomados y seminarios a fin. </span></p>
+                        <p class="p1"><span class="s1">Actualmente se desempeña como promotor y actor<span class="Apple-converted-space">&nbsp; </span>del grupo Barón Negro: laboratorio escénico. Y en participación constante con: Grupo Atabal; Silencio en Movimiento: teatro-gesto; La Mandorla; y X Teatro.</span>
+                        </p>
+                </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo leonardocabrera"></div>
 					<div class="name">LEONARDO CABRERA</div>	
-					<div class="posicion">Actor</div>				
+					<div class="posicion">Actor</div>
+                    <div class="informacion">
+                        <p style="font-size:20px;"><strong>Locución en el programa de radio.</strong></p>
+                        <p class="p1"><span class="s1">Nacido en la ciudad de México, estudió la carrera de Actuación a nivel Técnico Superior</span></p>
+                    <p class="p1"><span class="s1">Universitario y posteriormente, la Licenciatura en Docencia del Arte Escénico, ambas en la Universidad Autónoma de Querétaro. Ha tomado talleres y diplomados con maestros como Jorge Vargas, Juan Manuel Ramos, Maira Sérbulo, Ricardo Leal, Héctor Mendoza, David Hevia, Iben Nagel, Eugenio Barba, Julia Varley, Leòne Cats, Gerardo Trejoluna y Boris Schoemann.</span></p>
+                    <p class="p1"><span class="s1">En 2001 crea el grupo Mandorla y con este nombre se ha ejercitado en la dirección escénica con obras de Héctor Mendoza, Óscar Liera, el monólogo “Antes del desayuno” de Eugene O´Neill; y con “El oso” de Antón Chéjov, obra apoyada por el programa “Apoyarte-2009” del Instituto Queretano de la Cultura y las Artes, que participó en la VI Muestra Internacional de Teatro MERCOSUR Interior “Atahualpa del Cioppo”, en Paysandú, Uruguay, en noviembre de 2010, y que continua dando funciones. En mayo de 2012 estrena como director la obra “El loco amor, viene”, del autor mexicano Jorge Ibargüengoitia; y en septiembre del mismo año “El ogrito” de Suzanne Lebeau.</span></p>
+                    <p class="p1"><span class="s1">Como actor ha participado en obras como “La lección” de Eugène Ionèsco; “Canción de Gershwin” y “La graciosa comitiva del Leteo” de Mariana Hartasánchez; “La importancia de llamarse Ernesto” de Óscar Wilde; “Susana y los jóvenes” de Jorge Ibargüengoitia; “Corona de sombra” de Rodolfo Usigli, bajo la dirección del maestro Mauricio Jiménez, que se estrena en la XXVI Muestra Nacional de Teatro en San Luis Potosí; “El crimen del hotel Palacio” de Martín López Brie; “La mano del mago” de Mariana Hartasánchez; “Querido Diego, te abraza Quiela” de Elena Poniatowska, de nuevo bajo la dirección de Mauricio Jiménez, y que participó en la XXXI Muestra Nacional de Teatro; “Canek” de Ermilo Abreu Gómez, bajo la dirección de Ana Bertha Cruces y Fernando Flores; participa como actor en la coreografía “Cría cuervos” de Ricardo Flores, y es parte del elenco del espectáculo “La ciudad de los palacios”, con “Aletheia – Cuerpo escénico de México”, que se estrenó y presentó en octubre de 2011; “Señorita Julia” de August Strindberg, dirigida por Omar Alaín, estrenada en julio de 2012. Es asistente de Dirección de Jesús Coronado para la obra “Los heraldos negros” de Gerardo Velásquez, presentada en Querétaro por el grupo Atabal en septiembre de 2012.</span></p>
+                    <p class="p1"><span class="s1">Estrenó como director la obra “Los pelirrojos” de Jean-Claude Grumberg, en febrero de 2013; y a petición del Grupo Cómicos de la Legua dirige “Casamiento a la fuerza” de Moliére, estrenada a finales de julio de 2013.</span></p>
+                    <p class="p1"><span class="s1">Actualmente es actor de la obra “Río Ánimas”, de Edeberto “Pilo” Galindo, dirigida por el maestro Boris Schoemann, y de “Aspiracional”, reescritura de Las preciosas ridículas de Moliére, por Edgar Chías, y dirigida por Edén Coronado. También presenta como director la obra “El ogrito”.</span></p>
+                    </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo mariafernanda"></div>
 					<div class="name">MARÍA FERNANDA MONROY</div>	
-					<div class="posicion">Actríz</div>				
+					<div class="posicion">Actríz</div>
+                    <div class="informacion">
+                         <p class="p1"><span class="s1">Nace en 1986 en la Ciudad de México pero radica en la Ciudad de Querétaro desde 1989. Licenciada en Artes Escénicas con línea terminal en Actuación por la Facultad de Bellas Artes de la Universidad Autónoma de Querétaro.</span></p>
+                    <p class="p1"><span class="s1">Desde 2005 ha realizado diversos trabajos con diferentes agrupaciones y directores como: Omar Alain (Gpo. Espektros), Uriel Bravo (Gpo. Los Desesperados), Ruy Nieves (Gpo. La Otra Banda), Franco Vega (Gpo. La Pipirijaina), Jean Paul Carstensen (Gpo. Barón Negro), Edén Coronado (Atabal Creación Escénica A.C.), Rodrigo Canchola (Imaginartes) y Maestros de la Universidad Autónoma de Querétaro como Manuel Puente, Ricardo Leal, Cristina Medellín (Gpo. De danza contemporánea GROSSO MODO), Pamela Draguicevic y maestros Fernando Jhons y Dubia Hernández (Ballet Representativo de la UAQ).</span></p>
+                    <p class="p1"><span class="s1">Ha participado en diversos festivales nacionales e internacionales como: Muestra Nacional de la Joven Dramaturgia (Querétaro), Encuentro Internacional de Teatro Alternativo y de Investigación (Querétaro), Festival RODARÁ (Puebla), Festival Romerías de Mayo (Holguín, Cuba), Festival de Teatro de Nuevo León, Coloquio Internacional de Teatro Alternativo (Nayarit y Nuevo León), Festival SiguientEscena (Querétaro), Cruzada Central por el Teatro (Querétaro), entre otros.</span></p>
+                    <p class="p1"><span class="s1">Entre los talleres que ha cursado se encuentran: Arte y Finanzas, Gestión Cultural, El Cuerpo Femenino en Escena y Esgrima Teatral. Ha impartido curso de actuación en la escuela de Danza DANZARTE y un curso de técnica vocal en el Festival de Autor FESTEA (Caracas, Venezuela).</span></p>
+                    <p class="p1"><span class="s1">Beneficiada por el PECDA en la emisión del 2013.</span></p>
+                    <p class="p1"><span class="s1">Actualmente se desempeña como actriz profesional, docente de la matera de actuación en el International School of Querétaro y promotora grupo de teatro Barón Negro: laboratorio escénico.</span></p>
+                    </div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo marianavega"></div>
 					<div class="name">MARIANA VEGA</div>	
-					<div class="posicion">Actríz</div>				
+					<div class="posicion">Actríz</div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo roidrigonunez"></div>
 					<div class="name">RODRÍGO NUÑEZ</div>	
-					<div class="posicion">Actor</div>				
+					<div class="posicion">Actor</div>	
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div><div class="person">
 					<div class="photo gabymendoza"></div>
 					<div class="name">GABRIELA MENDOZA CORNEJO</div>	
-					<div class="posicion">Administración general y contable</div>				
+					<div class="posicion">Administración general y contable</div>
+                    <div class="personClose">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
 				</div>
 			</div>
 
@@ -365,7 +1321,7 @@
 					<div class='culturaLogo'>
 						<img src="https://image.ibb.co/bFG8TH/foncabanner.png">
 					</div><div class='copy'>© 2018 ATABAL CREACIÓN ARTÍSTICA AC</div><div class='rs'>
-						<div class='face'><i class="fab fa-facebook-f"></i></div><div class='twi'><i class="fab fa-twitter"></i></div><div class='insta'><i class="fab fa-instagram"></i></div><div class='youtube'><i class="fab fa-youtube"></i></div>
+                <a href="https://www.facebook.com/AtabalAC/" target="_blank"><div class='face'><i class="fab fa-facebook-f"></i></div></a><a href="https://twitter.com/atabal_teatro" target="_blank"><div class='twi'><i class="fab fa-twitter"></i></div></a><a href="https://www.instagram.com/atabal_teatro/" target="_blank"><div class='insta'><i class="fab fa-instagram"></i></div></a><a href="https://www.youtube.com/channel/UCwpRa1JJUlmWenNDRha2hvg/videos" target="_blank"><div class='youtube'><i class="fab fa-youtube"></i></div></a>
 					</div>
 			</div>
 
