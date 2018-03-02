@@ -5,6 +5,69 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
+.activeLi{
+	background-color: #efbf54;
+	box-shadow: 0px 2px 5px 1px rgba(255, 0 ,0, .3);
+	transition: all  .3s ease;
+}
+
+a { color: inherit; 
+    text-decoration: none;} 
+
+.cruzadaClose{
+	opacity: 0;
+}
+
+.activeCruzada .cruzadaClose{
+	display: block;
+	position: fixed;
+	top: 60px;
+	left: 10px;
+	font-size: 30px;
+  cursor: pointer;
+	opacity: 1;
+}
+
+.cruzadaInfo{
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	transition: all .3s ease;
+}
+
+.activeCruzada .cruzadaInfo{
+	transition: all .3s ease;
+	position: fixed;
+	top: 40px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: initial;
+	width: initial;
+	z-index: 11;
+	background-color: #fff;
+	overflow-y: scroll;
+	padding: 60px;
+	text-align: left;
+}
+
+.ct2 button{
+	border: none;
+	border-radius: 40px;
+	width: 50%;
+	padding: 5px 10px 5px 10px;
+	background: #ec5555; 
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: 6px;
+	cursor: pointer;
+}
+
 .cl{
     border: 2px solid #1d1d1d;
     display: inline-block;
@@ -41,6 +104,9 @@ body{
 	line-height: 45px;
 	margin-right: 15px;
 	cursor: pointer;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: all  .3s ease;
 }
 
 h2{
@@ -76,7 +142,7 @@ h2{
 	padding:15px 10px 10px 10px;
 	width:30%;
 	margin:10px 20px 10px 10px;
-	min-width: 200px;
+	min-width: 100px;
 	max-width: 250px;
 	position: relative;
 	display: inline-block;
@@ -460,6 +526,7 @@ h2{
 	position: relative;
 	margin:10px;
     vertical-align: top;
+	margin-bottom: 20px;
 }
 
 .cruzadaImg{
@@ -477,7 +544,7 @@ h2{
 	line-height: 15px;
 	position: relative;
 	padding-top:  10px;
-	padding-bottom:  10px;
+	padding-bottom:  20px;
 	border-top: 1px dashed #1d1d1d;
 }
 
@@ -565,6 +632,8 @@ h2{
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
+	transition: all 0.2s ease;
+	cursor: pointer;
 }
 
 .person:after{
@@ -586,6 +655,7 @@ h2{
 	background-size:cover;
 	background-position: center top;
 	background-repeat: no-repeat;
+	transition: all 0.5s ease;
 }
 
 .name{
@@ -834,6 +904,7 @@ article .time {
 .footer{
 	background-color: #1d1d1d;
 	height: 70px;
+	position: relative;
 }
 
 .footer div{
@@ -918,6 +989,72 @@ article .time {
 	background-color: #e74c3c;
 }
 
+
+
+/*animaciones*/
+.informacion{
+	display: none;
+}
+
+.personClose{
+	display: none;
+}
+
+.activePerson .informacion{
+	display: block;
+}
+
+.activePerson .personClose{
+	display: block;
+	position: fixed;
+	top: 60px;
+	left: 10px;
+	font-size: 30px;
+    cursor: pointer;
+}
+
+.activePerson{
+	position: fixed;
+	top: 40px;
+	right: 0;
+	bottom: 0;
+	left:  0;
+	background-color: #fff;
+	margin-bottom: 0;
+	margin: 0 auto;
+	padding: 10px;
+	z-index: 10;
+	width: calc(98% - 10px);
+	transition: all 0.5s ease;
+	cursor:auto;
+	overflow-y: auto;
+}
+
+
+.activePerson .photo{
+	width: 200px;
+	height: 200px;
+}
+
+.activePerson .informacion{
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.activePerson .name{
+	font-size: 20px;
+}
+
+.activePerson .posicion{
+	font-size: 15px;
+}
+
+.activePerson:after{
+	display: none;
+}
+
+
 @media only screen and (max-width: 968px) {
 	.person{
 		width: 33%;
@@ -946,6 +1083,23 @@ article .time {
 
 
 @media only screen and (max-width: 768px) {
+  
+	.cruzada{
+		width:85% !important;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.ct2 button{
+	   width: 70%;	
+	}
+	
+	.activePerson .informacion{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+
 	.culturaLogo{
 		position: relative !important;
 		margin: 0 auto;
@@ -960,7 +1114,8 @@ article .time {
 
 	.footer .culturalogo{
 		display: block;
-		width:100%;
+		width:80%;
+		margin: 0;
 		text-align:center;
 	}
 
@@ -973,6 +1128,10 @@ article .time {
 		display: inline-block;
 		width: 100%;
 		text-align:center;
+	}
+	
+	.rs{
+		transform: translate(0px);
 	}
 
 	.bars{
@@ -1008,9 +1167,10 @@ article .time {
 	}
 
 	.funcion{
-		width: 100%;
+		width: 80%;
 		max-width: 250px;
 		margin-right: 0;
+		margin-left: 0px;
 	}
 
 	.menu ul{
@@ -1018,5 +1178,3 @@ article .time {
 	}
 
 }
-
-/*animaciones*/
