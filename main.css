@@ -1089,6 +1089,10 @@ article .time {
 		margin-left: 0px;
 		margin-right: 0px;
 	}
+
+	.activeCruzada img{
+		max-width: 100%;
+	}
 	
 	.ct2 button{
 	   width: 70%;	
@@ -1159,7 +1163,7 @@ article .time {
 
 
 	.person{
-		width: 50%;
+		width: 100%;
 	}
 
 	.cruzada{
