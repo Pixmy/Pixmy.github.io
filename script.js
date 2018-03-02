@@ -12,6 +12,49 @@ $( document ).ready(function() {
 			$( ".menuMob" ).hide("fast");
 		}
 	});
+    
+    //click sobre menu para que scroll
+    $('a[href*=\\#]').on('click', function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 1000);
+    });
+    
+    //menu highlight
+    $(".menu ul li").on("click", function(){
+        $(this).addClass("activeLi");
+        setTimeout(function() {
+            $(".menu ul li").removeClass("activeLi");
+        }, 1000, this);                    
+    });
+    
+    $(".menuMob ul li").on("click", function(){
+        $( ".bars svg" ).attr("class","fas fa-bars");
+        $( ".menuMob" ).hide("fast");
+    });
+    
+    //click sobre persona
+    $('.person').on("click", function(){
+        $(this).addClass("activePerson");
+        $('body').attr('style','overflow-y:hidden;');
+    });
+    
+    $('.personClose').on("click", function(event){
+        $('.activePerson').removeClass("activePerson");
+        event.stopPropagation();
+        $('body').removeAttr('style');
+    });
+    
+    //click sobre informacion cruzada
+    $('.ct2 button').on("click", function(){
+        $(this).closest('.cruzada').addClass('activeCruzada');
+        $('body').attr('style','overflow-y:hidden;');
+    });
+    
+    $('.cruzadaClose').on("click", function(event){
+        $('.activeCruzada').removeClass("activeCruzada");
+        event.stopPropagation();
+        $('body').removeAttr('style');
+    });
 
 	//galeria
 	var widthPhoto = $(".principalPhoto img").width();
