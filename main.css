@@ -5,6 +5,70 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
+.radioSection{
+	background-color:#efbf54;
+}
+
+.radioSection .container{
+	background-color:#efbf54;
+}
+
+.container{
+	text-align:center;
+}
+
+#Stage_JBEEB_16{
+	box-shadow: 0px 6px 8px 2px rgba(0,0,0,.2) !important;
+}
+
+.container .row{
+	width: 50%;
+	height: 300px;
+	margin: 0 auto;
+}
+
+#Container_JBEEB_36 div{
+	font-size: 14px !important;
+	height: 20px !important;
+	color: white !important;
+}
+
+#Box_JBEEB_34{
+	background-color: #1d1d1d !important;
+}
+
+#Rube_JBEEB_22{
+	color: white !important;
+}
+
+#Rube_JBEEB_24{
+	color: white !important;
+}
+
+#Rube_JBEEB_25{
+	color: white !important;
+}
+
+.radioSection h2{
+	padding-top: 20px;
+	margin: 0;
+}
+
+.radioSection h4{
+	color: white;
+	margin-top: 0px !important;
+}
+
+.dp{
+	text-decoration: underline;
+}
+
+.radioSection p{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0;
+}
+
 .galleryModal{
 	position: fixed;
 	top: 0;
@@ -1172,6 +1236,16 @@ article .time {
 
 
 @media only screen and (max-width: 768px) {
+
+	.container .row{
+	width: 100% !important;
+	height: 300px;
+	margin: 0 auto;
+	}
+
+	#wdid_JBEEB_15{
+	 width: 90% !important;
+	}
   
 	.cruzada{
 		width:85% !important;
