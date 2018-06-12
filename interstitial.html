@@ -30,7 +30,7 @@
     <script>
       $( document ).ready(function() {
          $('.btn').on('click', function(){
-          var link = $('.link').text();
+          var link = $('.link').val();
           alert(link);
          });
       });
@@ -39,7 +39,7 @@
   <body>
     <div class='cont'>
       <p style='margin-bottom:7px;'><i class="fas fa-link"></i> Please insert link here:</p>
-      <textarea class='link animated fade-in' placeholder='Insert link here' style="box-shadow: 0 4px 5px -2px rgba(0,0,0,.2);resize: none;font-family: 'Nunito', sans-serif;padding: 5px 5px 0px 5px;
+      <textarea rows="1" class='link animated fade-in' placeholder='Insert link here' style="box-shadow: 0 4px 5px -2px rgba(0,0,0,.2);resize: none;font-family: 'Nunito', sans-serif;padding: 5px 5px 0px 5px;
     padding-top: 10px;">
         
       </textarea>
