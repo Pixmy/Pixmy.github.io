@@ -37,10 +37,14 @@
         
          $('.btn').on('click', function(){
           var link = $('.link').val();
+           console.log(link);
            if(link.includes("peer-play") == true){
+             console.log('entro');
              $('.result').addClass('animated zoomIn');
              $('.result').text('http://c.peer-play.com/assets/interstitial/interstitialmock.html?' + link);
            }else if(link.includes("pvb.pvbriefing") == true || link.includes("pvc.pvchallenges") == true || link.includes("pv-express") == true || link.includes("pvu.pvupdates") == true){
+             
+             console.log('entro2');
              $('.result').addClass('animated zoomIn');
              $('.result').text('http://c.peer-direct.com/assets/interstitial/interstitialmock.html?' + link);       
            }
