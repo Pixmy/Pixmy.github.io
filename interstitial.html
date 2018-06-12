@@ -47,19 +47,19 @@
           var link = $('.link').val();
            if(link.includes("peer-play") == true){
              $('.result').addClass('animated zoomIn display');
-             $('.result').text('http://c.peer-play.com/assets/interstitial/interstitialmock.html?' + link);
+             $('.result').html('http://c.peer-play.com/assets/interstitial/interstitialmock.html?' + link + '<div class="copy" style=" position: absolute; top: 0; right: 0; background-color: #34495e; color: white; padding: 10px; height: calc(100% - 20px); width: 4.5%; text-align: center; font-size: 18px;"><i class="fas fa-clipboard"></i></div>');
              $('.btn').text("done!");
            }else if(link.includes("pvb.pvbriefing") == true || link.includes("pvc.pvchallenges") == true || link.includes("pv-express") == true || link.includes("pvu.pvupdates") == true){
              $('.result').addClass('animated zoomIn display');
-             $('.result').text('http://c.peer-direct.com/assets/interstitial/interstitialmock.html?' + link);
+             $('.result').html('http://c.peer-direct.com/assets/interstitial/interstitialmock.html?' + link + '<div class="copy" style=" position: absolute; top: 0; right: 0; background-color: #34495e; color: white; padding: 10px; height: calc(100% - 20px); width: 4.5%; text-align: center; font-size: 18px;"><i class="fas fa-clipboard"></i></div>');
              $('.btn').text("done!");       
            } else if(link.includes("mdminute-usa") == true){
              $('.result').addClass('animated zoomIn display');
-             $('.result').text('http://c.mdminute-usa.com/assets/interstitial/interstitialmock.html?' + link);
+             $('.result').html('http://c.mdminute-usa.com/assets/interstitial/interstitialmock.html?' + link + '<div class="copy" style=" position: absolute; top: 0; right: 0; background-color: #34495e; color: white; padding: 10px; height: calc(100% - 20px); width: 4.5%; text-align: center; font-size: 18px;"><i class="fas fa-clipboard"></i></div>');
              $('.btn').text("done!");
            }else if(link.includes("patient-consult") == true){
              $('.result').addClass('animated zoomIn display');
-             $('.result').text('http://c.patient-consult.com/assets/interstitial/interstitialmock.html?' + link);
+             $('.result').html('http://c.patient-consult.com/assets/interstitial/interstitialmock.html?' + link + '<div class="copy" style=" position: absolute; top: 0; right: 0; background-color: #34495e; color: white; padding: 10px; height: calc(100% - 20px); width: 4.5%; text-align: center; font-size: 18px;"><i class="fas fa-clipboard"></i></div>');
              $('.btn').text("done!");
            }
          });
