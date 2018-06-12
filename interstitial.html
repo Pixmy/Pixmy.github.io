@@ -29,8 +29,8 @@
     
     <script>
       $( document ).ready(function() {
-         $(button).on('click', function(){
-          var link = $(textarea).text();
+         $('.btn').on('click', function(){
+          var link = $('.link').text();
           alert(link);
          });
       });
@@ -43,7 +43,7 @@
     padding-top: 10px;">
         
       </textarea>
-      <button style='margin-top: 10px;padding: 10px;background-color: #3498db;color: white;font-weight: bold;float: right;border: none;font-size: 13px;cursor: pointer;'><i class="fas fa-hand-holding-heart"></i> Create link</button>
+      <button class='btn' style='margin-top: 10px;padding: 10px;background-color: #3498db;color: white;font-weight: bold;float: right;border: none;font-size: 13px;cursor: pointer;'><i class="fas fa-hand-holding-heart"></i> Create link</button>
       <div class='result'>
 
       </div>
