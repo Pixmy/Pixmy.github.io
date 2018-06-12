@@ -1,16 +1,38 @@
 <html>
   <head>
     <title>Interstitial Links</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:700" rel="stylesheet">
+    
     <style>
+      body{
+      font-family: 'Titillium Web', sans-serif;
+      }
       
+      textarea{
+        width:100%;
+      }
+      
+      .cont{
+        width: 50%;
+        margin: auto;
+        position: absolute;
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+      }
     </style>
   </head>
   <body>
-    <textarea class='link' placeholder='Insert link here'>
-      
-    </textarea>
-    <div class='result'>
-    
+    <div class='cont'>
+      <p style='margin-bottom:0;'><i class="fas fa-link"></i> Please insert link here:</p>
+      <textarea class='link' placeholder='Insert link here' style="resize: none;">
+
+      </textarea>
+      <div class='result'>
+
+      </div>
     </div>
   </body>
 </html>
