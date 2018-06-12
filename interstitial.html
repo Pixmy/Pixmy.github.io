@@ -65,17 +65,6 @@
            }
          });
         
-        $('.result').on('click', '.copy', function(){
-          myFunction();
-          alert('Link is now on your clipboard!');
-         });
-        
-        function myFunction() {
-          var copyText = $('.result').val();
-          copyText.select();
-          document.execCommand("copy");
-        }
-        
       });
     </script>
   </head>
