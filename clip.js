@@ -1,4 +1,4 @@
-import ClipboardAction from './clipboard-action';
+import ClipboardAction from 'https://pixmy.github.io/clip-action.js';
 import Emitter from 'tiny-emitter';
 import listen from 'good-listener';
 
