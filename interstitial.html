@@ -25,17 +25,24 @@
         -ms-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
       }
+      
+      
     </style>
     
     <script>
       $( document ).ready(function() {
          $('.link').text("");
-         $('.link').val("");
+         $('.link').val(""); 
+         $('.result').hide();
         
          $('.btn').on('click', function(){
           var link = $('.link').val();
            if(link.includes("peer-play") == true){
+             $('.result').addClass('animated zoomIn');
              $('.result').text('http://c.peer-play.com/assets/interstitial/interstitialmock.html?' + link);
+           }else if(link.includes("pvb.pvbriefing") == true || link.includes("pvc.pvchallenges") == true || link.includes("pv-express") == true || link.includes("pvu.pvupdates") == true){
+             $('.result').addClass('animated zoomIn');
+             $('.result').text('http://c.peer-direct.com/assets/interstitial/interstitialmock.html?' + link);       
            }
          });
       });
@@ -44,7 +51,7 @@
   <body>
     <div class='cont'>
       <p style='margin-bottom:7px;'><i class="fas fa-link"></i> Please insert link here:</p>
-      <textarea rows="1" class='link animated fade-in' placeholder='Insert link here' style="box-shadow: 0 4px 5px -2px rgba(0,0,0,.2);resize: none;font-family: 'Nunito', sans-serif;padding: 5px 5px 8px 5px;
+      <textarea rows="1" class='link animated fadeIn' placeholder='Insert link here' style="box-shadow: 0 4px 5px -2px rgba(0,0,0,.2);resize: none;font-family: 'Nunito', sans-serif;padding: 5px 5px 8px 5px;
     padding-top: 10px;">
         
       </textarea>
