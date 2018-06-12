@@ -29,9 +29,12 @@
     
     <script>
       $( document ).ready(function() {
+         $('.link').text("");
          $('.btn').on('click', function(){
           var link = $('.link').val();
-          alert(link);
+           if(link.includes("peer-play") == true){
+             alert('simon');
+           }
          });
       });
     </script>
