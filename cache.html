@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard-js@0.3.6/clipboard.js"></script>
     
+    
     <style>
       body{
       font-family: 'Titillium Web', sans-serif;
@@ -45,6 +46,10 @@
          $('.link').val(""); 
         
          $('.btn').on('click', function(){
+           var link = $('.link').val();
+            $('.result').addClass('animated zoomIn display');
+             $('.result').html(link + '#' + Date.now());
+             $('.btn').html("<i class='far fa-check-circle'></i> done!");
           
          });
         
