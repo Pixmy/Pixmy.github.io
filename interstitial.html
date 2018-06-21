@@ -50,22 +50,27 @@
              $('.result').addClass('animated zoomIn display');
              $('.result').html('http://c.peer-play.com/assets/interstitial/interstitialmock.html?' + link);
              
-             $('.btn').text("done!");
+             $('.btn').html("<i class='far fa-check-circle'></i> done!");
            }else if(link.includes("pvb.pvbriefing") == true || link.includes("pvc.pvchallenges") == true || link.includes("pv-express") == true || link.includes("pvu.pvupdates") == true || link.includes("rxroundup") == true){
              $('.result').addClass('animated zoomIn display');
              $('.result').html('http://c.peer-direct.com/assets/interstitial/interstitialmock.html?' + link);
              
-             $('.btn').text("done!");       
+             $('.btn').html("<i class='far fa-check-circle'></i> done!");
            } else if(link.includes("mdminute-usa") == true){
              $('.result').addClass('animated zoomIn display');
              $('.result').html('http://c.mdminute-usa.com/assets/interstitial/interstitialmock.html?' + link);
              v
-             $('.btn').text("done!");
+             $('.btn').html("<i class='far fa-check-circle'></i> done!");
            }else if(link.includes("patient-consult") == true){
              $('.result').addClass('animated zoomIn display');
              $('.result').html('http://c.patient-consult.com/assets/interstitial/interstitialmock.html?' + link);
              
-             $('.btn').text("done!");
+             $('.btn').html("<i class='far fa-check-circle'></i> done!");
+           }else if(link.includes("dgnotabene") == true){
+             $('.result').addClass('animated zoomIn display');
+             $('.result').html(' http://c.dgnotabene.com/assets/interstitial/interstitialmock.html?' + link);
+             
+             $('.btn').html("<i class='far fa-check-circle'></i> done!");
            }
          });
         
