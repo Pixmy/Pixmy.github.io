@@ -107,7 +107,7 @@ background:url('http://www.cssawds.com/ribbons/brand-award-right.png') no-repeat
 	z-index: 999;
 	background-color: #2ecc71;
 	border-radius: 10px;
-	padding: 1em;
+	padding: .6em;
 	color: white;
 	font-size: calc(0.75em + .5vmin);
   font-family: 'Raleway', sans-serif !important;
@@ -497,6 +497,7 @@ p{
 		left: 0;
 		right: 0;
 		border-radius: 0;
+		transform: translateX(-30px);
 	}
 	
 	.habilidad{
