@@ -1,1 +1,412 @@
-body{}
+estilos.css
+Details
+Activity
+No recorded activity
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ecf0f1;
+}
+
+.top-bar {
+    height: 40px;
+    background-color: #2d2d2d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    width: 100%;
+    height: calc(100% - 40px);
+    position: absolute;
+    top: 40px;
+}
+
+.menu {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, .3);
+    z-index: 50;
+    position:  relative;
+     background-color: white;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.menu ul li {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.menu ul li:hover {
+    background-color: #2ecc71;
+    color: white;
+    transition: all .2s ease;
+}
+
+.active {
+    background-color: #2ecc71;
+    color: white;
+    transition: all .2s ease;
+}
+
+.usr-name {
+    color: white;
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+    top: 10px
+}
+
+.window {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ecf0f1;
+    height: 100%;
+    width: 80%;
+    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    padding: 10px;
+}
+
+.usuarios content {
+    max-width: 450px;
+    height: auto;
+    background-color: #EFEFEF;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+
+.form__top {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__top h2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form__top span{
+    
+}
+
+h2 span {
+    color: #2ecc71;
+}
+
+
+.form_reg {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn_form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.input,
+.btn_submit,
+.btn_reset {
+    background-color: #EFEFEF;
+    padding: .5rem;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: solid #C8C8C8 .2rem;
+    transition: all .5s;
+}
+
+.input::after focus {
+    border-bottom: solid #F39B53 .2rem;
+}
+
+.btn_submit,
+.btn_reset {
+    width: 40%;
+    border-bottom: none;
+    background-color: #1abc9c;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_reset {
+    background-color: #e74c3c;
+}
+
+.btn_submit:hover {
+    background-color: #16a085;
+}
+
+.btn_reset:hover {
+    background-color: #c0392b;
+}
+
+/*Modal*/
+
+.modal {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 15px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: none;
+    z-index: 20;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.modal-delete {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 15px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: none;
+    z-index: 20;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.modal-modificar {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 15px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: none;
+    z-index: 20;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.modal-background {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+    overflow-y:  auto;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.cerrar-modal i:hover{
+    color: #e74c3c !important;
+    border-radius: 5px;
+    color:white;
+}
+
+.tabla-forma{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+.tabla-forma tr:first-child{
+    background-color: #2ecc71;
+    color: white;
+    font-size: 16px;
+}
+
+.tabla-forma th{
+    padding: 4px 0px;
+}
+
+.tabla-forma td{
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+}
+
+table tr:hover{
+    background: #2ecc71;
+    cursor: pointer;
+}
+
+table tr .activado{
+     background: #2ecc71;
+    color: #fff;
+}
+
+th .ocultar{
+    display: none!important;
+    
+}
+
+.seleccionado td{
+    background-color:#09200e;
+    color: #fff;
+}
+
+.boton{
+    padding: 8px 20px;
+    margin: 0 0 15px;
+    transition: all .2s ease; 
+    cursor: pointer;
+    margin-left:10px;
+}
+
+.boton:hover{
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,.2);
+}
+
+.boton-registrar{
+    border: 3px solid #1abc9c;
+    background-color: rgba(0,0,0,0);
+    color: #1abc9c;
+}
+
+.registrar:hover{
+    background-color: #1abc9c;
+    transform: scale(1.05);
+    color: white;
+    transition: all .2s ease;
+}
+
+.boton-modificar{
+    border: 3px solid #f1c40f;
+    background-color: rgba(0,0,0,0);
+    color: #f1c40f;
+}
+
+.boton-modificar:hover{
+    background-color: #f1c40f;
+    color:white;
+    transition: all .2s ease;
+    transform: scale(1.05);
+}
+
+.boton-eliminar{
+    border: 3px solid #e74c3c;
+    background-color: rgba(0,0,0,0);
+    color: #e74c3c;
+}
+
+.boton-eliminar:hover{
+    background-color: #e74c3c;
+    color:white;
+    transition: all .2s ease;
+    transform: scale(1.05);
+}
+
+.hide{
+    display: none!important;
+}
+
+
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.login-box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    
+}
+
+.login-box h1{
+  margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff; 
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    
+}
+
+.login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.login-box a:hover{
+    color: #fff;
+}
