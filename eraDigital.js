@@ -1,8 +1,3 @@
-interface.js
-Details
-Activity
-Loading...
-
 
 $(document).ready(function(){
    
