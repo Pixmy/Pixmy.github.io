@@ -1,0 +1,507 @@
+{
+    "base": [
+        "MDCbase"
+    ],
+    "metatada": {
+        "mainTitle": "MD Chat – Jardiance® (empagliflozin)"
+    },
+    "variables": {
+        "config:track:menu": {
+            "track": {
+                "objectid": "1",
+                "type": "external/menu",
+                "custom": "Prescribing Information [menu]"
+            }
+        },
+        "page:default": {
+            "title": "MD Chat – Jardiance® (empagliflozin)"
+        }
+    },
+    "configuration": {
+        "colorSet": {
+            "dark": "666",
+            "teal": "58ccc9",
+            "grey": "e1e5e3",
+            "blue": "58a6dc",
+            "white": "ffffff",
+            "light-blue": "528cbf",
+            "b-blue": "4bacc6",
+            "primary": "E1ECF9",
+            "secondary": "008c7d",
+            "third" : "ffc908"
+       },
+        "classes": {
+            "contentBody": "grey-color-bg",
+            "contentWrapper": "white-color-bg"
+        },
+        "login": {
+            "enabled": false,
+            "username": "some_user_name",
+            "password": "some_complicated_password"
+        },
+        "includes": {
+            "stylesheets": [
+                "https://c.mdchat-usa.com/programs/130201165/css/general10.css"
+            ]
+        },
+        "manifest": {
+            "pages": [
+                "casey"
+            ],
+            "setup": {
+                "first": "casey"
+            }
+        }
+    },
+    "features": {
+        "isi": {
+            "class": "white-color-bg dark-grey-color-font",
+            "logo": "",
+            "text": "<p id='lesponsor'></p>",
+            "position": "top",
+            "scroll": false,
+            "scrollOnce": false,
+            "layout": "bottom",
+            "height": "22%",
+            "disclaimer": "<div class='b1'><h4>IMPORTANT SAFETY INFORMATION for JARDIANCE<sup>&reg;</sup> (empagliflozin) tablets</h4></div><div class='b2'><h4>INDICATIONS AND LIMITATIONS OF USE</h4><p>JARDIANCE is indicated to reduce the risk of cardiovascular (CV) death in adults with type 2 diabetes mellitus and established CV disease.</p><p>JARDIANCE is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.</p><p>JARDIANCE is not recommended for patients with type 1 diabetes or for the treatment of diabetic ketoacidosis.</p><div class='b2'><h4>IMPORTANT SAFETY INFORMATION</h4><p><span>CONTRAINDICATIONS:</span> History of serious hypersensitivity to empagliflozin or any of the excipients in JARDIANCE; severe renal impairment, end-stage renal disease, or dialysis.</p><h4>WARNINGS AND PRECAUTIONS</h4><p><b>Hypotension:</b> Empagliflozin causes intravascular volume contraction and symptomatic hypotension may occur. Before initiating JARDIANCE, assess and correct volume status in the elderly, and in patients with renal impairment, low systolic blood pressure, or on diuretics. Monitor for hypotension.</p><p><b>Ketoacidosis:</b> Ketoacidosis, a serious life-threatening condition requiring urgent hospitalization, has been identified in patients with type 1 and type 2 diabetes mellitus receiving SGLT2 inhibitors, including empagliflozin. Fatal cases of ketoacidosis have been reported in patients taking empagliflozin. Patients who present with signs and symptoms of metabolic acidosis should be assessed for ketoacidosis, even if blood glucose levels are less than <nobr>250 mg/dL.</nobr> If suspected, discontinue JARDIANCE, evaluate, and treat promptly. Before initiating JARDIANCE, consider risk factors for ketoacidosis. Patients may require monitoring and temporary discontinuation in situations known to predispose to ketoacidosis.</p><p><b>Acute Kidney Injury and Impairment in Renal Function: </b>Empagliflozin causes intravascular volume contraction and can cause renal impairment. Acute kidney injury requiring hospitalization and dialysis have been identified in patients taking SGLT2 inhibitors, including empagliflozin; some reports involved patients younger than 65 years of age. Before initiating JARDIANCE, consider factors that may predispose patients to acute kidney injury. Consider temporary discontinuation in settings of reduced oral intake or fluid losses. Monitor patients for signs and symptoms of acute kidney injury. If it occurs, discontinue JARDIANCE and treat promptly.</p><p>Empagliflozin increases serum creatinine and decreases eGFR. Patients with hypovolemia may be more susceptible to these changes. Before initiating JARDIANCE, evaluate renal function and monitor thereafter. More frequent monitoring is recommended in patients with eGFR <nobr>&lt;60 mL/min/1.73 m<sup>2</sup>.</nobr> Discontinue JARDIANCE in patients with a persistent <nobr>eGFR &lt;45 mL/min/1.73 m<sup>2</sup>.</nobr></p><p><b>Urosepsis and Pyelonephritis:</b> Serious urinary tract infections including urosepsis and pyelonephritis requiring hospitalization have been identified in patients receiving SGLT2 inhibitors, including empagliflozin. Treatment with SGLT2 inhibitors increases the risk for urinary tract infections. Evaluate for signs and symptoms of urinary tract infections and treat promptly.</p><p><b>Hypoglycemia:</b> The use of JARDIANCE in combination with insulin or insulin secretagogues can increase the risk of hypoglycemia. A lower dose of insulin or the insulin secretagogue may be required.</p><p><b>Genital Mycotic Infections:</b> Empagliflozin increases the risk for genital mycotic infections, especially in patients with prior infections. Monitor and treat as appropriate.</p><p><b>Hypersensitivity Reactions:</b> Discontinue JARDIANCE, treat promptly, and monitor until signs and symptoms resolve.</p><p><b>Increased Low-Density Lipoprotein Cholesterol (LDL-C):</b> Monitor and treat as appropriate.</p><p><span style='color: #008c7d; font-weight: bold;'>MOST COMMON ADVERSE REACTIONS (&ge;5%):</span>Urinary tract infections and female genital mycotic infections.</p><p><span style='color: #008c7d; font-weight: bold;'>DRUG INTERACTIONS:</span> Coadministration with diuretics may enhance the potential for volume depletion.</p><span style='color: #008c7d; font-weight: bold;'>USE IN SPECIAL POPULATIONS</span><br><p><b>Pregnancy:</b> JARDIANCE is not recommended, especially during the second and third trimesters.</p><p><b>Lactation:</b> JARDIANCE is not recommended while breastfeeding.</p><p><b>Geriatric Use:</b> JARDIANCE is expected to have diminished efficacy in elderly patients with renal impairment. Renal function should be assessed more frequently in elderly patients. The incidence of volume depletion-related adverse reactions and urinary tract infections increased in patients &ge;75 years treated with empagliflozin.</p></div><p style='text-align:right;'>CL-JAR-100004 12.19.17</p><p><b>Please see JARDIANCE <a href='http://docs.boehringer-ingelheim.com/Prescribing%20Information/PIs/Jardiance/jardiance.pdf'  target='_blank' style='color:#333;'><u>Prescribing Information</u></a>, including <a href='http://docs.boehringer-ingelheim.com/Prescribing%20Information/PIs/Jardiance/Patient%20Info/Jardiance%20Patient%20Information.pdf?DMW_FORMAT=pdf' target='_blank' style='color:#333;'><u>Patient Information</u></a>.</b></p><p><br><p>Intended for healthcare professionals of the United States of America only.</p><p><img style='max-width:150px; margin-bottom: 10px;' src='https://c.mdminute-usa.com/programs/130201107/img/logo.png'></p><p This program is sponsored by Boehringer Ingelheim Pharmaceuticals, Inc.<br><p style='margin-bottom:0;'><strong>This program is sponsored by Boehringer Ingelheim Pharmaceuticals, Inc.</strong></p>PC-US-105756<br><br>&copy;2018 Boehringer Ingelheim Pharmaceuticals, Inc. All rights reserved.",
+            "jobcode": "jobCode"
+        },
+        "menu": [
+            {
+                "label": "Prescribing Information",
+                "type": "external",
+                "link": "http://docs.boehringer-ingelheim.com/Prescribing%20Information/PIs/Jardiance/jardiance.pdf",
+                "use": [
+                    "config:track:menu"
+                ]
+            },
+            {
+                "label": "Patient Information",
+                "type": "external",
+                "link": "http://docs.boehringer-ingelheim.com/Prescribing%20Information/PIs/Jardiance/Patient%20Info/Jardiance%20Patient%20Information.pdf?DMW_FORMAT=pdf",
+                "use":[
+                    "config:track:menu"
+                ]
+            },
+            {
+                "label": "References",
+                "type": "modal",
+                "html": "<div class='references-list'><h1>References</h1><p>Angelantonio DE, Kaptoge S, Wormser D, et al; Emerging Risk Factors Collaboration. <i>JAMA</i>. 2015;314(1):52-60</p><p>Data on file. Boehringer Ingelheim Pharmaceuticals, Inc.</p><p>Zinman B, Wanner C, Lachin JM, et al; EMPA-REG OUTCOME Investigators. <i>N Engl J Med</i>. 2015;373(22):2117-2128.</p></div>"
+            },
+            {
+            "label": "Privacy Policy",
+            "type": "external",
+            "link": "https://mdchat-usa.com/privacy"
+            },
+            {
+                "label": "Contact Us",
+                "type": "modal",
+                "html": "<h1>Contact Us</h1><p><p class='normal'>NuMedis Publishing<br>1140 Avenue of the Americas, 14th Floor, Suite C<br>New York, NY 10036<br><a href='mailto:info@mdchat-usa.com' style='text-decoration:none; color:#337ab7 !important' target='_blank'>info@mdchat-usa.com</a></p>"
+            }
+        ],
+        "navigation": {
+            "type": "headline",
+            "displayProgressBar": false,
+            "classes": {
+                "menu": "grey-color-font test",
+                "hover": "dark-grey-color-font light-grey-color-bg",
+                "progress": "b-blue-color-bg",
+                "handle": "white-color-border"
+            },
+            "controls": {
+                "menu": true,
+                "prev": true,
+                "next": true,
+                "pause": false,
+                "nextLabel": "NEXT"
+            }
+        },
+        "autonext": {
+            "enabled": false,
+            "delay": 0
+        },
+        "reference": {
+            "1": {
+                "content": "Angelantonio DE, Kaptoge S, Wormser D, et al; Emerging Risk Factors Collaboration. <i>JAMA</i>. 2015;314(1):52-60"
+            },
+            "2": {
+                "content": "Data on file. Boehringer Ingelheim Pharmaceuticals, Inc."
+            },
+            "3": {
+                "content": "Zinman B, Wanner C, Lachin JM, et al; EMPA-REG OUTCOME Investigators. <i>N Engl J Med</i>. 2015;373(22):2117-2128."
+            },
+            "f1": {
+                "content": "<img style='width:100%' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/rrrv2.png'/>"
+            },
+            "f2": {
+                "content": "<img style='width:100%' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/rrrv2.png'/>"
+            },
+            "f3": {
+                "content": "<img style='width:100%' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/rrrv2.png'/>"
+            },
+            "f4": {
+                "content": "<img style='width:100%' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section1B_Table1.png'/>"
+            },
+            "f5": {
+                "content": "<img style='width:100%' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section1B_Table2.png'/>"
+            },
+            "f6": {
+                "content": "<img style='width:100%' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section1B_Table3.png'/>"
+            },
+            "f12": {
+                "content": "<img style='width:100%' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section3D_Table1.png'/>"
+            },
+            "referenceAll": {
+                "all": false
+            }
+        }
+    },
+    "pages": {
+        "casey": {
+            "use": [
+                "page:default"
+            ],
+            "features": {
+                "autonext": {
+                    "disabled": true
+                }
+            },
+            "sections": [
+                {
+                    "template": "MecBot",
+                    "mecbotChat": {
+                        "chat": [
+                            {
+                                "id": 0,
+                                "objective": "obj1",
+                                "answer": [
+                                    "<img class='avatar' style='width: 30px; position:absolute;' src='https://c.mdchat-usa.com/assets/images/edels/casey_1.gif'/><div style='margin-left:40px;'>Hello, I’m Casey. I’m here to help you discover how you can fight CV death now more than ever.</div>",
+                                    "Did you know that, despite all you do, adults with a previous CV event and type 2 diabetes may have their lives cut short by more than 12 years (based on patients ~60 years <nobr>of age)? <reference id='1'> [ANGELANTONIO]</reference></nobr>",
+                                    "JARDIANCE<sup>&reg;</sup> (empagliflozin) tablets can help.",
+                                    "Would you like to learn more about JARDIANCE for adults with established CV disease and type 2 diabetes? Choose a topic to start."
+                                ],
+                                "suggest": [
+                                    100,
+                                    200,
+                                    300,
+                                    400,
+                                    5
+                                ]
+                            },
+                            {
+                                "id": 100,
+                                "title": "Efficacy",
+                                "objective": "obj1",
+                                "prompt": [
+								    "I’d like to learn about the efficacy of JARDIANCE in adults with established CV disease <nobr>and type 2 diabetes.</nobr>"
+								],
+                                "answer": [
+                                    "I can show you results from the <nobr>EMPA-REG</nobr> OUTCOME trial.",
+                                    "What efficacy topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    101,
+                                    102,
+                                    103,
+                                    104,
+                                    105
+                                ]
+                            },
+                            {
+                                "id": 101,
+                                "title": "RRR in CV Death",
+                                "objective": "obj1",
+                                "prompt": [
+								    "By how much did JARDIANCE reduce the risk of CV death in the <nobr>EMPA-REG trial?</nobr>"
+								],
+                                "answer": [
+                                    "For adults with Type 2 Diabetes and established CV disease, you can prescribe JARDIANCE to reduce the risk of CV death in your patients.",
+                                    "These results were achieved on top of standard of care and were consistent for the two JARDIANCE dosing strengths.",
+                                    "<div class='markup'><div style='position:relative;'><reference id='f1' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img class='p-centerimg' style='width: 100%; max-width: 390px;' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section1A_Graph_V2.png'/></div></div></div><div style='background-color:#ecf0f1;width:100%;max-width:390px;padding: 10px 0px 0px 0px;'><p style='text-align:center;'><strong style='font-size:18px;'>Absolute rates for CV death</strong><br>5.9% placebo VS 3.7% JARDIANCE</p><div style='text-align:Center;'><div style='position:relative;display:inline-block;vertical-align: text-bottom;'><reference id='f2' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img class='p-centerimg' style='width: 100%; max-width: 390px;width:50px;display:inline-block;transform: translate(-10px);' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section1A_arrow.png'/></div><span style='font-size:45px;color:#008c7d;'><strong>2.2%</strong></span><p style='text-align: center;color: #008c7d;font-size: 16px !important;font-weight: bold;transform: translateY(-5px);margin-bottom:0;'>ABSOLUTE RISK REDUCTION</p></div></div></div><div style='position:relative;'><reference id='f3' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img class='p-centerimg' style='width: 100%; max-width: 390px;' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section1A_Table2.png'/></div></div><br><p><strong>JARDIANCE demonstrated a 14% RRR for the primary composite endpoint</strong> (HR=0.86 [95% CI: 0.74-0.99]; p=0.04)<ul style='padding-left:16px!important;'><li>The absolute risk reduction for the composite endpoint was 1.6%</li><li>There was no change in risk of nonfatal MI (HR=0.87 [95% CI: 0.70-1.09]) or nonfatal stroke (HR=1.24 [95% CI: 0.92-1.67]); the 14% RRR in CV events was due to a reduction in the risk of CV death (HR=0.62 [95% CI: 0.49-0.77])</li></ul></p><div style='font-size:12px;position:absolute;transform:translate(-6px);'>*</div><p class='p-footnote' style='font-size:12px!important;'>Pooled data from JARDIANCE <nobr>10 mg</nobr> and JARDIANCE <nobr>25 mg</nobr>; similar magnitude of reduction was shown with both doses. <br>CI=confidence interval; CV=cardiovascular; HR=hazard ratio; MI=myocardial infarction; RRR=relative risk reduction.</p>",
+                                    "What other efficacy topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    101,
+                                    102,
+                                    103,
+                                    104,
+                                    105
+                                ]
+                            },
+                            {
+                                "id": 102,
+                                "title": "Subgroup Analyses",
+                                "objective": "obj1",
+                                "prompt": [
+								    "I’d like to see how the EMPA-REG trial results applied across different subgroups <nobr>in the study.</nobr>"
+								],
+                                "answer": [
+                                    "Okay. For adults with established CV disease and Type 2 Diabetes, reduced risk was observed in patients with different types of established CV disease and T2D.<reference id='2'> [DOF]</reference>*",
+                                    "<div style='padding:5px;display: inline-block;margin-bottom: 15px;'><div style='font-size:14px;background-color:#4B3232;color:white;padding:7px;width:100%;max-width:390px;text-align:center;'><strong>POST-HOC ANALYSIS: REDUCTION IN RISK OF CV DEATH ACROSS CVD SUBGROUPS</strong></div><table style='border-collapse:collapse;width:100%;max-width:390px;'> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;font-size:14px;'>PERIPHERAL ARTERY DISEASE</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;font-size:14px;'>CORONARY ARTERY DISEASE</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;font-size:14px;'>HISTORY OF MI</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;font-size:14px;'>HISTORY OF STROKE</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr></table></div><br><p class='p-footnote' style='font-size:12px!important;'><b>Post-hoc Analysis:</b> CV death was analyzed in subgroups by type of CV disease at baseline. Differences between treatment groups were assessed usingCox regression analysis in patients treated with &ge;1 dose of study drug. The <nobr>post-hoc</nobr> analysis was not designed to determine statistical significance.</p><p class='p-footnote' style='font-size:12px!important;'><b>Rate of CV death (%) across CVD subgroups:</b> All values depict JARDIANCE vs placebo, respectively. With PAD, 4.5 vs 7.5; without, 3.5 vs 5.5. With CAD, 3.7 vs 5.8; without, 3.8 vs 5.9. With history of MI, 4.6 vs 7.6; without, 2.8 vs 4.4. With history of stroke, 4.3 vs 8.0; without, 3.5 vs 5.2.</p><div style='font-size:12px;position:absolute;transform:translate(-6px);'>*</div><p class='p-footnote' style='font-size:12px!important;margin-bottom:0;'>Established CV disease consisted of peripheral artery disease, coronary artery disease, or a history of MI or <nobr>stroke.<reference id='3'> [ZINMAN]</reference></nobr></p><p style='font-size:12px!important;'>CAD=coronary artery disease; CVD=cardiovascular disease; PAD=peripheral artery disease; T2D=type 2 diabetes.</p>",
+                                    "Also, JARDIANCE demonstrated consistent reductions in CV death across A1C <nobr>subgroups<reference id='2'> [DOF]</reference><sup>&dagger;</sup></nobr>",
+                                    "<div style='padding:5px;display: inline-block;margin-bottom: 15px;'><div style='color:#4B3232;padding:7px;width:100%;max-width:390px;font-size:14px;'><strong>A1C AT BASELINE</strong></div><table style='border-collapse:collapse;width:100%;max-width:390px;'> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;width:200px;'>&#60;7.0%</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;width:200px;'>7.0% &ndash; &#60;8.0%</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;width:200px;'>8.0 &ndash; &#60;7.0%</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;width:200px;'>&ge;9.0%</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr></table><div style='color:#4B3232;padding:7px;width:100%;max-width:390px;font-size:14px;margin-top:15px;'><strong>A1C CHANCE FROM BASELINE</strong></div><table style='border-collapse:collapse;width:100%;max-width:390px;'> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;width:200px;'>Reduction of &ge;0.3%</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr> <tr> <td style='border-bottom:1px solid #4B3232;padding:10px;width:200px;'>Reduction of &ge;0.3%<br>or increase</td> <td style='border-bottom:1px solid #4B3232;padding:10px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/checkv2.png' style='width:32px;margin-left:40px;'></td> </tr></table></div><p class='p-footnote' style='font-size:12px!important;'><b>Post-hoc Analysis:</b> Risk of CV death was analyzed in the placebo and pooled JARDIANCE groups according to baseline A1C and change in A1C from baseline to the last value in the trial. A Cox proportional hazards model was used to assess the differences between the treatment groups. The <nobr>post-hoc</nobr> analysis was not designed to determine statistical significance.<br><br><strong>Rate of CV death (%) across A1C subgroups:</strong> All values depict JARDIANCE vs placebo, respectively. &lt;7.0%: 2.4 (N=297) vs 7.9 (N=127); 7.0%–&lt;8.0%: 3.7 (N=2042) vs 6.1 (N=1029); 8.0%–&lt;9.0%: 3.7 (N=1534) vs 5.4 (N=795); &ge;9.0%: 4.2 (N=812) vs 5.5 (N=382).</p><div style='font-size:12px;position:absolute;transform:translate(-6px);'><sup>&dagger;</div><p class='p-footnote' style='font-size:12px!important;margin-bottom:0;'>A pre-specified analysis included subgroups of patients with A1C &#60;8.5% and ≥8.5%.<reference id='3'> [ZINMAN]</reference></p>",
+                                    "What other efficacy topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    101,
+                                    102,
+                                    103,
+                                    104,
+                                    105
+                                ]
+                            },
+                            {
+                                "id": 103,
+                                "title": "Study Design",
+                                "objective": "obj1",
+                                "prompt": [
+								    "How was the EMPA-REG OUTCOMES <nobr>trial designed?</nobr>"
+								],
+                                "answer": [
+                                    "Here is the EMPA-REG OUTCOME trial as published in <i>The New England Journal of Medicine</i><reference id='3'> [ZINMAN]</reference>:",
+
+                                    "<div style='text-align: center;padding: 10px;'><div style='position:relative;'><reference id='f6' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img class='p-centerimg' style='width: 100%; max-width: 390px;margin-bottom: 10px;width: 50px;' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section1C_Icon1.png'/></div><p style='font-size:22px!important;color:#008c7d;text-align:center;margin-bottom:0;'><strong>7020 PATIENTS<br>3.1 YEARS</strong><br><span style='font-size:14px!important;'>(median)<span></p></div><p style='color: #4b3232;font-size: 1.125rem !important;margin-bottom: 0px;text-align: center;padding-bottom: 10px;'><strong>PATIENTS STUDIED HAD:</strong></p><div style='padding:10px;max-width: 400px;'><div style='position:relative;display:inline-block;width:50px;vertical-align:top;'><reference id='f7' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img class='p-centerimg' style='width: 100%; max-width: 390px;margin-bottom: 10px;' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section1C_Icon2.png'/></div><div style='display:inline-block;vertical-align:top;width: calc(100% - 60px);margin-left: 10px;'><p style='font-size:16px!important;color:#008c7d;margin-bottom:0;'><strong>CV DISEASE</strong></p><p style='font-size:14px!important;'>Evidenced by coronary artery disease, peripheral artery disease, or a history of myocardial infarction or stroke</p></div></div><div style='padding:10px;'><div style='position:relative;display:inline-block;width:50px;vertical-align:top;'><reference id='f8' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img class='p-centerimg' style='width: 100%; max-width: 390px;margin-bottom: 10px;' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section1C_Icon3.png'/></div><div style='display:inline-block;vertical-align:top;width: calc(100% - 60px);margin-left: 10px;'><p style='font-size:16px!important;color:#008c7d;margin-bottom:0;'><strong>TYPE 2 DIABETES</strong></p><p style='font-size:14px!important;'>A1C baseline of ≥7%-≤10%</p></div><p style='margin-top:15px;color: #4b3232;font-size: 1.125rem !important;margin-bottom: 0px;text-align: center;padding-bottom: 15px;'><strong>PATIENTS WERE RANDOMIZED TO RECEIVE:</strong></p><p style='font-size:14px!important;text-align: center;'><span style='color: #4b3232;'><strong>Placebo</strong></span> + standard of care <nobr>(N=2333)</nobr></p><p style='font-size:14px!important;text-align: center;'><span style='color: #5fb2a9;'><strong>JARDIANCE 10 mg</strong></span> + standard of care (N=2345)</nobr></p><p style='font-size:14px!important;text-align: center;'><span style='color: #008c7d;'><strong>JARDIANCE 25 mg</strong></span> + standard of care (N=2342)</nobr></p></div>",
+
+                                    "What other efficacy topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    101,
+                                    102,
+                                    103,
+                                    104,
+                                    105
+                                ]
+                            },
+                            {
+                                "id": 104,
+                                "title": "Baseline Characteristics",
+                                "objective": "obj1",
+                                "prompt": [
+								    "What were the baseline characteristics of patients enrolled in the <nobr>EMPA-REG OUTCOME trial?</nobr>"
+								],
+                                "answer": [
+                                    "Here were the baseline characteristics.  Clinical findings were acheived on top of cardiovascular and type 2 diabetes standard of care medications.*",
+                                    "<div style='text-align:center;'><div style='display: inline-block;margin: 0 auto;padding: 5px;margin-bottom: 15px;'><p style='color:#008c7d;'><strong>CARDIOVASCULAR MEDICATIONS</strong></p><table style='border-collapse:collapse;'> <tr> <td style='text-align:center;font-size:14px;border-bottom:1px solid lightgray;border-right:1px solid lightgray;width:150px;padding:10px;'><strong style='color:#008c7d;font-size:28px;'>81<div style='font-size:20px;display:inline-block;vertical-align:top;'>%</div></strong><br>ACEIs/ARBs</td> <td style='text-align:center;font-size:14px;border-bottom:1px solid lightgray;width:150px;padding:10px;'><strong style='color:#008c7d;font-size:28px;'>77<div style='font-size:20px;display:inline-block;vertical-align:top;'>%</div></strong><br>STATINS</td> <tr> <tr> <td style='text-align:center;font-size:14px;border-right:1px solid lightgray;width:150px;padding:10px;'><strong style='color:#008c7d;font-size:28px;'>86<div style='font-size:20px;display:inline-block;vertical-align:top;'>%</div></strong><br>ASPIRIN</td> <td style='text-align:center;font-size:14px;width:150px;padding:10px;'><strong style='color:#008c7d;font-size:28px;'>65<div style='font-size:20px;display:inline-block;vertical-align:top;'>%</div></strong><br>BETA BLOCKERS</td> <tr></table><p style='color:#008c7d;margin-top:15px;'><strong>TYPE 2 DIABETES MEDICATIONS</strong></p><table style='border-collapse:collapse;'> <tr> <td style='font-size:14px;text-align:center;font-size:14px;border-right:1px solid lightgray;width:150px;padding:10px;vertical-align:top;'><strong style='color:#008c7d;font-size:28px;'>74<div style='font-size:20px;display:inline-block;vertical-align:top;'>%</div></strong><br>METFORMIN</td> <td style='font-size:14px;text-align:center;font-size:14px;width:150px;padding:10px;vertical-align:top;'><strong style='color:#008c7d;font-size:28px;'>&#126;70<div style='font-size:20px;display:inline-block;vertical-align:top;'>%</div></strong><br>TWO OR MORE TYPE 2 DIABETES MEDICATIONS</td> <tr></table></div></div><p>Investigators were encouraged to manage CV risk factors and blood glucose by actively adjusting all medications in order to achieve appropriate treatment goals in all treatment groups.</p><div style='font-size:12px;position:absolute;transform:translate(-6px);'>*</div><p class='p-footnote' style='font-size:12px!important;'>Percentages reflect medications taken at baseline. Type 2 diabetes medications were kept stable for the first 12 weeks.  ACEIs=angiotensin-converting enzyme inhibitors; ARBs=angiotensin II receptor blockers; CV=cardiovascular.</p>",
+                                    "What other efficacy topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    101,
+                                    102,
+                                    103,
+                                    104,
+                                    105
+                                ]
+                            },
+                            {
+                                "id": 105,
+                                "title": "Something Else",
+                                "objective": "obj1",
+                                "prompt": [
+								    "I'd like to see another topic."
+								],
+                                "answer": [
+                                    "What else would you like to learn about JARDIANCE for adults with established CV disease and <nobr>type 2 diabetes?</nobr>"
+                                ],
+                                "suggest": [
+                                    100,
+                                    200,
+                                    300,
+                                    400,
+                                    5
+                                ]
+                            },
+                            {
+                                "id": 200,
+                                "title": "Dosing",
+                                "objective": "obj2",
+                                "prompt": [
+								    "Can you show me how JARDIANCE is dosed in adults with established CV disease and <nobr>type 2 diabetes?</nobr>"
+								],
+                                "answer": [
+                                    "Okay. JARDIANCE provides convenient once-daily oral dosing.",
+                                    "<div style='text-align:center;width: 100%;max-width: 390px;padding: 10px;margin: 0 auto;'><div style='position:relative;'><reference id='f9' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img class='p-centerimg' style='width: 100%; max-width: 390px;margin-bottom: 10px;width: 50px;margin-top: 15px;' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section2_Image1.png'/></div><p style='color:#008c7d;'>10 mg</p><p>The recommended dose for JARDIANCE is <strong>10 mg once daily</strong></p></div><div style='text-align:center;width: 100%;max-width: 390px;padding: 10px;margin: 0 auto;'><div style='position:relative;'><reference id='f10' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img class='p-centerimg' style='width: 100%; max-width: 390px;margin-bottom: 10px;width: 70px;' src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section2_Image2.png'/></div><p>JARDIANCE can be taken <strong>with or without food</strong> in the morning</p></div><br><ul class='removeSpace' style='padding-left:16px;'><li><p>In patients with volume depletion, correcting this condition prior to initiation of JARDIANCE is recommended</p></li><li><p>Dosing in patients with renal impairment:</p><ul><li style='list-style-type: none;'><div style='position:absolute;transform:translate(-13px, -2px);'>&ndash;</div><p>Assessment of renal function is recommended prior to initiation of JARDIANCE and periodically thereafter</p></li><li style='list-style-type: none;'><div style='position:absolute;transform:translate(-13px, -2px);'>&ndash;</div><p>Should not be initiated if eGFR is <span><nobr>&lt;45 mL/min/1.73 m<sup>2</sup></nobr></span></p></li><li style='list-style-type: none;'><div style='position:absolute;transform:translate(-13px, -2px);'>&ndash;</div><p>Should be discontinued if eGFR is persistently <span>&lt;45 mL/min/1.73 m<sup>2</sup></span></p></li><li style='list-style-type: none;'><div style='position:absolute;transform:translate(-13px, -2px);'>&ndash;</div><p>Reduction in risk of CV death was consistently observed among patients, including those with <span>eGFR <nobr>&lt;60 mL/min/1.73 m<sup>2</sup></nobr></span></p></li></ul></li><li><p>A lower dose of insulin or insulin secretagogues <nobr>(eg, sulfonylureas)</nobr> may be required to reduce the risk of hypoglycemia when JARDIANCE is used in combination with <nobr>these agents</nobr></p></li><li><p>JARDIANCE is contraindicated in patients with a history of serious hypersensitivity to empagliflozin or any of the excipients in JARDIANCE, severe renal impairment, end-stage renal disease, or dialysis</p></li></ul><p class='p-footnote' style='font-size:12px!important;'>CV=cardiovascular; eGFR=estimated glomerular filtration rate.</p>",
+                                    "What else would you like to learn about JARDIANCE for adults with established CV disease and <nobr>type 2 diabetes?</nobr>"
+                                ],
+                                "suggest": [
+                                    100,
+                                    200,
+                                    300,
+                                    400,
+                                    5
+                                ]
+                            },
+                            {
+                                "id": 300,
+                                "title": "Safety and Tolerability",
+                                "objective": "obj3",
+                                "prompt": [
+								    "Show me the safety and tolerability of JARDIANCE in adults with established CV disease and <nobr>type 2 diabetes.</nobr>"
+								],
+                                "answer": [
+                                    "Which safety and tolerability topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    301,
+                                    302,
+                                    303,
+                                    304,
+                                    305
+                                ]
+                            },
+                            {
+                                "id": 301,
+                                "title": "Common AEs in EMPA-REG",
+                                "objective": "obj3",
+                                "prompt": [
+								    "What were the common adverse events in the <nobr>EMPA-REG</nobr> CV <nobr>Outcome trial?</nobr>"
+								],
+                                "answer": [
+                                    "Across multiple trials, JARDIANCE has a demonstrated safety and tolerability profile.   There were common AEs in the CV Outcome trial<reference id='3'> [ZINMAN]</reference>:<br><br><table class='desktop' style='border-collapse:collapse;width:100%;background-color: white;'> <tr> <td style='border-bottom:1px solid lightgray;'> <strong>Common AEs in CV Outcome Trial <reference id='3'>[ZINMAN]</reference></strong> </td> <td style='background-color:#818181;color:white;padding:10px;border-bottom:1px solid lightgray;text-align:center;'> <strong>PLACEBO</strong> </td> <td style='background-color:#008c7d;color:white;padding:10px;border-bottom:1px solid lightgray;text-align:center;'> <strong>JARDIANCE*</strong> </td> </tr> <tr> <td style='border-bottom:1px solid black;padding-left:10px;padding:10px;'>Urinary tract infection</td> <td style='text-align:center;border-bottom:1px solid black;padding:10px;'><span style='color:#818181;'><strong>18.1%</strong></span></td> <td style='text-align:center;border-bottom:1px solid black;padding:10px;'><span style='color:#008c7d;'><strong>18.0%</strong></span></td> </tr> <tr> <td style='padding-left:10px;padding:10px;'>Genital mycotic infection</td> <td style='text-align:center;padding:10px;'><span style='color:#818181;'><strong>1.8%</strong></span></td> <td style='text-align:center;padding:10px;'><span style='color:#008c7d;'><strong>6.4%</strong></span></td> </tr></table><table style='border-collapse:collapse;width:100%;background-color: white;' class='mobile'> <tbody> <tr> <td colspan='2'> <strong>Common AEs in CV Outcome Trial <reference id='3'> [ZINMAN]</reference></strong> </td> </tr> <tr> <td style='border-bottom:1px solid lightgray;color:#818181;padding:10px;font-size:14px;'>PLACEBO <div style='width:20px;height:10px;background-color:#818181;display:inline-block;'></div></td> <td style='border-bottom:1px solid lightgray;color:#008c7d;padding:10px;font-size:14px;width: 130px;'>JARDIANCE* <div style='width:20px;height:10px;background-color:#008c7d;display:inline-block;'></div></td> </tr> <tr> <td>Urinary tract infection</td> </tr> <tr> <td style='text-align:center;border-bottom:1px solid black;padding:10px;'><span style='color:#818181;'><strong>18.1%</strong></span></td> <td style='text-align:center;border-bottom:1px solid black;padding:10px;'><span style='color:#008c7d;'><strong>18.0%</strong></span></td> </tr> <tr> <td>Genital mycotic infection</td> </tr> <tr> <td style='text-align:center;border-bottom:1px solid #ffc908;padding:10px;'><span style='color:#818181;'><strong>1.8%</strong></span></td> <td style='text-align:center;border-bottom:1px solid #ffc908;padding:10px;'><span style='color:#008c7d;'><strong>6.4%</strong></span></td> </tr> </tbody></table><div style='text-align:center;margin-top:15px;border-top:1px solid #ffc908;border-bottom:1px solid #ffc908;padding:15px;'><strong>THE SAFETY PROFILE IN THE JARDIANCE CV OUTCOME TRIAL WAS CONSISTENT WITH THAT OF PREVIOUS TRIALS</strong></div><br><div style='font-size:12px;position:absolute;transform:translate(-6px);'>*</div><p class='p-footnote' style='font-size:12px!important;'>Pooled data from JARDIANCE <nobr>10 mg</nobr> and JARDIANCE <nobr>25 mg</nobr>.<reference id='3'> [ZINMAN]</reference></p>",
+                                    "What other safety and tolerability topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    301,
+                                    302,
+                                    303,
+                                    304,
+                                    305
+                                ]
+                            },
+                            {
+                                "id": 302,
+                                "title": "Common AEs in Other Trials",
+                                "objective": "obj3",
+                                "prompt": [
+								    "What were the common adverse events in monotherapy and combination therapy trials <nobr>of JARDIANCE?</nobr>"
+								],
+                                "answer": [
+                                    "The common AEs in monotherapy and combination therapy trials* were as follows:<br><div style='margin-top:15px;' class='bg'><table style='border-collapse:collapse;width:100%;' class='desktop2'> <tr> <td style='border-bottom:1px solid lightgray;'><strong>COMMON AEs IN MONOTHERAPY AND COMBINATION THERAPY TRIALS*</strong></td> <td style='background-color:#636363;color:white;padding:10px;text-align:center;border-bottom:1px solid lightgray;'><strong>PLACEBO</strong></td> <td style='background-color:#5fb2a9;color:white;padding:10px;border-left:10px solid white;text-align:center;border-bottom:1px solid lightgray;'><strong>JARDIANCE 10 mg</strong></td> <td style='background-color:#008c7d;color:white;padding:10px;border-left:10px solid white;text-align:center;border-bottom:1px solid lightgray;'><strong>JARDIANCE 25 mg</strong></td> </tr> <tr> <td></td> <td style='color:#636363;text-align:center;'><strong>(N=995)</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>(N=999)</strong></td> <td style='color:#008c7d;text-align:center;'><strong>(N=977)</strong></td> </tr> <tr> <td style='border-bottom:1px solid lightgray;background-color:#e4f5f3;'>Urinary tract infection</td> <td style='color:#636363;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'><strong>7.6%</strong></td> <td style='color:#5fb2a9;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'><strong>9.3%</strong></td> <td style='color:#008c7d;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'><strong>7.6%</strong></td> </tr> <tr> <td style='border-bottom:1px solid lightgray;padding-left:20px;background-color:#e4f5f3;'>UTIs: Males</td> <td style='color:#636363;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'>3.2%</td> <td style='color:#5fb2a9;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'>3.6%</td> <td style='color:#008c7d;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'>4.1%</td> </tr> <tr> <td style='padding-left:20px;background-color:#e4f5f3;'>UTIs: Females</td> <td style='color:#636363;text-align:center;background-color:#e4f5f3;'>16.6%</td> <td style='color:#5fb2a9;text-align:center;background-color:#e4f5f3;'>18.4%</td> <td style='color:#008c7d;text-align:center;background-color:#e4f5f3;'>17.0%</td> </tr> <tr> <td>Female genital mycotic infections</td> <td style='color:#636363;text-align:center;'><strong>1.5%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>5.4%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>6.4%</strong></td> </tr> <tr> <td>Upper respiratory tract infection</td> <td style='color:#636363;text-align:center;'><strong>3.8%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>3.1%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>4.0%</strong></td> </tr> <tr> <td>Increased urination</td> <td style='color:#636363;text-align:center;'><strong>1.0%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>3.4%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>3.2%</strong></td> </tr> <tr> <td>Dyslipidemia</td> <td style='color:#636363;text-align:center;'><strong>3.4%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>3.9%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>2.9%</strong></td> </tr> <tr> <td>Arthralgia</td> <td style='color:#636363;text-align:center;'><strong>2.2%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>2.4%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>2.3%</strong></td> </tr> <tr> <td>Male genital mycotic infections</td> <td style='color:#636363;text-align:center;'><strong>0.4%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>3.1%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>1.6%</strong></td> </tr> <tr> <td>Nausea</td> <td style='color:#636363;text-align:center;'><strong>1.4%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>2.3%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>1.1%</strong></td> </tr> </table></div><div class='bg'><p class='mobile2'><strong>COMMON AEs IN MONOTHERAPY AND COMBINATION THERAPY TRIALS*</strong></p><table style='border-collapse:collapse;width:100%;' class='mobile2'> <tr> <td style='background-color:#636363;color:white;padding:5px;text-align:center;border-bottom:1px solid lightgray;font-size:13px;'><strong>PLACEBO</strong></td> <td style='background-color:#5fb2a9;color:white;padding:5px;border-left:1px solid white;text-align:center;border-bottom:1px solid lightgray;font-size:13px;'><strong>JARDIANCE 10 mg</strong></td> <td style='background-color:#008c7d;color:white;padding:5px;border-left:1px solid white;text-align:center;border-bottom:1px solid lightgray;font-size:13px;'><strong>JARDIANCE 25 mg</strong></td> </tr> <tr> <td style='color:#636363;text-align:center;'><strong>(N=995)</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>(N=999)</strong></td> <td style='color:#008c7d;text-align:center;'><strong>(N=977)</strong></td> </tr> <tr> <td style='background-color:#e4f5f3;' colspan='3'>Urinary tract infection</td></tr> <tr> <td style='color:#636363;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'><strong>7.6%</strong></td> <td style='color:#5fb2a9;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'><strong>9.3%</strong></td> <td style='color:#008c7d;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'><strong>7.6%</strong></td> </tr> <tr> <td  colspan='3' style='background-color:#e4f5f3;'  colspan='3'>UTIs: Males</td></tr> <tr> <td style='color:#636363;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'>3.2%</td> <td style='color:#5fb2a9;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'>3.6%</td> <td style='color:#008c7d;text-align:center;border-bottom:1px solid lightgray;background-color:#e4f5f3;'>4.1%</td> </tr> <tr> <td style='background-color:#e4f5f3;'  colspan='3'>UTIs: Females</td></tr> <tr> <td style='color:#636363;text-align:center;background-color:#e4f5f3;'>16.6%</td> <td style='color:#5fb2a9;text-align:center;background-color:#e4f5f3;'>18.4%</td> <td style='color:#008c7d;text-align:center;background-color:#e4f5f3;'>17.0%</td> </tr> <tr> <td colspan='3'>Female genital mycotic infections</td> </tr> <tr> <td style='color:#636363;text-align:center;'><strong>1.5%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>5.4%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>6.4%</strong></td> </tr> <tr> <td colspan='3'>Upper respiratory tract infection</td> </tr> <tr> <td style='color:#636363;text-align:center;'><strong>3.8%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>3.1%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>4.0%</strong></td> </tr> <tr> <td colspan='3'>Increased urination</td> </tr> <tr> <td style='color:#636363;text-align:center;'><strong>1.0%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>3.4%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>3.2%</strong></td> </tr> <tr> <td colspan='3'>Dyslipidemia</td> </tr> <tr> <td style='color:#636363;text-align:center;'><strong>3.4%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>3.9%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>2.9%</strong></td> </tr> <tr> <td colspan='3'>Arthralgia</td> </tr> <tr> <td style='color:#636363;text-align:center;'><strong>2.2%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>2.4%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>2.3%</strong></td> </tr> <tr> <td colspan='3'>Male genital mycotic infections</td> </tr> <tr> <td style='color:#636363;text-align:center;'><strong>0.4%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>3.1%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>1.6%</strong></td> </tr> <tr> <td colspan='3'>Nausea</td> </tr> <tr> <td style='color:#636363;text-align:center;'><strong>1.4%</strong></td> <td style='color:#5fb2a9;text-align:center;'><strong>2.3%</strong></td> <td style='color:#008c7d;text-align:center;'><strong>1.1%</strong></td> </tr> </table></div><br><p>The safety profile in the JARDIANCE CV Outcome trial was consistent with that of previous trials.</p><div style='font-size:12px;position:absolute;transform:translate(-6px, -1px);'>*</div><p class='p-footnote' style='font-size:12px!important;'>Adverse events, excluding hypoglycemia, reported in pooled, placebo-controlled clinical studies in &ge;2% of patients treated with JARDIANCE and greater than placebo.</p>",
+                                    "What other safety and tolerability topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    301,
+                                    302,
+                                    303,
+                                    304,
+                                    305
+                                ]
+                            },
+                            {
+                                "id": 303,
+                                "title": "Hypoglycemia",
+                                "objective": "obj3",
+                                "prompt": [
+								    "Show me the rates of hypoglycemia associated <nobr>with JARDIANCE</nobr>"
+								],
+                                "answer": [
+                                    "JARDIANCE demonstrated similar hypoglycemia rates to palcebo when used as monotherapy or <nobr>add-on</nobr> to metformin.  The incidence of overall and severe hypoglycemic events with JARDIANCE were as follows:",
+                                    "<div style='padding:10px;background-color:lightgray;display:inline-block;'> <table style='border-collapse:collapse;'> <tr> <td colspan='3' style='color:white;background-color:#4B3232;padding:10px;'><strong>Monotherapy</strong> (24 weeks)</td> </tr> <tr> <td style='text-align:center;color:#666;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>PLACEBO</strong></p></td> <td style='color:#5fb2a9;text-align:center;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>JARDIANCE<br>10 mg</strong></p></td> <td style='color:#008c7d;text-align:center;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>JARDIANCE<br>25 mg</strong></p></td> </tr> <tr> <td style='text-align:center;color:#666;font-size:14px!important;'><strong>(n=229)</strong></td> <td style='color:#5fb2a9;text-align:center;font-size:14px!important;'><strong>(n=224)</strong></td> <td style='color:#008c7d;text-align:center;font-size:14px!important;'><strong>(n=223)</strong></td> </tr> <tr> <td colspan='3' style='padding:10px;color:#666;'><p style='margin-top:10px;margin-bottom:0;'>Overall (plasma glucose ≤70 mg/dL)</p></td> </tr> <tr> <td style='text-align:center;background-color:white;padding:10px;color:#666;'><strong>0.4%</strong></td> <td style='color:#5fb2a9;text-align:center;background-color:white;padding:10px;'><strong>0.4%</strong></td> <td style='color:#008c7d;text-align:center;background-color:white;padding:10px;'><strong>0.4%</strong></td> </tr> <tr> <td colspan='3' style='padding:10px;color:#666;'>Severe (requiring assistance regardless of blood glucose)</td> </tr> <tr> <td style='text-align:center;background-color:white;padding:10pxcolor:#666;'><strong>0%</strong></td> <td style='color:#5fb2a9;text-align:center;background-color:white;padding:10px;'><strong>0%</strong></td> <td style='color:#008c7d;text-align:center;background-color:white;padding:10px;'><strong>0%</strong></td> </tr> </table></div><br><div style='padding:10px;background-color:lightgray;display:inline-block;'> <table style='border-collapse:collapse;'> <tr> <td colspan='3' style='color:white;background-color:#4B3232;padding:10px;'><strong>ADD-ON to Metformin</strong> (24 Weeks)</td> </tr> <tr> <td style='text-align:center;color:#666;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>PLACEBO</strong></p></td> <td style='color:#5fb2a9;text-align:center;font-size:14px!important;'><p style='margin-top:5px;margin-bottom:0;'><strong>JARDIANCE<br>10 mg</strong></p></td> <td style='color:#008c7d;text-align:center;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>JARDIANCE<br>25 mg</strong></p></td> </tr> <tr> <td style='text-align:center;color:#666;font-size:14px!important;'><strong>(n=206)</strong></td> <td style='color:#5fb2a9;text-align:center;font-size:14px!important;'><strong>(n=217)</strong></td> <td style='color:#008c7d;text-align:center;font-size:14px!important;'><strong>(n=214)</strong></td> </tr> <tr> <td colspan='3' style='padding:10px;color:#666;'><p style='margin-top:10px;margin-bottom:0;'>Overall (plasma glucose ≤70 mg/dL)</p></td> </tr> <tr> <td style='text-align:center;background-color:white;padding:10px;color:#666;'><strong>0.5%</strong></td> <td style='color:#5fb2a9;text-align:center;background-color:white;padding:10px;'><strong>1.8%</strong></td> <td style='color:#008c7d;text-align:center;background-color:white;padding:10px;'><strong>1.4%</strong></td> </tr> <tr> <td colspan='3' style='padding:10px;color:#666;'>Severe (requiring assistance regardless of blood glucose)</td> </tr> <tr> <td style='text-align:center;background-color:white;padding:10pxcolor:#666;;'><strong>0%</strong></td> <td style='color:#5fb2a9;text-align:center;background-color:white;padding:10px;'><strong>0%</strong></td> <td style='color:#008c7d;text-align:center;background-color:white;padding:10px;'><strong>0%</strong></td> </tr> </table></div>",
+                                    "<p>Hypoglycemia rates were higher when used in combination with sulfonylurea or insulin:</p><div style='padding:10px;background-color:lightgray;display:inline-block;'> <table style='border-collapse:collapse;max-width:430px;'> <tr> <td colspan='3' style='color:white;background-color:#4B3232;padding:10px;'><strong>ADD-ON to Metformin to Meformin + Sulfonylurea</strong> (24 Weeks)</td> </tr> <tr> <td style='text-align:center;color:#666;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>PLACEBO</strong></p></td> <td style='color:#5fb2a9;text-align:center;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>JARDIANCE<br>10 mg</strong></p></td> <td style='color:#008c7d;text-align:center;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>JARDIANCE<br>25 mg</strong></p></td> </tr> <tr> <td style='text-align:center;color:#666;font-size:14px!important;'><strong>(n=225)</strong></td> <td style='color:#5fb2a9;text-align:center;font-size:14px!important;'><strong>(n=224)</strong></td> <td style='color:#008c7d;text-align:center;font-size:14px!important;'><strong>(n=217)</strong></td> </tr> <tr> <td colspan='3' style='padding:10px;color:#666;'><p style='margin-top:10px;margin-bottom:0;'>Overall (plasma glucose ≤70 mg/dL)</p></td> </tr> <tr> <td style='text-align:center;background-color:white;padding:10px;color:#666;'><strong>8.4%</strong></td> <td style='color:#5fb2a9;text-align:center;background-color:white;padding:10px;'><strong>16.1%</strong></td> <td style='color:#008c7d;text-align:center;background-color:white;padding:10px;'><strong>11.5%</strong></td> </tr> <tr> <td colspan='3' style='padding:10px;color:#666;'>Severe (requiring assistance regardless of blood glucose)</td> </tr> <tr> <td style='text-align:center;background-color:white;padding:10pxcolor:#666;;'><strong>0%</strong></td> <td style='color:#5fb2a9;text-align:center;background-color:white;padding:10px;'><strong>0%</strong></td> <td style='color:#008c7d;text-align:center;background-color:white;padding:10px;'><strong>0%</strong></td> </tr> </table></div><br><div style='padding:10px;background-color:lightgray;display:inline-block;'> <table style='border-collapse:collapse;'> <tr> <td colspan='3' style='color:white;background-color:#4B3232;padding:10px;'><strong>ADD-ON to Basal Insulin ± Orals*<sup>&dagger;</sup></strong> (24 Weeks)</td> </tr> <tr> <td style='text-align:center;color:#666;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>PLACEBO</strong></p></td> <td style='color:#5fb2a9;text-align:center;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>JARDIANCE<br>10 mg</strong></p></td> <td style='color:#008c7d;text-align:center;'><p style='margin-top:5px;margin-bottom:0;font-size:14px!important;'><strong>JARDIANCE<br>25 mg</strong></p></td> </tr> <tr> <td style='text-align:center;color:#666;font-size:14px!important;'><strong>(n=170)</strong></td> <td style='color:#5fb2a9;text-align:center;font-size:14px!important;'><strong>(n=169)</strong></td> <td style='color:#008c7d;text-align:center;font-size:14px!important;'><strong>(n=155)</strong></td> </tr> <tr> <td colspan='3' style='padding:10px;color:#666;'><p style='margin-top:10px;margin-bottom:0;'>Overall (plasma glucose ≤70 mg/dL)</p></td> </tr> <tr> <td style='text-align:center;background-color:white;padding:10px;color:#666;'><strong>20.6%</strong></td> <td style='color:#5fb2a9;text-align:center;background-color:white;padding:10px;'><strong>19.5%</strong></td> <td style='color:#008c7d;text-align:center;background-color:white;padding:10px;'><strong>28.4%</strong></td> </tr> <tr> <td colspan='3' style='padding:10px;color:#666;'>Severe (requiring assistance regardless of blood glucose)</td> </tr> <tr> <td style='text-align:center;background-color:white;padding:10pxcolor:#666;;'><strong>0%</strong></td> <td style='color:#5fb2a9;text-align:center;background-color:white;padding:10px;'><strong>0%</strong></td> <td style='color:#008c7d;text-align:center;background-color:white;padding:10px;'><strong>1.3%</strong></td> </tr> </table></div><br><div style='text-align:center;margin-top:15px;border-top:1px solid #ffc908;border-bottom:1px solid #ffc908;padding:15px;'><strong>A LOWER DOSE OF INSULIN OR INSULIN SECRETAGOGUES <nobr>(EG, SULFONYLUREAS)</nobr> MAY BE REQUIRED TO REDUCE THE RISK OF HYPOGLYCEMIA WHEN JARDIANCE IS USED IN COMBINATION WITH <nobr>THESE AGENTS</nobr></strong></div><br><div style='font-size:12px;position:absolute;transform:translate(-6px);'>*</div><p class='p-footnote' style='font-size:12px!important;margin-bottom:0;'>Basal insulin study: No insulin adjustment during the first 18 weeks.</p><div style='font-size:12px;position:absolute;transform:translate(-6px);'><sup>&dagger;</sup></div><p style='font-size:12px!important;'>Orals included metformin and/or a sulfonylurea.</p>",
+                                    "What other safety and tolerability topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    301,
+                                    302,
+                                    303,
+                                    304,
+                                    305
+                                ]
+                            },
+                            {
+                                "id": 304,
+                                "title": "Amputation and Fracture",
+                                "objective": "obj3",
+                                "prompt": [
+								    "What about rates of lower limb amputation and bone fracture in the <nobr>EMPA-REG trial?</nobr>"
+								],
+                                "answer": [
+                                    "Here are some select adverse events from the EMPA-REG Outcome <nobr>trial <reference id='3'>[ZINMAN]</reference> <reference id='2'>[DOF]</reference>:</nobr><br><br><div class='tableC desktop'><div class='t' style='background-color:#ffc908;display:inline-block;font-size:14px;padding:8px;'>SELECT ADVERSE EVENTS</div> <div class='aes'> <table style='border-collapse:collapse;'> <tr> <td style='text-align:center;padding-left:10px;'><strong>SELECT AEs IN <nobr>EMPA-REG</nobr> OUTCOME <nobr>TRIAL</nobr></strong></td> <td style='text-align:center;color:white;border-left:30px solid #ecf0f1;'><div style='height:60px;transform:translateY(-18px);background-color:#636363;padding:10px;line-height:40px;' class='tri2'><strong>PLACEBO</strong></div></td> <td style='text-align:center;color:white;border-left:30px solid #ecf0f1;'><div class='tri' style='height:60px;transform:translateY(-18px);background-color:#008c7d;padding:10px;'><strong>JARDIANCE</strong><br>10 mg</div></td> <td style='text-align:center;color:white;border-left:30px solid #ecf0f1;'><div class='tri' style='height:60px;transform:translateY(-18px);background-color:#008c7d;padding:10px;'><strong>JARDIANCE</strong><br>25 mg</div></td> </tr> <tr> <td style='padding:10px;'>Lower limb amputation*</td> <td style='color:#636363;text-align:center;padding:10px;'><strong>1.8%</strong></td> <td style='color:#008c7d;text-align:center;padding:10px;'><strong>1.8%</strong></td> <td style='color:#008c7d;text-align:center;padding:10px;'><strong>2.0%</strong></td> </tr> <tr> <td style='padding:10px;background-color:white;'>Bone fracture</td> <td style='color:#636363;text-align:center;padding:10px;background-color:white;'><strong>3.9%</strong></td> <td style='color:#008c7d;text-align:center;padding:10px;background-color:white;'><strong>3.9%</strong></td> <td style='color:#008c7d;text-align:center;padding:10px;background-color:white;'><strong>3.7%</strong></td> </tr> <tr> <td colspan='4' style='padding:5px;'></td> </tr> </table> </div></div><div class='tableM mobile'><br><div class='t' style='background-color:#ffc908;display:inline-block;font-size:14px;padding:8px;'>SELECT ADVERSE EVENTS</div> <p style='margin-bottom:25px;padding-left:10px;'><strong>SELECT AEs IN <nobr>EMPA-REG</nobr> OUTCOME <nobr>TRIAL</nobr></strong></p> <div class='aes' style='width: 100%;'> <table style='border-collapse:collapse;width:100%;'> <tr> <td style='text-align:center;color:white;font-size:14px;'><div style='height:60px;transform:translateY(-18px);background-color:#636363;padding:5px;line-height:60px;' ><strong>PLACEBO</strong></div></td> <td style='text-align:center;color:white;font-size:14px;'><div style='height:60px;transform:translateY(-18px);background-color:#008c7d;padding:5px;'><strong>JARDIANCE</strong><br>10 mg</div></td> <td style='text-align:center;color:white;font-size:14px;'><div style='height:60px;transform:translateY(-18px);background-color:#008c7d;padding:5px;'><strong>JARDIANCE</strong><br>25 mg</div></td> </tr> <tr> <td colspan='3' style='padding:10px;'>Lower limb amputation*</td> </tr> <tr> <td style='color:#636363;text-align:center;padding:10px;'><strong>1.8%</strong></td> <td style='color:#008c7d;text-align:center;padding:10px;'><strong>1.8%</strong></td> <td style='color:#008c7d;text-align:center;padding:10px;'><strong>2.0%</strong></td> </tr> <tr> <td colspan='3' style='padding:10px;background-color:white;'>Bone fracture</td> </tr> <tr> <td style='color:#636363;text-align:center;padding:10px;background-color:white;'><strong>3.9%</strong></td> <td style='color:#008c7d;text-align:center;padding:10px;background-color:white;'><strong>3.9%</strong></td> <td style='color:#008c7d;text-align:center;padding:10px;background-color:white;'><strong>3.7%</strong></td> </tr> <tr> <td colspan='4' style='padding:5px;'></td> </tr> </table> </div></div><br><div style='font-size:12px;position:absolute;transform:translate(-6px);'>*</div><p class='p-footnote' style='font-size:12px!important;'>In the EMPA-REG OUTCOME Trial, procedures such as amputations were classified as therapeutic procedures and were not routinely captured as adverse events. Post-hoc analyses of amputations in the clinical trial database were performed by searching concomitant therapies, comment fields for adverse event listings, and case narratives. <reference id='3'>[ZINMAN]</reference>",
+                                    "What other safety and tolerability topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    301,
+                                    302,
+                                    303,
+                                    304,
+                                    305
+                                ]
+                            },
+                            {
+                                "id": 305,
+                                "title": "Something Else",
+                                "objective": "obj3",
+                                "prompt": [
+								    "I'd like to see another topic."
+								],
+                                "answer": [
+                                    "What else would you like to learn about JARDIANCE for adults with established CV disease and <nobr>type 2 diabetes?</nobr>"
+                                ],
+                                "suggest": [
+                                    100,
+                                    200,
+                                    300,
+                                    400,
+                                    5
+                                ]
+                            },
+                            {
+                                "id": 400,
+                                "title": "Access",
+                                "objective": "obj4",
+                                "prompt": [
+								    "I'd like to learn about access and <nobr>patient support.</nobr>"
+								],
+                                "answer": [
+                                    "Sure.  Here is some information about JARDIANCE patient support:<br><br><div style='vertical-align:top;display:inline-block;width:50px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section4_Checkmark.png' style='width:100%;'></div><div style='vertical-align:top;display:inline-block;width:calc(100% - 65px);margin-left:10px;'><p style='margin-bottom:0;'><strong>Access</strong></p><ul style='padding-left:16px;'><li style='color:#666666;'>Lowest branded copay* for most commercially insured patients</li><li style='margin-left:10px;list-style-type:none;'>&ndash; More coverage. Fewer callbacks</li></ul></div><br><div style='vertical-align:top;display:inline-block;width:50px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section4_Checkmark.png' style='width:100%;'></div><div style='vertical-align:top;display:inline-block;width:calc(100% - 65px);margin-left:10px;'><p style='margin-bottom:0;'><strong>Affordability</strong></p><ul style='padding-left:16px;'><li style='color:#666666;'>$0 Patient Copay Card available for eligible patients<sup>&dagger;</sup></li></ul></div><br><div style='vertical-align:top;display:inline-block;width:50px;'><img src='https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/Section4_Checkmark.png' style='width:100%;'></div><div style='vertical-align:top;display:inline-block;width:calc(100% - 65px);margin-left:10px;'><p style='margin-bottom:0;'><strong>Affordability</strong></p><ul style='padding-left:16px;'><li style='color:#666666;'>Free access to disease education</li><li style='color:#666666;'>Online compliance reminders</li></ul></div><br><div style='font-size:12px;position:absolute;transform:translate(-6px, -2px);'>*</div><p class='p-footnote' style='font-size:12px!important;'>Source: Fingertip Formulary, health plan or state listed above, and/or data on file, Boehringer Ingelheim Pharmaceuticals, Inc. as of 10/1/2017. Placement on formulary does not establish clinical comparability of products, including safety and efficacy, and is not a guarantee of full or partial coverage and/or payment. Contact health plan, state, or www.medicare.gov for most current information, as it may change without notice. This is not intended to be an exhaustive list of all plans in your area. Boehringer Ingelheim Pharmaceuticals, Inc. and <nobr>Lilly USA,</nobr> LLC do not sponsor or endorse any particular plan, and the company/plan names listed do not imply their endorsement of Boehringer Ingelheim Pharmaceuticals, Inc., <nobr>Lilly USA,</nobr> LLC, or the product(s) referenced.</p><div style='font-size:12px;position:absolute;transform:translate(-6px);'><sup>&dagger;</sup></div><p style='font-size:12px!important;'>Eligible patients 18 years or older may pay as little as $0/month with a maximum savings up to $250/monthly prescription. Card valid for 12 consecutive months from activation date. Eligible patients may re-enroll for additional 12 consecutive-month periods by reactivating expired card; benefits not to exceed program expiration on September 30, 2019. If you live in Massachusetts, card expires on the earlier of June 30, 2019, or date AB-rated generic equivalent is available. One card per patient, not transferable, and cannot be combined with any other offer. Program not health insurance. Only valid for commercially insured patients in the 50 United States, DC, and Puerto Rico. Not eligible if prescriptions are paid for in part/ full by state or federally funded program(s), like Medicare Part D, Medicaid, Vet. Aff., Dept. of Def., or TRICARE and where prohibited by law. Offer may change at any time, without notice.</p>",
+                                    "Is there anything else that I can show you?"
+                                ],
+                                "suggest": [
+                                    100,
+                                    200,
+                                    300,
+                                    400,
+                                    5
+                                ]
+                            },
+                            {
+                                "id": 5,
+                                "title": "No, thank you.",
+                                "prompt": ["No, thank you."],
+                                "answer": [
+                                    "<img class='avatar' style='width: 30px; position:absolute;' src='http://c.mdchat-usa.com/assets/images/edels/casey_1.gif'/><div style='margin-left:40px;'>Thank you for reviewing this information about JARDIANCE in adults with established CV disease and type 2 diabetes.</div>",
+                                    "Here's a summary of what we reviewed:",
+                                    "<objectives>"
+                                ],
+                                "suggest": []
+                            }
+                        ],
+
+                        "objectives": {
+                            "obj1": "<ul><li>In adults with established CV disease and type 2 diabetes, adding JARDIANCE to standard of care medications led to a 38% relative risk reduction (2.2% ARR) in CV death (HR=0.62;  95% CI 0.49-0.77)<reference id='3'> [ZINMAN]</reference></li></ul>",
+                            "obj2": "<ul><li>The recommended dose of JARDIANCE is 10mg once daily, taken orally with or without food in the morning</li></ul>",
+                            "obj3": "<ul><li>Across multiple trials, JARDIANCE has a demonstrated safety and tolerability profile. The safety profile in the EMPA-REG OUTCOME Trail was consistent with that of previous trials.<reference id='3'>[ZINMAN]</reference><reference id='2'>[DOF]</reference></li></ul>",
+                            "obj4": "<ul><li>Most commercially insured patients have access to JARDIANCE at the lowest branded copay*<br><br><div style='font-size:12px;position:absolute;transform:translate(-6px, -3px);'>*</div><p class='p-footnote' style='font-size:12px!important;'>Source: Fingertip Formulary, health plan or state listed above, and/or data on file, Boehringer Ingelheim Pharmaceuticals, Inc. as of 10/1/2017. Placement on formulary does not establish clinical comparability of products, including safety and efficacy, and is not a guarantee of full or partial coverage and/or payment. Contact health plan, state, or www.medicare.gov for most current information, as it may change without notice. This is not intended to be an exhaustive list of all plans in your area. Boehringer Ingelheim Pharmaceuticals, Inc. and <nobr>Lilly USA,</nobr> LLC do not sponsor or endorse any particular plan, and the company/plan names listed do not imply their endorsement of Boehringer Ingelheim Pharmaceuticals, Inc., <nobr>Lilly USA,</nobr> LLC, or the product(s) referenced.</p></li></ul>"
+                        },
+                        "progress": {
+                            "display": false
+                        },
+                        "settings": {
+
+                          "header": {
+                                "title": "<div class='links'><a style='color:#008c7d;float:right;' href='http://docs.boehringer-ingelheim.com/Prescribing%20Information/PIs/Jardiance/jardiance.pdf'  target='_blank'  class='track'><strong>Prescribing Information</strong></a><br><a target='_blank' style='color:#008c7d;float:right;' href='http://docs.boehringer-ingelheim.com/Prescribing%20Information/PIs/Jardiance/Patient%20Info/Jardiance%20Patient%20Information.pdf?DMW_FORMAT=pdf' class='track'><p style='    margin-top: 10px;'><strong>Patient Information</strong></p></a></div>",
+	                                "image": "https://ivcf.s3.amazonaws.com/000136/sitemanager/numedis/mdchat/programs/130201165/images/jardiance_logo.png"
+                            },
+                          "classesSet": {
+                                "botReply": "primary-color-bg dark-grey-color-font",
+                                "mecbotBackground": "white-color-bg",
+                                "chatBackground": "white-color-bg",
+                                "suggestion": "secondary-color-bg white-color-font",
+                                "userMessage": "third-color-bg"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
