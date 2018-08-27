@@ -274,8 +274,7 @@
                     1,
                     2,
                     3,
-                    4,
-                    500
+                    4
                 ]
               },
               {
@@ -363,8 +362,7 @@
                     1,
                     2,
                     3,
-                    4,
-                    500
+                    4
                 ]
               },              
               {
@@ -431,8 +429,7 @@
                     1,
                     2,
                     3,
-                    4,
-                    500
+                    4
                 ]
               },
               {
@@ -539,8 +536,7 @@
                     1,
                     2,
                     3,
-                    4,
-                    500
+                    4
                 ]
               },
               {
@@ -703,22 +699,9 @@
                     400,
                     401,
                     402,
-                    403,
-                    500
+                    403
                 ]
-              },
-              {
-                "id": 500,
-                "title": "Summary and Exit",
-                "prompt": [
-                  "That's all for now."
-                ],
-                "answer": [
-                  "<img class='avatar' style='width: 30px; position:absolute;' src='http://c.mdchat-usa.com/assets/images/edels/casey_1.gif'/><div style='margin-left:40px;'>Thank you for reviewing this information about OPDIVO<sup>&reg;</sup> in patients previously treated with mNSCLC.</div>",
-                  "Here's a summary of what we reviewed:",
-                  "<objectives>"
-              ]
-              } 
+              }
             ],
             "objectives": {
               "1": "<ul><li>In previously treated non-squamous NSCLC, OPDIVO achieved a significantly higher OS vs Chemotherapy*, with over half of patients alive at 1 year (51% vs 39%).<reference id='1'>[OPDIVO PI]</reference> <reference id='2'>[Borghaei]</reference> Also, OPDIVO demonstrated longer median OS of 17.1 months vs 9.0 months with chemotherapy† for patients expressing PD-L1 at all levels (1%). <reference id='1'>[OPDIVO PI]</reference><p class='p-footnote'><sup>*</sup>Docetaxel<br><sup>&dagger;</sup>Median overall survival in patients treated with OPDIVO who had a PD-L1 expression level of &ge;1%, &ge;5%, or &ge;10%</p></li></ul>",
