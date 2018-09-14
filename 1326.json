@@ -282,77 +282,6 @@
                                 ]
                             },
                             {
-                                "id": 200,
-                                "title": "Verzenio + AI Efficacy",
-                                "objective": "2",
-                                "prompt": [
-                                    "Show me efficacy data from MONARCH&nbsp;3: Verzenio + AI."
-                                ],
-                                "answer": [
-                                    "<p>Okay. Below, you can find progression-free survival results, the objective response rate, and the study design for MONARCH&nbsp;3:</p>",
-                                    "<p style='font-size:22px!important; color:#00ABC7;margin-bottom: 20px;'>>28-month median PFS as initial endocrine&#8209;based therapy <reference id='20'>[Verzenio PI]</reference></p><p style='color: #00678D;font-weight: bold;margin-top: 15px;margin-left: 21px;'><span style='display:inline-block;position:absolute;transform: translateX(-21px);'><span style='background-color: #00678D;display: inline-block;width: 15px;height: 15px;margin-right: 5px;'></span></span>PFS IN ITT POPULATION <reference id='20'>[Verzenio PI]</reference></p><div style='position:relative;'><reference id='f6' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img style='width: 100%; max-width: 500px;' src='https://c.mdchat-usa.com/programs/130201326/img/200_1.png'/></div><br><ul style='color: #00abc7;'><li><span style='color:#666;'>The percentage of events at the time of analysis was 42.1% (n=138) and 65.5% (n=108) in the Verzenio + AI and placebo + AI arms, respectively <reference id='20'>[Verzenio PI]</reference></span></li><li><span style='color:#666;'>At the time of the primary analysis of PFS, overall survival data were not mature (19% of patients had died) <reference id='20'>[Verzenio PI]</reference></span></li></ul><p style='font-size: 12px!important;margin-top: 40px;'>NR=not reached.</p>",
-                                    "<p>For postmenopausal women with HR+, HER2−&nbsp;MBC</p><p style='font-size:22px!important; color:#00ABC7;margin-bottom: 20px;'>55% ORR as initial endocrine&#8209;based therapy <reference id='20'>[Verzenio PI]</reference></p><p style='color: #00678D;font-weight: bold;margin-top: 15px;margin-left: 21px;'><span style='display:inline-block;position:absolute;transform: translateX(-21px);'><span style='background-color: #00678D;display: inline-block;width: 15px;height: 15px;margin-right: 5px;'></span></span>ORR IN PATIENTS WITH MEASURABLE DISEASE <reference id='20'>[Verzenio PI]</reference> <reference id='10'>[DOF ONC20180214a]</reference>* </p><div style='position:relative;'><reference id='f7' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img style='width: 100%; max-width: 500px;' src='https://c.mdchat-usa.com/programs/130201326/img/200_2.png'/></div><br><ul style='color: #00abc7;'><li><span style='color:#666;'>ORR was defined as the proportion of patients with CR + PR and does not include stable disease <reference id='20'>[Verzenio PI]</reference></span></li><li><span style='color:#666;'>At the time of the PFS analysis, 19% of patients had died, and overall survival data were immature <reference id='20'>[Verzenio PI]</reference></span></li></ul><p style='font-size: 12px !important;margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'>*</span>Based upon confirmed responses. <reference id='20'>[Verzenio PI]</reference></p>",
-                                    "<p>For women with HR+, HER2−&nbsp;MBC</p><p style='font-size:22px!important; color:#00ABC7;margin-bottom: 15px;'>Verzenio + AI as first-line endocrine&#8209;based <nobr>therapy <reference id='20'>[Verzenio PI]</reference></nobr> <reference id='14'>[Goetz]</reference></p><ul style='color: #00abc7;'><li><span style='color:#666;'><strong>53</strong>% of patients had visceral disease <reference id='20'>[Verzenio PI]</reference> <reference id='14'>[Goetz]</reference></span></li></ul><p style='padding-left: 35px;'><span style='display: inline-block;text-indent: -15px;position: absolute;color:#00ABC7;'>–</span> Concerning clinical characteristic: 16% of patients had liver metastases <reference id='14'>[Goetz]</reference> <reference id='13'>[Gerratana]</reference><sup>&dagger;</sup> </p><ul style='color: #00abc7;'><li><span style='color:#666;'><strong>47</strong>% of patients received prior (neo)adjuvant ET <reference id='14'>[Goetz]</reference></span></li></ul><p style='padding-left: 35px;'><span style='display: inline-block;text-indent: -15px;position: absolute;color:#00ABC7;'>–</span> Concerning clinical characteristic: 15% had a treatment&#8209;free interval <36&nbsp;months <reference id='14'>[Goetz]</reference> <reference id='21'>[Vogel]</reference> <reference id='2'>[Chang]</reference> <reference id='22'>[Yamamoto]</reference><sup>&dagger;&Dagger;</sup></p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;margin-top: 15px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&dagger;</sup></span>Disease characteristics that typically confer a less favorable prognosis. Liver metastases and treatment&#8209;free interval <36&nbsp;months were concerning clinical characteristics in MONARCH&nbsp;3. Exploratory subgroup analyses of PFS were performed for patients with these characteristics. <reference id='7'>[DOF ONC20180108a]</reference> <reference id='11'>[DOF ONC20180328a]</reference></p><p style='font-size: 12px !important;margin-bottom:45px;margin-top: 5px;margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&Dagger;</sup></span>Percentage based on number of patients in the ITT population. Among patients who received prior (neo)adjuvant ET (n=230), 33% had a treatment&#8209;free interval of <36&nbsp;months. <reference id='14'>[Goetz]</reference> <reference id='11'>[DOF ONC20180328a]</reference></p><p style='color: #00678D;font-weight: bold;margin-top: 15px;margin-left: 21px;'><span style='display:inline-block;position:absolute;transform: translateX(-21px);'><span style='background-color: #00678D;display: inline-block;width: 15px;height: 15px;margin-right: 5px;'></span></span>MONARCH&nbsp;3: A PHASE III, RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED <nobr>TRIAL <reference id='20'>[Verzenio PI]</reference></nobr> <reference id='14'>[Goetz]</reference></p><div class='graph'> <div class='square-one square'> <img src='https://c.mdchat-usa.com/programs/130201326/img/tri.png'> <p style='color:#00AFCA;text-align:center;margin-bottom:0;margin-top: 15px;'><strong>Patients with HR+, HER2− locoregionally recurrent or MBC (N=493) <reference id='20'>[Verzenio PI]</reference> <reference id='14'>[Goetz]</reference></strong></p> <ul style='margin-top:0;padding:16px;padding-left:45px;text-align: left;'> <li style='color:#00AFCA;'><span style='color:#000000;'>No prior treatment for MBC</span></li> <li style='color:#00AFCA;'><span style='color:#000000;'>ET in the adjuvant setting permitted if patient had a disease-free interval >12 months from completion of ET</span></li> <li style='color:#00AFCA;'><span style='color:#000000;'>Postmenopausal status prior to starting treatment</span></li> <li style='color:#00AFCA;'><span style='color:#000000;'>ECOG PS 0-1</span></li> </ul> </div> <img src='https://c.mdchat-usa.com/programs/130201326/img/arrow3.png' style='width: 80px; bottom: calc(-100% - 110px);'/><p style='margin-top: 10px;'>RANDOMIZED 2:1</p> <div class='square-two square'> <div style='text-align:Center;' class='s-p'><strong>Verzenio + AI (n=328) <reference id='20'>[Verzenio PI]</reference> <reference id='14'>[Goetz]</reference><sup>&Dagger;</sup> <br>Verzenio 150 mg PO BID continuously until disease progression or unacceptable toxicity</strong><br>+<br>Anastrozole 1&nbsp;mg PO&nbsp;QD or letrozole 2.5&nbsp;mg PO&nbsp;QD<sup>&sect;</sup></div> <div style='text-align:Center;margin-top:15px;' class='s-p'><strong>Placebo + Al (n=165) <reference id='20'>[Verzenio PI]</reference> <reference id='14'>[Goetz]</reference><sup>&Dagger;</sup> <br>Placebo PO BID continuously until disease progression or unacceptable toxicity</strong><br>+<br>Anastrozole 1&nbsp;mg PO&nbsp;QD or letrozole 2.5&nbsp;mg PO&nbsp;QD<sup>&sect;</sup></div> </div> <div class='square square-three2'> <div style='border-bottom:1px solid white;padding-bottom:15px;'>PRIMARY ENDPOINT <strong>Progression&#8209;free survival <reference id='14'>[Goetz]</reference></strong></div> <p style='margin-top: 15px;'><strong>KEY SECONDARY ENDPOINTS</strong> Overall Survival, Objective Response Rate, Duration of Response <reference id='14'>[Goetz]</reference></p> </div></div><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;margin-top: 75px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&Dagger;</sup></span>Each cycle was 28&nbsp;days. <reference id='14'>[Goetz]</reference></p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&sect;</sup></span>80% of patients received letrozole and 20% received anastrozole. <reference id='20'>[Verzenio PI]</reference></p><p style='font-size: 12px!important;'>ECOG PS=Eastern Cooperative Oncology Group Performance Status; QD=once a day.</p>",
-                                    "<p>Are there additional efficacy data from the Verzenio + AI trial that you would like to explore?</p>"
-                                ],
-                                "suggest": [
-                                    210,
-                                    220,
-                                    230,
-                                    240
-                                ]
-                            },
-                            {
-                                "id": 300,
-                                "title": "Safety",
-                                "objective": "3",
-                                "prompt": [
-                                    "I’d like to explore the safety of Verzenio."
-                                ],
-                                "answer": [
-                                    "What safety topic would you like to explore?"
-                                ],
-                                "suggest": [
-                                    310,
-                                    320,
-                                    330,
-                                    340
-                                ]
-                            },
-                            {
-                                "id": 400,
-                                "title": "Guideline Recommendations",
-                                "objective": "4",
-                                "prompt": [
-                                    "Can you show me what the NCCN Clinical Practical Guidelines in Oncology (NCCN Guidelines<sup>&reg;</sup>) say about abemaciclib&nbsp;(Verzenio)?"
-                                ],
-                                "answer": [
-                                    "Okay. Here are the NCCN Guidelines<sup>&reg;</sup>:",
-                                    "<p style='font-size:22px!important; color:#00ABC7;margin-bottom:15px;'>Abemaciclib (Verzenio<sup>&reg;</sup>): The only CDK4 & 6&nbsp;inhibitor recommended by the National Comprehensive Cancer Network<sup>&reg;</sup> (NCCN<sup>&reg;</sup>) in combination with fulvestrant or AI and as a single agent <reference id='17'>[NCCN]</reference></p><p style='margin-bottom: 15px;padding: 20px; background-color: #301946;text-align: center; color: white; font-weight: bold;font-size: 20px!important;'>CATEGORY 1*</p><p style='font-weight: bold; margin-bottom:0px;'>Abemaciclib (Verzenio) + fulvestrant<sup>&dagger;</sup></p><p style='margin-bottom: 15px;'>Recommended option for the treatment of postmenopausal women with HR+, HER2−&nbsp;MBC after disease progression on prior endocrine therapy.</p><p style='font-weight: bold; margin-bottom:0px;'>Abemaciclib (Verzenio)+ an aromatase inhibitor<sup>&dagger;</sup></p><p style='margin-bottom: 15px;'>Recommended option for the treatment of postmenopausal women with HR+, HER2−&nbsp;MBC as initial endocrine&#8209;based therapy.</p><p style='padding: 20px; margin-bottom: 15px; background-color: #00abc7;text-align: center; color: white; font-weight: bold;font-size: 20px!important;'>CATEGORY 2A<sup>&Dagger;</sup></p><p style='font-weight: bold; margin-bottom:0px;'>Abemaciclib (Verzenio)as a single agent<sup>&dagger;</sup></p><p style='margin-bottom: 15px;'>Recommended option for the treatment of postmenopausal women with HR+, HER2−&nbsp;MBC after disease progression on prior endocrine therapy and prior chemotherapy in the metastatic setting.</p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;margin-top: 45px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'>*</span>Category 1: Based upon high-level evidence, there is uniform NCCN consensus that the intervention is appropriate.</p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&dagger;</sup></span>If there is disease progression while on CDK4 & 6 inhibitor therapy, there are no data to support an additional line of therapy with another CDK4 & 6–containing regimen.</p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&Dagger;</sup></span>Category 2A: Based upon lower-level evidence, there is uniform NCCN consensus that the intervention is appropriate.NCCN makes no warranties of any kind whatsoever regarding their content, use or application and disclaims any responsibility for theirapplication or use in any way.</p>",
-                                    "Would you like to learn more about Verzenio?"
-                                ],
-                                "suggest": [
-                                    100,
-                                    200,
-                                    300,
-                                    400,
-                                    500
-                                ]
-                            },
-                            {
-                                "id": 500,
-                                "title": "Summary and Exit",
-                                "prompt": [
-                                    "That's all for now."
-                                ],
-                                "answer": [
-                                    "<img class='avatar' style='width: 30px; position:absolute;' src='http://c.mdchat-usa.com/assets/images/edels/casey_1.gif'/><div style='margin-left:40px;'>Thank you for reviewing this information about Verzenio<sup>&reg;</sup> (abemaciclib)<br><br></div>",
-                                    "Here's a summary of what we reviewed:",
-                                    "<objectives>"
-                                ],
-                                "suggest": []
-                            },
-                            {
                                 "id": 110,
                                 "title": "PFS: Primary Resistance",
                                 "objective": "1",
@@ -425,6 +354,27 @@
                                     300,
                                     400,
                                     500
+                                ]
+                            },
+                            {
+                                "id": 200,
+                                "title": "Verzenio + AI Efficacy",
+                                "objective": "2",
+                                "prompt": [
+                                    "Show me efficacy data from MONARCH&nbsp;3: Verzenio + AI."
+                                ],
+                                "answer": [
+                                    "<p>Okay. Below, you can find progression-free survival results, the objective response rate, and the study design for MONARCH&nbsp;3:</p>",
+                                    "<p style='font-size:22px!important; color:#00ABC7;margin-bottom: 20px;'>>28-month median PFS as initial endocrine&#8209;based therapy <reference id='20'>[Verzenio PI]</reference></p><p style='color: #00678D;font-weight: bold;margin-top: 15px;margin-left: 21px;'><span style='display:inline-block;position:absolute;transform: translateX(-21px);'><span style='background-color: #00678D;display: inline-block;width: 15px;height: 15px;margin-right: 5px;'></span></span>PFS IN ITT POPULATION <reference id='20'>[Verzenio PI]</reference></p><div style='position:relative;'><reference id='f6' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img style='width: 100%; max-width: 500px;' src='https://c.mdchat-usa.com/programs/130201326/img/200_1.png'/></div><br><ul style='color: #00abc7;'><li><span style='color:#666;'>The percentage of events at the time of analysis was 42.1% (n=138) and 65.5% (n=108) in the Verzenio + AI and placebo + AI arms, respectively <reference id='20'>[Verzenio PI]</reference></span></li><li><span style='color:#666;'>At the time of the primary analysis of PFS, overall survival data were not mature (19% of patients had died) <reference id='20'>[Verzenio PI]</reference></span></li></ul><p style='font-size: 12px!important;margin-top: 40px;'>NR=not reached.</p>",
+                                    "<p>For postmenopausal women with HR+, HER2−&nbsp;MBC</p><p style='font-size:22px!important; color:#00ABC7;margin-bottom: 20px;'>55% ORR as initial endocrine&#8209;based therapy <reference id='20'>[Verzenio PI]</reference></p><p style='color: #00678D;font-weight: bold;margin-top: 15px;margin-left: 21px;'><span style='display:inline-block;position:absolute;transform: translateX(-21px);'><span style='background-color: #00678D;display: inline-block;width: 15px;height: 15px;margin-right: 5px;'></span></span>ORR IN PATIENTS WITH MEASURABLE DISEASE <reference id='20'>[Verzenio PI]</reference> <reference id='10'>[DOF ONC20180214a]</reference>* </p><div style='position:relative;'><reference id='f7' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img style='width: 100%; max-width: 500px;' src='https://c.mdchat-usa.com/programs/130201326/img/200_2.png'/></div><br><ul style='color: #00abc7;'><li><span style='color:#666;'>ORR was defined as the proportion of patients with CR + PR and does not include stable disease <reference id='20'>[Verzenio PI]</reference></span></li><li><span style='color:#666;'>At the time of the PFS analysis, 19% of patients had died, and overall survival data were immature <reference id='20'>[Verzenio PI]</reference></span></li></ul><p style='font-size: 12px !important;margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'>*</span>Based upon confirmed responses. <reference id='20'>[Verzenio PI]</reference></p>",
+                                    "<p>For women with HR+, HER2−&nbsp;MBC</p><p style='font-size:22px!important; color:#00ABC7;margin-bottom: 15px;'>Verzenio + AI as first-line endocrine&#8209;based <nobr>therapy <reference id='20'>[Verzenio PI]</reference></nobr> <reference id='14'>[Goetz]</reference></p><ul style='color: #00abc7;'><li><span style='color:#666;'><strong>53</strong>% of patients had visceral disease <reference id='20'>[Verzenio PI]</reference> <reference id='14'>[Goetz]</reference></span></li></ul><p style='padding-left: 35px;'><span style='display: inline-block;text-indent: -15px;position: absolute;color:#00ABC7;'>–</span> Concerning clinical characteristic: 16% of patients had liver metastases <reference id='14'>[Goetz]</reference> <reference id='13'>[Gerratana]</reference><sup>&dagger;</sup> </p><ul style='color: #00abc7;'><li><span style='color:#666;'><strong>47</strong>% of patients received prior (neo)adjuvant ET <reference id='14'>[Goetz]</reference></span></li></ul><p style='padding-left: 35px;'><span style='display: inline-block;text-indent: -15px;position: absolute;color:#00ABC7;'>–</span> Concerning clinical characteristic: 15% had a treatment&#8209;free interval <36&nbsp;months <reference id='14'>[Goetz]</reference> <reference id='21'>[Vogel]</reference> <reference id='2'>[Chang]</reference> <reference id='22'>[Yamamoto]</reference><sup>&dagger;&Dagger;</sup></p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;margin-top: 15px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&dagger;</sup></span>Disease characteristics that typically confer a less favorable prognosis. Liver metastases and treatment&#8209;free interval <36&nbsp;months were concerning clinical characteristics in MONARCH&nbsp;3. Exploratory subgroup analyses of PFS were performed for patients with these characteristics. <reference id='7'>[DOF ONC20180108a]</reference> <reference id='11'>[DOF ONC20180328a]</reference></p><p style='font-size: 12px !important;margin-bottom:45px;margin-top: 5px;margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&Dagger;</sup></span>Percentage based on number of patients in the ITT population. Among patients who received prior (neo)adjuvant ET (n=230), 33% had a treatment&#8209;free interval of <36&nbsp;months. <reference id='14'>[Goetz]</reference> <reference id='11'>[DOF ONC20180328a]</reference></p><p style='color: #00678D;font-weight: bold;margin-top: 15px;margin-left: 21px;'><span style='display:inline-block;position:absolute;transform: translateX(-21px);'><span style='background-color: #00678D;display: inline-block;width: 15px;height: 15px;margin-right: 5px;'></span></span>MONARCH&nbsp;3: A PHASE III, RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED <nobr>TRIAL <reference id='20'>[Verzenio PI]</reference></nobr> <reference id='14'>[Goetz]</reference></p><div class='graph'> <div class='square-one square'> <img src='https://c.mdchat-usa.com/programs/130201326/img/tri.png'> <p style='color:#00AFCA;text-align:center;margin-bottom:0;margin-top: 15px;'><strong>Patients with HR+, HER2− locoregionally recurrent or MBC (N=493) <reference id='20'>[Verzenio PI]</reference> <reference id='14'>[Goetz]</reference></strong></p> <ul style='margin-top:0;padding:16px;padding-left:45px;text-align: left;'> <li style='color:#00AFCA;'><span style='color:#000000;'>No prior treatment for MBC</span></li> <li style='color:#00AFCA;'><span style='color:#000000;'>ET in the adjuvant setting permitted if patient had a disease-free interval >12 months from completion of ET</span></li> <li style='color:#00AFCA;'><span style='color:#000000;'>Postmenopausal status prior to starting treatment</span></li> <li style='color:#00AFCA;'><span style='color:#000000;'>ECOG PS 0-1</span></li> </ul> </div> <img src='https://c.mdchat-usa.com/programs/130201326/img/arrow3.png' style='width: 80px; bottom: calc(-100% - 110px);'/><p style='margin-top: 10px;'>RANDOMIZED 2:1</p> <div class='square-two square'> <div style='text-align:Center;' class='s-p'><strong>Verzenio + AI (n=328) <reference id='20'>[Verzenio PI]</reference> <reference id='14'>[Goetz]</reference><sup>&Dagger;</sup> <br>Verzenio 150 mg PO BID continuously until disease progression or unacceptable toxicity</strong><br>+<br>Anastrozole 1&nbsp;mg PO&nbsp;QD or letrozole 2.5&nbsp;mg PO&nbsp;QD<sup>&sect;</sup></div> <div style='text-align:Center;margin-top:15px;' class='s-p'><strong>Placebo + Al (n=165) <reference id='20'>[Verzenio PI]</reference> <reference id='14'>[Goetz]</reference><sup>&Dagger;</sup> <br>Placebo PO BID continuously until disease progression or unacceptable toxicity</strong><br>+<br>Anastrozole 1&nbsp;mg PO&nbsp;QD or letrozole 2.5&nbsp;mg PO&nbsp;QD<sup>&sect;</sup></div> </div> <div class='square square-three2'> <div style='border-bottom:1px solid white;padding-bottom:15px;'>PRIMARY ENDPOINT <strong>Progression&#8209;free survival <reference id='14'>[Goetz]</reference></strong></div> <p style='margin-top: 15px;'><strong>KEY SECONDARY ENDPOINTS</strong> Overall Survival, Objective Response Rate, Duration of Response <reference id='14'>[Goetz]</reference></p> </div></div><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;margin-top: 75px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&Dagger;</sup></span>Each cycle was 28&nbsp;days. <reference id='14'>[Goetz]</reference></p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&sect;</sup></span>80% of patients received letrozole and 20% received anastrozole. <reference id='20'>[Verzenio PI]</reference></p><p style='font-size: 12px!important;'>ECOG PS=Eastern Cooperative Oncology Group Performance Status; QD=once a day.</p>",
+                                    "<p>Are there additional efficacy data from the Verzenio + AI trial that you would like to explore?</p>"
+                                ],
+                                "suggest": [
+                                    210,
+                                    220,
+                                    230,
+                                    240
                                 ]
                             },
                             {
@@ -503,6 +453,23 @@
                                 ]
                             },
                             {
+                                "id": 300,
+                                "title": "Safety",
+                                "objective": "3",
+                                "prompt": [
+                                    "I’d like to explore the safety of Verzenio."
+                                ],
+                                "answer": [
+                                    "What safety topic would you like to explore?"
+                                ],
+                                "suggest": [
+                                    310,
+                                    320,
+                                    330,
+                                    340
+                                ]
+                            },
+                            {
                                 "id": 310,
                                 "title": "Verzenio + Fulvestrant ARs",
                                 "objective": "3",
@@ -576,6 +543,39 @@
                                     400,
                                     500
                                 ]
+                            },
+                            {
+                                "id": 400,
+                                "title": "Guideline Recommendations",
+                                "objective": "4",
+                                "prompt": [
+                                    "Can you show me what the NCCN Clinical Practical Guidelines in Oncology (NCCN Guidelines<sup>&reg;</sup>) say about abemaciclib&nbsp;(Verzenio)?"
+                                ],
+                                "answer": [
+                                    "Okay. Here are the NCCN Guidelines<sup>&reg;</sup>:",
+                                    "<p style='font-size:22px!important; color:#00ABC7;margin-bottom:15px;'>Abemaciclib (Verzenio<sup>&reg;</sup>): The only CDK4 & 6&nbsp;inhibitor recommended by the National Comprehensive Cancer Network<sup>&reg;</sup> (NCCN<sup>&reg;</sup>) in combination with fulvestrant or AI and as a single agent <reference id='17'>[NCCN]</reference></p><p style='margin-bottom: 15px;padding: 20px; background-color: #301946;text-align: center; color: white; font-weight: bold;font-size: 20px!important;'>CATEGORY 1*</p><p style='font-weight: bold; margin-bottom:0px;'>Abemaciclib (Verzenio) + fulvestrant<sup>&dagger;</sup></p><p style='margin-bottom: 15px;'>Recommended option for the treatment of postmenopausal women with HR+, HER2−&nbsp;MBC after disease progression on prior endocrine therapy.</p><p style='font-weight: bold; margin-bottom:0px;'>Abemaciclib (Verzenio)+ an aromatase inhibitor<sup>&dagger;</sup></p><p style='margin-bottom: 15px;'>Recommended option for the treatment of postmenopausal women with HR+, HER2−&nbsp;MBC as initial endocrine&#8209;based therapy.</p><p style='padding: 20px; margin-bottom: 15px; background-color: #00abc7;text-align: center; color: white; font-weight: bold;font-size: 20px!important;'>CATEGORY 2A<sup>&Dagger;</sup></p><p style='font-weight: bold; margin-bottom:0px;'>Abemaciclib (Verzenio)as a single agent<sup>&dagger;</sup></p><p style='margin-bottom: 15px;'>Recommended option for the treatment of postmenopausal women with HR+, HER2−&nbsp;MBC after disease progression on prior endocrine therapy and prior chemotherapy in the metastatic setting.</p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;margin-top: 45px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'>*</span>Category 1: Based upon high-level evidence, there is uniform NCCN consensus that the intervention is appropriate.</p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&dagger;</sup></span>If there is disease progression while on CDK4 & 6 inhibitor therapy, there are no data to support an additional line of therapy with another CDK4 & 6–containing regimen.</p><p style='font-size: 12px !important;margin-bottom:0px; margin-left: 5px;'><span style='display:inline-block;position:absolute;transform:translateX(-6px);'><sup>&Dagger;</sup></span>Category 2A: Based upon lower-level evidence, there is uniform NCCN consensus that the intervention is appropriate.NCCN makes no warranties of any kind whatsoever regarding their content, use or application and disclaims any responsibility for theirapplication or use in any way.</p>",
+                                    "Would you like to learn more about Verzenio?"
+                                ],
+                                "suggest": [
+                                    100,
+                                    200,
+                                    300,
+                                    400,
+                                    500
+                                ]
+                            },
+                            {
+                                "id": 500,
+                                "title": "Summary and Exit",
+                                "prompt": [
+                                    "That's all for now."
+                                ],
+                                "answer": [
+                                    "<img class='avatar' style='width: 30px; position:absolute;' src='http://c.mdchat-usa.com/assets/images/edels/casey_1.gif'/><div style='margin-left:40px;'>Thank you for reviewing this information about Verzenio<sup>&reg;</sup> (abemaciclib)<br><br></div>",
+                                    "Here's a summary of what we reviewed:",
+                                    "<objectives>"
+                                ],
+                                "suggest": []
                             }
                         ],
                         "objectives": {
