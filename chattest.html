@@ -1,0 +1,244 @@
+<!doctype html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <script>
+        $(document).ready(function() {
+            
+            
+        var toggle = document.getElementById('container');
+        var toggleContainer = document.getElementById('toggle-container');
+        var toggleNumber = "false";
+
+        toggle.addEventListener('click', function() {
+            toggleNumber = !toggleNumber;
+            if (toggleNumber) {
+                toggleContainer.style.clipPath = 'inset(0 0 0 50%)';
+                toggleContainer.style.backgroundColor = '#ff4757';
+            } else {
+                toggleContainer.style.clipPath = 'inset(0 50% 0 0)';
+                toggleContainer.style.backgroundColor = '#ffa502';
+            }
+        });
+            
+            $("button").on("click", function() {
+                
+                $('.markup').show();
+                 if(toggleNumber == "false"){
+                    $('head').append('<style type="text/css">@media print {.prompttray { page-break-after: always; }.prompttray { page-break-after: always; } .markup { color: white; border-color: white; } .promptcontainer { color: white !important; } #references { display: none; } #isi .markup { display: none; }#references {display: none;}.refmarkup {display: none;}}</style>');
+                }
+                var url = $("input").val();
+                var url2 = "https://c.mdchat-usa.com/programs/"+url+"/json/"+url+".json";
+
+                function loadJSON(callback) {
+                    var xobj = new XMLHttpRequest();
+                    xobj.overrideMimeType("application/json");
+                    xobj.open('GET', url2, true);
+                    xobj.onreadystatechange = function() {
+                        if (xobj.readyState == 4) {
+                            callback(xobj.responseText);
+                        }
+                    }
+                    xobj.send(null);
+                }
+                loadJSON(function(response) {
+                    var j = JSON.parse(response);
+                    var chat = j.pages.casey.sections[0].mecbotChat.chat;
+                    var objectives = j.pages.casey.sections[0].mecbotChat.objectives;
+                    var references = j.features.reference;
+                    document.getElementById('logoimg').src = j.pages.casey.sections[0].mecbotChat.settings.header.image;
+                    document.getElementById('header').innerHTML = j.pages.casey.sections[0].mecbotChat.settings.header.title;
+                    var promptTitles = new Array();
+                    for (let prompt of chat) {
+                        promptTitles[prompt.id] = prompt.title;
+                    }
+                    //validate
+                    var promptids = new Array();
+                    var suggestions = new Array();
+                    for (let prompt of chat) {
+                        promptids.push(prompt.id);
+                    }
+                    for (let prompt of chat) {
+                        if (prompt.suggest.length == 0) {
+                            //console.log('Prompt ID ' + prompt.promptid + 'has no suggestion (dead end).');
+                        }
+                        for (let suggestion of prompt.suggest) {
+                            if (promptids.indexOf(suggestion) == -1) {
+                                //console.log('Suggestion ID ' + suggestion + ' is listed as suggestion, but prompt doesn\'t exist.');
+                            }
+                            suggestions.push(suggestion);
+                        }
+                    }
+                    for (let promptid of promptids) {
+                        if (suggestions.indexOf(promptid) == -1) {
+                            //console.log('Prompt ID ' + promptid + ' is included but is never suggested.');
+                        }
+                    }
+                    for (let prompt of chat) {
+                        var e = document.createElement('div');
+                        e.className = 'markup';
+                        e.innerHTML = '<b>' + prompt.id + ' (' + prompt.objective + ')</b> - ' + prompt.title;
+                        e.id = 'p' + prompt.id;
+                        document.getElementById("chatbot").appendChild(e);
+                        if (prompt.prompt != undefined) {
+                            var e = document.createElement('div');
+                            e.className = 'prompt';
+                            e.innerHTML = prompt.prompt;
+                            document.getElementById("chatbot").appendChild(e);
+                            makeFloatBreak("chatbot");
+                        }
+                        for (let answer of prompt.answer) {
+                            var e = document.createElement('div');
+                            e.className = 'answer';
+                            if (answer.indexOf('<objectives>') !== -1) {
+                                var txtobjective = "";
+                                for (let objective of makeIterable(objectives)) {
+                                    txtobjective += objective;
+                                }
+                                answer = answer.replace("<objectives>", txtobjective);
+                            }
+                            e.innerHTML = answer;
+                            document.getElementById("chatbot").appendChild(e);
+                            makeFloatBreak("chatbot");
+                            for (let reference of e.getElementsByTagName("reference")) {
+                                var ep = document.createElement('div');
+                                ep.className = 'refmarkup';
+                                //console.log(reference);
+                                if (!reference.id) {
+                                    ep.innerHTML = "Missing reference to " + reference.innerHTML;
+                                } else {
+                                    if (!references[reference.id]) {
+                                        ep.innerHTML = "Reference " + reference.innerHTML + "reference id " + reference.id + " doesn't exist";
+                                    } else {
+                                        ep.innerHTML = reference.innerHTML + " (" + reference.id + ") " + references[reference.id].content;
+                                    }
+                                }
+                                document.getElementById("chatbot").appendChild(ep);
+                            }
+                            makeFloatBreak("chatbot");
+                        }
+                        var e = document.createElement('div');
+                        e.className = 'prompttray';
+                        document.getElementById("chatbot").appendChild(e);
+                        for (let suggest of prompt.suggest) {
+                            if (suggest != prompt.id) {
+                                var f = document.createElement('div');
+                                f.innerHTML = suggest + '<br><div class=\'suggestion\' onclick=\'gotoPrompt(\"p' + suggest + '\");\'>' + promptTitles[suggest] + '</div>'
+                                f.className = 'promptcontainer';
+                                e.appendChild(f);
+                            }
+                        }
+                        makeFloatBreak("chatbot");
+                    }
+                    var e = document.createElement('div');
+                    e.innerHTML = j.features.isi.disclaimer;
+                    document.getElementById("isi").appendChild(e);
+                    for (let reference of makeIterable(references)) {
+                        if (Object.keys(reference)[0] !== "all") {
+                            var e = document.createElement('div');
+                            e.innerHTML = '<p>' + reference.content + '</p>';
+                            document.getElementById("references").appendChild(e);
+                        }
+                    }
+                });
+
+                function makeIterable(obj) {
+                    return Object.values(obj);
+                }
+
+                function gotoPrompt(promptid) {
+                    document.getElementById(promptid).scrollIntoView();
+                }
+
+                function makeFloatBreak(el) {
+                    var f = document.createElement('div');
+                    f.className = 'floatbreak';
+                    document.getElementById(el).appendChild(f);
+                }
+
+                $("#bt").addClass("animated bounceOutRight");
+                $(".group").addClass("animated bounceOutLeft");
+                $("#container").addClass("animated bounceOutLeft");
+                
+
+
+                $.get(url2, function(data) {
+                    var text = data;
+                    console.log(data);
+
+                    /*Suggestion*/
+                    var boxColor = "#" + data.configuration.colorSet.secondary + "!important";
+                    var fontColor = "#" + data.configuration.colorSet.white + "!important";
+                    $('.suggestion').attr('style', 'background-color:' + boxColor + ';color:' + fontColor + ';');
+
+
+                    /*User box*/
+                    var userBg = "#" + data.configuration.colorSet.third + "!important";
+                    $('.prompt').attr('style', 'background-color:' + userBg + ';color:' + fontColor + ';');
+                    $('head').append('<style type="text/css">.prompt:before {background-color:' + userBg + '}</style>');
+
+                    /*Casey box*/
+                    var caseyBg = "#" + data.configuration.colorSet.primary + "!important";
+                    var caseyColor = "#" + data.configuration.colorSet.dark + "!important";
+                    $('.answer').attr('style', 'background-color:' + caseyBg + ';color:' + caseyColor + ';');
+                    $('head').append('<style type="text/css">.answer:before {background-color:' + caseyBg + '}</style>');
+
+
+                    /*css*/
+                    var cssUrl = data.configuration.includes;
+                    for (var i = 0; i < cssUrl.stylesheets.length; i++) {
+                        var urlcss = cssUrl.stylesheets[i];
+                        $('head').append('<link rel="stylesheet" type="text/css" href="' + urlcss + '">');
+                    }
+
+                });
+
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="visual.css">
+</head>
+
+<body>
+    <!--https://pixmy.github.io/1326v2.json-->
+    <div class="group">
+        <input type="text" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Project Number</label>
+    </div>
+    <button id="bt"><i class="fas fa-file-pdf"></i> Get PDF</button>
+
+    <div id="container">
+        <div class="inner-container">
+            <div class="toggle">
+                <p>QA</p>
+            </div>
+            <div class="toggle">
+                <p>Client</p>
+            </div>
+        </div>
+        <div class="inner-container" id='toggle-container'>
+            <div class="toggle">
+                <p>QA</p>
+            </div>
+            <div class="toggle">
+                <p>Client</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="logo"><img id="logoimg" />
+        <div id="header"></div>
+    </div>
+    <div id="chatbot"></div>
+    <div id="objectives"></div>
+    <div id="references">
+        <div class='markup'>REFERENCES</div>
+    </div>
+    <div id="isi">
+        <div class='markup'>ISI</div>
+    </div>
+</body>
