@@ -35,6 +35,10 @@
                 function loadJSON(callback) {
                     var xobj = new XMLHttpRequest();
                     xobj.overrideMimeType("application/json");
+                    xobj.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+                    xobj.setRequestHeader("Access-Control-Allow-Origin", "*");
+                    var text = {"command":"PUSH"};
+                    xhr.send(text);
                     xobj.open('GET', url2, true);
                     xobj.onreadystatechange = function() {
                         if (xobj.readyState == 4) {
