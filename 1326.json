@@ -576,7 +576,7 @@
                                     "<objectives>"
                                 ],
                                 "suggest": []
-                            },
+                            }
                         ],
                         "objectives": {
                             "1": "<ul style='color:#00abc7'><li><span style='color:#301946'>MONARCH 2 (Verzenio + fulvestrant): >16-month median PFS in women with HR+, HER2&ndash;&nbsp;MBC who recurred or progressed on or after&nbsp;ET <reference id='20'>[Verzenio PI]</reference></span></li></ul>",
