@@ -1,0 +1,390 @@
+{
+    "base": [
+        "340204481_collection"
+    ],
+    "metadata": {
+        "mainTitle": "Balancing Safety With Stroke Prevention in High-Risk Patients With AF",
+        "title": "Case #1: Marie"
+    },
+    "variables": {},
+    "features": {
+        "reminders": [
+            {
+                "reminderid": "Program_participants",
+                "active": true,
+                "send_delay": "+1 mins",
+                "emailkey": "Program_participants",
+                "jobkey": "340204481"
+            }
+        ],
+        "redirects": {
+            "redirect1": {
+                "use": [
+                    "global:internal-redirect"
+                ],
+                "link": "/340204481/340204481_p1/intro"
+            }
+        },
+        "reference": {
+            "f1": {
+                "content": "<img style='width:100%' src='https://c.peervoice.com/programs/340204481/slides/Case1-1.png'/>"
+            },
+            "referenceAll": {
+                "all": false
+            }
+        }
+    },
+    "configuration": {
+        "manifest": {
+            "pages": [
+                "cases",
+                "summary",
+                "redirect"
+            ],
+            "setup": {
+                "first": "cases"
+            }
+        },
+        "includes": {
+            "stylesheets": [
+                "https://c.peervoice.com/programs/casedemo/css/case.css"
+            ],
+            "scripts": [
+                "https://c.peervoice.com/programs/casedemo/js/case.js"
+            ]
+        }
+    },
+    "pages": {
+        "specialtypage": {
+            "sections": [
+                {
+                    "header": "<h4>Select Your Specialty or Profession</h4>",
+                    "template": "Specialty",
+                    "class": "white-color-bg gray-color-border",
+                    "selectClass": "gray-color-bg white-color-font",
+                    "use": [
+                        "global:specialty"
+                    ]
+                }
+            ]
+        },
+        "cases": {
+            "use": [
+                "page:default"
+            ],
+            "features": {
+                "bottomNext": false,
+                "reminderActions": [
+                    {
+                        "action": "invoke",
+                        "reminderId": "Program_participants"
+                    }
+                ],
+                "autonext": {
+                    "disabled": true,
+                    "delay": 30
+                }
+            },
+            "sections": [
+                {
+                    "template": "MecBot",
+                    "mecbotChat": {
+                        "chat": [
+                            {
+                                "id": 0,
+                                "answer": [
+                                    "Thank you for seeing me today, doctor.",
+                                    "I'm taking a lot of medications since my stroke. Do I need all of them? I'm also just concerned about having another stroke."
+                                ],
+                                "suggest": [
+                                    20,
+                                    10
+                                ]
+                            },
+                            {
+                                "id": 10,
+                                "title": "Medications",
+                                "prompt": [
+                                    "Okay. Let's have a look at your medical record and see what you're taking."
+                                ],
+                                "objective": "obj1",
+                                "answer": [
+                                    "<div class='p-ehr'><h2>Medications</h2><b>Current:</b><ul><li>Clopidogrel 75 mg</li><li>Simvastatin 10 mg</li><li>Daily multivitamin with iron 18 mg</li><li>Alendronate sodium 10 mg</li><li>Calcium + vitamin D3 (1200 mg/1000 IU)</li></ul><br><b>Previous:</b><ul><li>Baby aspirin 75 mg</li></ul></div>",
+                                    "That looks right."
+                                ],
+                                "suggest": [
+                                    20,
+                                    30,
+                                    40
+                                ]
+                            },
+                            {
+                                "id": 20,
+                                "title": "Medical History",
+                                "prompt": [
+                                    "Okay.  I know we're treating you for atrial fibrillation.  Let's have a look at your record and see what other conditions you are being treated for."
+                                ],
+                                "objective": "obj1",
+                                "answer": [
+                                    "<div class='p-ehr'><h2>Medical History</h2><ul><li>Moderate stroke 8 days ago</li><li>Fracture: broken collarbone from fall 3 years ago; diagnosed with osteoporosis</li><li>Low blood pressure (105/60 mm Hg)</li><li>Low BMI (18 kg/m<sup>2</sup>)</li><li>Anaemia</li></ul></div>",
+                                    "Yes, that looks correct. I have osteoporosis. About 3 years ago I fell and broke my collarbone. And I’ve always been anaemic."
+                                ],
+                                "suggest": [
+                                    10,
+                                    30,
+                                    40,
+                                    60
+                                ]
+                            },
+                            {
+                                "id": 30,
+                                "title": "Smoking/Alcohol History",
+                                "prompt": [
+                                    "Do you smoke or have alcoholic drinks?"
+                                ],
+                                "objective": "obj1",
+                                "answer": [
+                                    "Not anymore, I quit smoking about 30 years ago. I probably have a drink once or twice a day."
+                                ],
+                                "suggest": [
+                                    10,
+                                    20,
+                                    40,
+                                    60
+                                ]
+                            },
+                            {
+                                "id": 40,
+                                "title": "Exercise and Activity",
+                                "prompt": [
+                                    "Do you participate in any exercise or regular activity?"
+                                ],
+                                "objective": "obj1",
+                                "answer": [
+                                    "Yes, I keep busy. I play golf with friends about once or twice a week, and I do an exercise class at a health club near my house. I also volunteer at a food bank for two hours every Saturday and that keeps me on my feet."
+                                ],
+                                "suggest": [
+                                    10,
+                                    20,
+                                    30,
+                                    60
+                                ]
+                            },
+                            {
+                                "id": 60,
+                                "title": "Calculate HAS-BLED ",
+                                "prompt": [
+                                    "Okay.  I have a tool here to calculate your risk of bleeding based on your blood pressure, renal and liver function, stroke history, prior major bleeding, age, medications, and alcohol use. It's called your HAS-BLED score."
+                                ],
+                                "objective": "obj2",
+                                "answer": [
+                                    "<div class='p-ehr'><h2>HAS-BLED Score:&nbsp;<span id='has-bled-score'>4</span></h2><table id='has-bled'><tbody><tr><td><input type='checkbox' value=1 onchange='calc(\"has-bled\")'/></td><td>(+1) Hypertension<br>Uncontrolled, &gt;160 mmHg sys</td></tr><tr><td><input type='checkbox' value=1 onchange='calc(\"has-bled\")'/></td><td>(+1) Renal disease<br>Dialysis, transplant, Cr &gt;2.26 mg/dL or &gt;200 &micro;mol/L</td></tr><tr><td><input type='checkbox' value=1 onchange='calc(\"has-bled\")'/></td><td>(+1) Liver disease<br>Cirrhosis or bilirubin &gt;2x normal with AST/ALT/AP &gt;3x normal</td></tr><tr><td><input checked type='checkbox' value=1 onchange='calc(\"has-bled\")'/></td><td>(+1) Stroke History</td></tr><tr><td><input type='checkbox' value=1 onchange='calc(\"has-bled\")'/></td><td>(+1) Prior major bleeding or predisposition to bleeding</td></tr><tr><td><input type='checkbox' value=1 onchange='calc(\"has-bled\")' /></td><td>(+1) Labile INR<br>Unstable/high INRs, time in therapeutic range &lt;60%</td></tr><tr><td><input type='checkbox' value=1 checked onchange='calc(\"has-bled\")'/></td><td>(+1) Age &gt;65</td></tr><tr><td><input type='checkbox' value=1 checked onchange='calc(\"has-bled\")'/></td><td>(+1) Medication usage predisposing to bleeding<br>Aspirin, clopidogrel, NSAIDs</td></tr><tr><td><input type='checkbox' value=1 checked onchange='calc(\"has-bled\")'/></td><td>(+1) Alcohol use &ge;8 drinks/week</td></tr></tbody></table></div>",
+                                    "Is that high? How can I lower my risk of bleeding?"
+                                ],
+                                "suggest": [
+                                    61
+                                ]
+                            },
+                            {
+                                "id": 61,
+                                "title": "Explain HAS-BLED",
+                                "prompt": [
+                                    "It is high, but we reduce it significantly by getting your blood pressure under control and reducing your alcohol intake.  Switching from warfarin to a non-vitamin K anticoagulant can also reduce your bleeding risk."
+                                ],
+                                "objective": "obj2",
+                                "answer": [
+                                    "That's good news."
+                                ],
+                                "suggest": [
+                                    70
+                                ]
+                            },
+                            {
+                                "id": 70,
+                                "title": "<p style='margin: 0px;padding-top: 10px;'>Calculate</p><p>CHA<sub>2</sub> DS<sub>2</sub>-VASc</p>",
+                                "prompt": [
+                                    "We'll use another calculator to assess your risk of stroke based on your age, sex, history of congestive heart failure, hypertension, stroke, vascular disease, and diabetes."
+                                ],
+                                "objective": "obj2",
+                                "answer": [
+                                    "<div class='p-ehr'> <h2>CHA<sub>2</sub>DS<sub>2</sub>-VASc Score: <span id='chads2-score'>5</span></h2> <table id='chads2'> <tbody> <tr> <td><input type='checkbox' value=1 onchange='calc(\"chads2\")'/></td> <td>(+1) Age 65 &ndash; 74</td> </tr> <tr> <td><input type='checkbox' value=2 checked onchange='calc(\"chads2\")'/></td> <td>(+2) Age &ge; 75</td> </tr> <tr> <td><input type='checkbox' value=1 checked onchange='calc(\"chads2\")'/></td> <td>(+1) Female sex</td> </tr> <tr> <td><input type='checkbox' value=1 onchange='calc(\"chads2\")'/></td> <td>(+1) CHF history</td> </tr> <tr> <td><input type='checkbox' value=1 onchange='calc(\"chads2\")'/></td> <td>(+1) Hypertension</td> </tr> <tr> <td><input type='checkbox' value=1 onchange='calc(\"chads2\")'/></td> <td>(+1) Vascular disease</td> </tr> <tr> <td><input type='checkbox' value=1 onchange='calc(\"chads2\")'/></td> <td>(+1) Diabetes mellitus</td> </tr> <tr> <td><input type='checkbox' value=2 checked onchange='calc(\"chads2\")'/></td> <td>(+2) Thromboembolism, Stroke or TIA history</td> </tr> </tbody> </table></div>",
+                                    "So what about this score? Can we do anything to improve it, too? I'm worried about having a stroke."
+                                ],
+                                "suggest": [
+                                    71,
+                                    100
+                                ]
+                            },
+                            {
+                                "id": 71,
+                                "title": "<p style='margin: 0px;padding-top: 10px;'>Explain </p><p>CHA<sub>2</sub>DS<sub>2</sub>-VASc</p>",
+                                "prompt": [
+                                    "Based on your CHA<sub>2</sub>DS<sub>2</sub>-VASc score, your risk of having another stroke is actually higher than your bleeding risk. Unfortunately, we can't reduce any of your risk factors since this is based on your medical history and age."
+                                ],
+                                "objective": "obj2",
+                                "answer": [
+                                    "I'm still not completely recovered from the last stroke. What can I do?"
+                                ],
+                                "suggest": [
+                                    100,
+                                    101
+                                ]
+                            },
+                            {
+                                "id": 100,
+                                "title": "Guidelines for Stroke Prevention",
+                                "prompt": [
+                                    "So, Marie, you had a moderate stroke 8 days ago. Based on the current guidelines for stroke prevention, I recommend anticoagulation therapy to help prevent another stroke.<br><div style='width:100%;display:flex;justify-content:center;' > <div style='position:relative;'><reference id='f1' style='position:absolute;width:100%;height:100%;'>&nbsp;</reference><img class='p-centerimg' style='width:100%; max-width: 650px;' src='https://c.peervoice.com/programs/340204481/slides/Case1-1.png'></div></div>"
+                                ],
+                                "objective": "obj2",
+                                "answer": [
+                                    "So what are my options?"
+                                ],
+                                "suggest": [
+                                    101
+                                ]
+                            },
+                            {
+                                "id": 101,
+                                "prompt": [
+                                    "We do have several options for anticoagulation that will help prevent another stroke: Dabigatran, rivaroxaban, apixaban, and edoxaban. These are all oral medications.<br><table style='background-color: white; width: 100%; text-align: left; border-collapse: collapse; padding: 5px;'><tr style='background-color: #ececec; text-align: center; font-weight: bold; padding: 5px;'><td>Agent</td><td>Mechanism</td><td>Dose</td></tr><tr style='border-bottom: 2px solid  #ececec;'><td>Dabigatran</td><td>Oral direct thrombin inhibitor</td><td><nobr>150 mg BID</nobr> or <nobr>110 mg BID</nobr></td></tr><tr style='border-bottom: 2px solid #ececec;'><td>Rivaroxaban</td><td>Oral direct Factor Xa inhibitor</td><td><nobr>20 mg QD</nobr><td/></tr><tr style='border-bottom: 2px solid  #ececec;'><td>Apixaban</td><td>Oral direct Factor Xa inhibitor</td><td><nobr> 5 mg BID</nobr></td></tr><tr><td>Edoxaban</td><td>Oral direct Factor Xa inhibitor</td><td><nobr>60 mg QD</nobr> or <nobr>30 mg QD</nobr></td></tr></table><div style='font-size: 9pt;margin-top:15px;'><b><i>Reference:</i></b> Steffel J et al. <i>Eur Heart J.</i> 2018;39:1330-1393.</div><br>"
+                                ],
+                                "title": "Anticoagulation Options",
+                                "objective": "obj2",
+                                "answer": [
+                                    "Which one would be best for me?"
+                                ],
+                                "suggest": [
+                                    102,
+                                    103
+                                ]
+                            },
+                            {
+                                "id": 102,
+                                "prompt": [
+                                    "Do you prefer to take medication once or twice a day? Here are the different dosing options. Dabigatran and apixaban are twice daily, but rivaroxaban and edoxaban are once daily medications."
+                                ],
+                                "title": "Anticoagulant Dosing Schedule",
+                                "objective": "obj2",
+                                "answer": [
+                                    "Well, I take most of my medications once a day. Are the once-a-day medications effective at preventing stroke and bleeding?"
+                                ],
+                                "suggest": [
+                                    103,
+                                    500
+                                ]
+                            },
+                            {
+                                "id": 103,
+                                "title": "Differentiating NOACs",
+                                "prompt": [
+                                    "Both edoxaban and rivaroxaban are effective for preventing strokes, and have a lower risk of major bleeding. Edoxaban has been studied in patients at risk for falling."
+                                ],
+                                "objective": "obj2",
+                                "answer": [
+                                    "That’s important. With osteoporosis, falls can be dangerous for me."
+                                ],
+                                "suggest": [
+                                    102,
+                                    500
+                                ]
+                            },
+                            {
+                                "id": 500,
+                                "title": "Concluding Exchange",
+                                "action": "next",
+                                "delay": 3000,
+                                "prompt": [
+                                    "Okay, Marie.  I'd suggest we start you on edoxaban.>"
+                                ],
+                                "objective": "obj2",
+                                "answer": [
+                                    "Thank you Doctor. I feel better now that we’ve talked."
+                                ],
+                                "suggest": []
+                            }
+                        ],
+                        "objectives": {
+                            "obj1": "Recognize factors that contribute to risk of bleeding ",
+                            "obj2": "Apply current evidence and guidelines for stroke prevention to individual patient care",
+                            "obj3": "Recognize key factors that may contribute to risk of bleeding in patients with atrial fibrillation (AF) at risk for stroke",
+                            "obj4": "Counsel patients with AF at risk for stroke on management of bleeding risk"
+                        },
+                        "progress": {
+                            "display": true
+                        },
+                        "settings": {
+                            "header": {
+                                "title": "<div class='patient-header-table'> <div class='patient-header-td'> <div class='patient-header-td'> <img src='https://c.peervoice.com/programs/340204481/images/kitIcon.png' style='width:65px;display: inline;'></div> <div class='patient-header-td'> <h1 class='light-green-color-font'>Case #1: Marie</h1> </div> </div></div><ul> <li style='margin-bottom:15px;'>83-year-old woman with atrial fibrillation (AF) and a history of recent stroke.</li> <li style='margin-bottom:15px;'>Presents for follow-up.</li></ul><p style='font-weight: bold;'>Your goal is to identify risk factors for stroke and bleeding and advise her on a course of treatment. </p><p><em>To ask Marie a question, tap one of these green buttons. When she replies, you’ll be able to ask follow up questions, review her medical history and other relevant information, and establish her stroke and bleeding risk.</em></p><p style='font-weight: bold;'>Tap “NEXT <span  aria-hidden='false' class='glyphicon glyphicon-forward'></span>” to access the Faculty Presentation</p>"
+                            },
+                            "classesSet": {
+                                "botReply": "green-color-bg white-color-font",
+                                "mecbotBackground": "white-color-bg",
+                                "chatBackground": "white-color-bg",
+                                "progressSquares": "green-color-font",
+                                "suggestion": "green-color-bg white-color-font",
+                                "userMessage": "light-gray-color-bg black-color-font"
+                            },
+                            "autoscroll": true,
+                            "promptsLegend": "Ask Marie a question about...",
+                            "bottomProgress": false
+                        }
+                    }
+                }
+            ]
+        },
+        "summary": {
+            "use": [
+                "page:default"
+            ],
+            "features": {
+                "autonext": {
+                    "delay": 10
+                },
+                "reminderActions": [
+                    {
+                        "action": "invoke",
+                        "reminderId": "Program_participants"
+                    }
+                ]
+            },
+            "sections": [
+                {
+                    "template": "Media",
+                    "image": {
+                        "class": "no-border",
+                        "ratio": "16:9",
+                        "type": "regular",
+                        "url": {
+                            "default": "https://c.peervoice.com/programs/340204481/slides/summary-1.png"
+                        }
+                    }
+                },
+                {
+                    "template": "Content",
+                    "content": "<strong>Tap “NEXT <span  aria-hidden='false' class='glyphicon glyphicon-forward'></span>”  to hear Dr. Giugliano’s analysis of considerations and recommendations for secondary stroke prevention in frail, elderly patients.</strong>"
+                }
+            ]
+        },
+        "redirect": {
+            "use": [
+                "page:default"
+            ],
+            "features": {
+                "bottomNext": false,
+                "redirects": {
+                    "id": "redirect1"
+                },
+                "autonext": {
+                    "delay": 3
+                }
+            },
+            "sections": [
+                {
+                    "template": "Content",
+                    "content": ""
+                }
+            ]
+        }
+    }
+}
