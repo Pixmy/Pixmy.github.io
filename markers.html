@@ -9,30 +9,51 @@
                     var arrayOfLines = $('.markers').val().split('\n');
                      var x=0;
                      var temp;
+                     var chapter = "";
+                     
                     $.each(arrayOfLines, function(index, item) {
                         var s = item.split(':');
                         x++;
+                        
                         if(x === 1){
                             if(s[0] === '00'){
                                 $(".code").html($(".code").val() + '&#09;{\n&#09;&#09;"pageid":"screen' + x + '",\n&#09;&#09;"start":"0",\n&#09;&#09;"end":"'+ (s[1] - 1) + '"\n&#09;},\n');
                                 temp = s[1];
-                            }else{
+                                
+                                chapter = '{ "id": "screen'+x+'",\n "template": "Content",\n "title": "PV Updates - Program Title",\n "header": "",\n "listcontent": [\n {\n "thumbnails": {\n "url": "http://c.pvupdates.com/programs/projectNumber/images/thumbnails/screenXX.png",\n "url-large": "http://c.pvupdates.com/programs/projectNumber/images/slides/screenXX.png"\n }\n },\n {\n "content": "<p><strong>Chapter '+x+'</strong></p><p><strong>Dr. Name/Narrator:</strong> Insert copy</p><p>Insert copy</p>"\n },\n {\n "content": "<sponsor></sponsor>"\n }\n ],\n "audio_url": "",\n "audio_autoplay": "",\n "media_duration": "'+(s[1] - 1)+'",\n  "autonext_delay": "'+(s[1] - 1)+'",\n  "autonext_disabled": "false",\n "bottom-next": "true",\n "code": "$(\'.next-label\').html(\'NEXT\'); $(\'#bottom-next a\').css(\'display\',\'block\')",\n "reminders": [\n {\n "reminderid": "Program_participants",\n "action": "invoke"\n }\n ]\n},\n\n';
+                                
+                            }/*else{
                                 var mult = (s[0] * 60) + (s[1] - 1);
                                  $(".code").html($(".code").val() + '&#09;{\n&#09;&#09;"pageid":"screen' + x + '",\n&#09;&#09;"start":"'+ temp +'",\n&#09;&#09;"end":"'+ mult + '"\n&#09;},\n');
                                 temp = mult + 1;
-                            }
+                                console.log(temp);
+                            }*/
                         }else{
                              if(s[0] === '00'){
                                 $(".code").html($(".code").val() + '&#09;{\n&#09;&#09;"pageid":"screen' + x + '",\n&#09;&#09;"start":"'+ temp +'",\n&#09;&#09;"end":"'+ (s[1] - 1) + '"\n&#09;},\n');
+                                 
+                                 var media = (s[1] - 1) - temp;
+                                 
+                                 chapter = chapter + '{ "id": "screen'+x+'",\n "template": "Content",\n "title": "PV Updates - Program Title",\n "header": "",\n "listcontent": [\n {\n "thumbnails": {\n "url": "http://c.pvupdates.com/programs/projectNumber/images/thumbnails/screenXX.png",\n "url-large": "http://c.pvupdates.com/programs/projectNumber/images/slides/screenXX.png"\n }\n },\n {\n "content": "<p><strong>Chapter '+x+'</strong></p><p><strong>Dr. Name/Narrator:</strong> Insert copy</p><p>Insert copy</p>"\n },\n {\n "content": "<sponsor></sponsor>"\n }\n ],\n "audio_url": "",\n "audio_autoplay": "",\n "media_duration": "'+media+'",\n  "autonext_delay": "'+media+'",\n  "autonext_disabled": "false",\n "bottom-next": "true",\n "code": "$(\'.next-label\').html(\'NEXT\'); $(\'#bottom-next a\').css(\'display\',\'block\')"},\n\n';
+                                 
+                                 
                                 temp = s[1];
                             }else{
                                 var mult = (s[0] * 60) + (s[1] - 1);
                                  $(".code").html($(".code").val() + '&#09;{\n&#09;&#09;"pageid":"screen' + x + '",\n&#09;&#09;"start":"'+ temp +'",\n&#09;&#09;"end":"'+ mult + '"\n&#09;},\n');
+                                
+                                
+                                 
+                                 var media = mult - temp;
+                                 
+                                 chapter = chapter + '{ "id": "screen'+x+'",\n "template": "Content",\n "title": "PV Updates - Program Title",\n "header": "",\n "listcontent": [\n {\n "thumbnails": {\n "url": "http://c.pvupdates.com/programs/projectNumber/images/thumbnails/screenXX.png",\n "url-large": "http://c.pvupdates.com/programs/projectNumber/images/slides/screenXX.png"\n }\n },\n {\n "content": "<p><strong>Chapter '+x+'</strong></p><p><strong>Dr. Name/Narrator:</strong> Insert copy</p><p>Insert copy</p>"\n },\n {\n "content": "<sponsor></sponsor>"\n }\n ],\n "audio_url": "",\n "audio_autoplay": "",\n "media_duration": "'+media+'",\n  "autonext_delay": "'+media+'",\n  "autonext_disabled": "false",\n "bottom-next": "true",\n "code": "$(\'.next-label\').html(\'NEXT\'); $(\'#bottom-next a\').css(\'display\',\'block\')"},\n\n';
+                                
                                 temp = mult + 1;
                             }
                         }
                     });
-                    $(".code").html($(".code").val() + "\n]")
+                     
+                    $(".code").html($(".code").val() + "\n]\n\n\n\n-----Screens------\n\n\n\n"+chapter);
                 });
             });
         </script>
